@@ -4,9 +4,9 @@
   <subtitle>If You Want To Go Fast, Go Alone. If You Want To Go Far, Go Together.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.xlsdg.org/"/>
+  <link href="https://blog.xlsdg.org/"/>
   <updated>2016-12-09T15:55:20.000Z</updated>
-  <id>http://blog.xlsdg.org/</id>
+  <id>https://blog.xlsdg.org/</id>
   
   <author>
     <name>xLsDg</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Grunt 配置</title>
-    <link href="http://blog.xlsdg.org/2015/08/14/grunt-configuration/"/>
-    <id>http://blog.xlsdg.org/2015/08/14/grunt-configuration/</id>
+    <link href="https://blog.xlsdg.org/2015/08/14/grunt-configuration/"/>
+    <id>https://blog.xlsdg.org/2015/08/14/grunt-configuration/</id>
     <published>2015-08-14T06:00:00.000Z</published>
     <updated>2016-12-09T15:55:20.000Z</updated>
     
@@ -50,19 +50,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Grunt" scheme="http://blog.xlsdg.org/tags/Grunt/"/>
+      <category term="Grunt" scheme="https://blog.xlsdg.org/tags/Grunt/"/>
     
-      <category term="Node-js" scheme="http://blog.xlsdg.org/tags/Node-js/"/>
+      <category term="Node-js" scheme="https://blog.xlsdg.org/tags/Node-js/"/>
     
   </entry>
   
   <entry>
     <title>Gulp 配置</title>
-    <link href="http://blog.xlsdg.org/2015/08/13/gulp-configuration/"/>
-    <id>http://blog.xlsdg.org/2015/08/13/gulp-configuration/</id>
+    <link href="https://blog.xlsdg.org/2015/08/13/gulp-configuration/"/>
+    <id>https://blog.xlsdg.org/2015/08/13/gulp-configuration/</id>
     <published>2015-08-13T06:00:00.000Z</published>
     <updated>2016-12-09T15:55:37.000Z</updated>
     
@@ -91,19 +91,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Node-js" scheme="http://blog.xlsdg.org/tags/Node-js/"/>
+      <category term="Node-js" scheme="https://blog.xlsdg.org/tags/Node-js/"/>
     
-      <category term="Gulp" scheme="http://blog.xlsdg.org/tags/Gulp/"/>
+      <category term="Gulp" scheme="https://blog.xlsdg.org/tags/Gulp/"/>
     
   </entry>
   
   <entry>
     <title>花密PHP核心代码</title>
-    <link href="http://blog.xlsdg.org/2015/06/21/flower-password-php-core-code/"/>
-    <id>http://blog.xlsdg.org/2015/06/21/flower-password-php-core-code/</id>
+    <link href="https://blog.xlsdg.org/2015/06/21/flower-password-php-core-code/"/>
+    <id>https://blog.xlsdg.org/2015/06/21/flower-password-php-core-code/</id>
     <published>2015-06-21T06:30:00.000Z</published>
     <updated>2016-12-09T10:51:50.000Z</updated>
     
@@ -118,19 +118,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Flower Password" scheme="http://blog.xlsdg.org/tags/Flower-Password/"/>
+      <category term="Flower Password" scheme="https://blog.xlsdg.org/tags/Flower-Password/"/>
     
-      <category term="PHP" scheme="http://blog.xlsdg.org/tags/PHP/"/>
+      <category term="PHP" scheme="https://blog.xlsdg.org/tags/PHP/"/>
     
   </entry>
   
   <entry>
     <title>花密C语言核心代码</title>
-    <link href="http://blog.xlsdg.org/2015/06/10/flower-password-c-core-code/"/>
-    <id>http://blog.xlsdg.org/2015/06/10/flower-password-c-core-code/</id>
+    <link href="https://blog.xlsdg.org/2015/06/10/flower-password-c-core-code/"/>
+    <id>https://blog.xlsdg.org/2015/06/10/flower-password-c-core-code/</id>
     <published>2015-06-10T02:30:00.000Z</published>
     <updated>2016-12-09T10:49:46.000Z</updated>
     
@@ -156,23 +156,23 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Flower Password" scheme="http://blog.xlsdg.org/tags/Flower-Password/"/>
+      <category term="Flower Password" scheme="https://blog.xlsdg.org/tags/Flower-Password/"/>
     
-      <category term="C" scheme="http://blog.xlsdg.org/tags/C/"/>
+      <category term="C" scheme="https://blog.xlsdg.org/tags/C/"/>
     
-      <category term="Arduino" scheme="http://blog.xlsdg.org/tags/Arduino/"/>
+      <category term="Arduino" scheme="https://blog.xlsdg.org/tags/Arduino/"/>
     
-      <category term="Raspberry-Pi" scheme="http://blog.xlsdg.org/tags/Raspberry-Pi/"/>
+      <category term="Raspberry-Pi" scheme="https://blog.xlsdg.org/tags/Raspberry-Pi/"/>
     
   </entry>
   
   <entry>
     <title>花密Python核心代码</title>
-    <link href="http://blog.xlsdg.org/2015/06/09/flower-password-python-core-code/"/>
-    <id>http://blog.xlsdg.org/2015/06/09/flower-password-python-core-code/</id>
+    <link href="https://blog.xlsdg.org/2015/06/09/flower-password-python-core-code/"/>
+    <id>https://blog.xlsdg.org/2015/06/09/flower-password-python-core-code/</id>
     <published>2015-06-09T02:30:00.000Z</published>
     <updated>2016-12-09T10:52:25.000Z</updated>
     
@@ -188,19 +188,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Flower Password" scheme="http://blog.xlsdg.org/tags/Flower-Password/"/>
+      <category term="Flower Password" scheme="https://blog.xlsdg.org/tags/Flower-Password/"/>
     
-      <category term="Python" scheme="http://blog.xlsdg.org/tags/Python/"/>
+      <category term="Python" scheme="https://blog.xlsdg.org/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>花密JavaScript核心代码</title>
-    <link href="http://blog.xlsdg.org/2015/06/08/flower-password-javascript-core-code/"/>
-    <id>http://blog.xlsdg.org/2015/06/08/flower-password-javascript-core-code/</id>
+    <link href="https://blog.xlsdg.org/2015/06/08/flower-password-javascript-core-code/"/>
+    <id>https://blog.xlsdg.org/2015/06/08/flower-password-javascript-core-code/</id>
     <published>2015-06-08T09:30:00.000Z</published>
     <updated>2016-12-09T10:50:49.000Z</updated>
     
@@ -215,19 +215,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Flower Password" scheme="http://blog.xlsdg.org/tags/Flower-Password/"/>
+      <category term="Flower Password" scheme="https://blog.xlsdg.org/tags/Flower-Password/"/>
     
-      <category term="JavaScript" scheme="http://blog.xlsdg.org/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://blog.xlsdg.org/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/06/03/javascript-study-notes/"/>
-    <id>http://blog.xlsdg.org/2015/06/03/javascript-study-notes/</id>
+    <link href="https://blog.xlsdg.org/2015/06/03/javascript-study-notes/"/>
+    <id>https://blog.xlsdg.org/2015/06/03/javascript-study-notes/</id>
     <published>2015-06-03T04:30:00.000Z</published>
     <updated>2016-12-09T13:31:51.000Z</updated>
     
@@ -327,17 +327,17 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="JavaScript" scheme="http://blog.xlsdg.org/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="https://blog.xlsdg.org/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>树莓派之Node.js环境配置</title>
-    <link href="http://blog.xlsdg.org/2015/06/02/install-node-js-on-the-raspberry-pi/"/>
-    <id>http://blog.xlsdg.org/2015/06/02/install-node-js-on-the-raspberry-pi/</id>
+    <link href="https://blog.xlsdg.org/2015/06/02/install-node-js-on-the-raspberry-pi/"/>
+    <id>https://blog.xlsdg.org/2015/06/02/install-node-js-on-the-raspberry-pi/</id>
     <published>2015-06-02T13:30:00.000Z</published>
     <updated>2016-12-09T15:56:06.000Z</updated>
     
@@ -410,21 +410,21 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Raspberry-Pi" scheme="http://blog.xlsdg.org/tags/Raspberry-Pi/"/>
+      <category term="Raspberry-Pi" scheme="https://blog.xlsdg.org/tags/Raspberry-Pi/"/>
     
-      <category term="Node-js" scheme="http://blog.xlsdg.org/tags/Node-js/"/>
+      <category term="Node-js" scheme="https://blog.xlsdg.org/tags/Node-js/"/>
     
-      <category term="Shell" scheme="http://blog.xlsdg.org/tags/Shell/"/>
+      <category term="Shell" scheme="https://blog.xlsdg.org/tags/Shell/"/>
     
   </entry>
   
   <entry>
     <title>《SQL必知必会》学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/06/01/sams-teach-yourself-sql-in-10-minutes-study-notes/"/>
-    <id>http://blog.xlsdg.org/2015/06/01/sams-teach-yourself-sql-in-10-minutes-study-notes/</id>
+    <link href="https://blog.xlsdg.org/2015/06/01/sams-teach-yourself-sql-in-10-minutes-study-notes/"/>
+    <id>https://blog.xlsdg.org/2015/06/01/sams-teach-yourself-sql-in-10-minutes-study-notes/</id>
     <published>2015-06-01T12:30:00.000Z</published>
     <updated>2016-12-09T15:58:06.000Z</updated>
     
@@ -538,17 +538,17 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="MySQL" scheme="http://blog.xlsdg.org/tags/MySQL/"/>
+      <category term="MySQL" scheme="https://blog.xlsdg.org/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>树莓派之SD卡备份与还原</title>
-    <link href="http://blog.xlsdg.org/2015/05/31/raspberry-pi-sd-card-backup-and-recovery/"/>
-    <id>http://blog.xlsdg.org/2015/05/31/raspberry-pi-sd-card-backup-and-recovery/</id>
+    <link href="https://blog.xlsdg.org/2015/05/31/raspberry-pi-sd-card-backup-and-recovery/"/>
+    <id>https://blog.xlsdg.org/2015/05/31/raspberry-pi-sd-card-backup-and-recovery/</id>
     <published>2015-05-31T04:30:00.000Z</published>
     <updated>2016-12-09T15:58:12.000Z</updated>
     
@@ -599,19 +599,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Raspberry-Pi" scheme="http://blog.xlsdg.org/tags/Raspberry-Pi/"/>
+      <category term="Raspberry-Pi" scheme="https://blog.xlsdg.org/tags/Raspberry-Pi/"/>
     
-      <category term="Shell" scheme="http://blog.xlsdg.org/tags/Shell/"/>
+      <category term="Shell" scheme="https://blog.xlsdg.org/tags/Shell/"/>
     
   </entry>
   
   <entry>
     <title>HTML学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/05/28/html-study-notes/"/>
-    <id>http://blog.xlsdg.org/2015/05/28/html-study-notes/</id>
+    <link href="https://blog.xlsdg.org/2015/05/28/html-study-notes/"/>
+    <id>https://blog.xlsdg.org/2015/05/28/html-study-notes/</id>
     <published>2015-05-28T07:00:00.000Z</published>
     <updated>2016-12-09T10:55:22.000Z</updated>
     
@@ -1010,17 +1010,17 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="HTML" scheme="http://blog.xlsdg.org/tags/HTML/"/>
+      <category term="HTML" scheme="https://blog.xlsdg.org/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>树莓派之网络摄像头配置</title>
-    <link href="http://blog.xlsdg.org/2015/05/24/raspberry-pi-webcam-using-mjpg-streamer-over-internet/"/>
-    <id>http://blog.xlsdg.org/2015/05/24/raspberry-pi-webcam-using-mjpg-streamer-over-internet/</id>
+    <link href="https://blog.xlsdg.org/2015/05/24/raspberry-pi-webcam-using-mjpg-streamer-over-internet/"/>
+    <id>https://blog.xlsdg.org/2015/05/24/raspberry-pi-webcam-using-mjpg-streamer-over-internet/</id>
     <published>2015-05-24T01:30:00.000Z</published>
     <updated>2016-12-09T15:58:10.000Z</updated>
     
@@ -1047,19 +1047,19 @@
     
     </summary>
     
-      <category term="技术研究" scheme="http://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+      <category term="技术研究" scheme="https://blog.xlsdg.org/categories/%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
     
     
-      <category term="Raspberry-Pi" scheme="http://blog.xlsdg.org/tags/Raspberry-Pi/"/>
+      <category term="Raspberry-Pi" scheme="https://blog.xlsdg.org/tags/Raspberry-Pi/"/>
     
-      <category term="Shell" scheme="http://blog.xlsdg.org/tags/Shell/"/>
+      <category term="Shell" scheme="https://blog.xlsdg.org/tags/Shell/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第10章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/05/05/beginning-ios7-development-exploring-the-ios-sdk-10/"/>
-    <id>http://blog.xlsdg.org/2015/05/05/beginning-ios7-development-exploring-the-ios-sdk-10/</id>
+    <link href="https://blog.xlsdg.org/2015/05/05/beginning-ios7-development-exploring-the-ios-sdk-10/"/>
+    <id>https://blog.xlsdg.org/2015/05/05/beginning-ios7-development-exploring-the-ios-sdk-10/</id>
     <published>2015-05-05T07:30:00.000Z</published>
     <updated>2016-12-09T10:48:14.000Z</updated>
     
@@ -1083,19 +1083,19 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第09章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/05/04/beginning-ios7-development-exploring-the-ios-sdk-09/"/>
-    <id>http://blog.xlsdg.org/2015/05/04/beginning-ios7-development-exploring-the-ios-sdk-09/</id>
+    <link href="https://blog.xlsdg.org/2015/05/04/beginning-ios7-development-exploring-the-ios-sdk-09/"/>
+    <id>https://blog.xlsdg.org/2015/05/04/beginning-ios7-development-exploring-the-ios-sdk-09/</id>
     <published>2015-05-04T13:30:00.000Z</published>
     <updated>2016-12-09T10:48:09.000Z</updated>
     
@@ -1135,19 +1135,19 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第08章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/05/01/beginning-ios7-development-exploring-the-ios-sdk-08/"/>
-    <id>http://blog.xlsdg.org/2015/05/01/beginning-ios7-development-exploring-the-ios-sdk-08/</id>
+    <link href="https://blog.xlsdg.org/2015/05/01/beginning-ios7-development-exploring-the-ios-sdk-08/"/>
+    <id>https://blog.xlsdg.org/2015/05/01/beginning-ios7-development-exploring-the-ios-sdk-08/</id>
     <published>2015-05-01T13:00:00.000Z</published>
     <updated>2016-12-09T10:48:03.000Z</updated>
     
@@ -1213,19 +1213,19 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>Vim 常用命令总结</title>
-    <link href="http://blog.xlsdg.org/2015/04/30/vim-command-summary/"/>
-    <id>http://blog.xlsdg.org/2015/04/30/vim-command-summary/</id>
+    <link href="https://blog.xlsdg.org/2015/04/30/vim-command-summary/"/>
+    <id>https://blog.xlsdg.org/2015/04/30/vim-command-summary/</id>
     <published>2015-04-30T12:00:00.000Z</published>
     <updated>2016-12-09T15:58:03.000Z</updated>
     
@@ -1559,17 +1559,17 @@
     
     </summary>
     
-      <category term="网络转载" scheme="http://blog.xlsdg.org/categories/%E7%BD%91%E7%BB%9C%E8%BD%AC%E8%BD%BD/"/>
+      <category term="网络转载" scheme="https://blog.xlsdg.org/categories/%E7%BD%91%E7%BB%9C%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="Vim" scheme="http://blog.xlsdg.org/tags/Vim/"/>
+      <category term="Vim" scheme="https://blog.xlsdg.org/tags/Vim/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第07章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-07/"/>
-    <id>http://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-07/</id>
+    <link href="https://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-07/"/>
+    <id>https://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-07/</id>
     <published>2015-04-29T12:00:00.000Z</published>
     <updated>2016-12-09T10:47:58.000Z</updated>
     
@@ -1612,19 +1612,19 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第06章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-06/"/>
-    <id>http://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-06/</id>
+    <link href="https://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-06/"/>
+    <id>https://blog.xlsdg.org/2015/04/29/beginning-ios7-development-exploring-the-ios-sdk-06/</id>
     <published>2015-04-29T05:00:00.000Z</published>
     <updated>2016-12-09T10:47:52.000Z</updated>
     
@@ -1644,19 +1644,19 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第05章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-05/"/>
-    <id>http://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-05/</id>
+    <link href="https://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-05/"/>
+    <id>https://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-05/</id>
     <published>2015-04-28T09:00:00.000Z</published>
     <updated>2016-12-09T10:47:45.000Z</updated>
     
@@ -1677,19 +1677,19 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
   <entry>
     <title>《精通iOS开发》第04章学习笔记</title>
-    <link href="http://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-04/"/>
-    <id>http://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-04/</id>
+    <link href="https://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-04/"/>
+    <id>https://blog.xlsdg.org/2015/04/28/beginning-ios7-development-exploring-the-ios-sdk-04/</id>
     <published>2015-04-28T07:00:00.000Z</published>
     <updated>2016-12-09T10:47:36.000Z</updated>
     
@@ -1719,12 +1719,12 @@
     
     </summary>
     
-      <category term="编程笔记" scheme="http://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
+      <category term="编程笔记" scheme="https://blog.xlsdg.org/categories/%E7%BC%96%E7%A8%8B%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="iOS" scheme="http://blog.xlsdg.org/tags/iOS/"/>
+      <category term="iOS" scheme="https://blog.xlsdg.org/tags/iOS/"/>
     
-      <category term="Objective-C" scheme="http://blog.xlsdg.org/tags/Objective-C/"/>
+      <category term="Objective-C" scheme="https://blog.xlsdg.org/tags/Objective-C/"/>
     
   </entry>
   
