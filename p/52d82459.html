@@ -1,0 +1,4322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
+  <meta name="msvalidate.01" content="CF69BFDC6D5AD24F7037CBEF9B558B84">
+  <meta name="yandex-verification" content="20d8ac9dbb5dee76">
+  <meta name="baidu-site-verification" content="zc2MlowHRQ">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="说明编码过程中花尽心思想变量名的缩写，特地收集了一分清单参考。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用变量名缩写">
+<meta property="og:url" content="https://xlsdg.org/p/52d82459.html">
+<meta property="og:site_name" content="xLsDg">
+<meta property="og:description" content="说明编码过程中花尽心思想变量名的缩写，特地收集了一分清单参考。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2017-11-18T09:37:18.000Z">
+<meta property="article:modified_time" content="2019-05-02T01:44:12.613Z">
+<meta property="article:author" content="xLsDg">
+<meta property="article:tag" content="Development">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://xlsdg.org/p/52d82459.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>常用变量名缩写 | xLsDg</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-62013560-3');
+      }
+    </script>
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  <script>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init', '93b1fecf6ab1be1a', {});
+    gio('send');
+  </script>
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="xLsDg" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">xLsDg</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Xiao Lu Software Development Group</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">25</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">14</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">41</span></a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/xlsdg" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xlsdg.org/p/52d82459.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="xLsDg">
+      <meta itemprop="description" content="Developer making the web an awesome place.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xLsDg">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          常用变量名缩写
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2017-11-18 17:37:18" itemprop="dateCreated datePublished" datetime="2017-11-18T17:37:18+08:00">2017-11-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-05-02 09:44:12" itemprop="dateModified" datetime="2019-05-02T09:44:12+08:00">2019-05-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/02-%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">02.学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/02-%E5%AD%A6%E4%B9%A0/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/p/52d82459.html" class="post-meta-item leancloud_visitors" data-flag-title="常用变量名缩写" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/p/52d82459.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/52d82459.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>13k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>12 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>编码过程中花尽心思想变量名的缩写，特地收集了一分清单参考。</p>
+<a id="more"></a>
+
+<h2 id="清单"><a href="#清单" class="headerlink" title="清单"></a>清单</h2><table>
+<thead>
+<tr>
+<th>单词</th>
+<th>缩写</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Word</td>
+<td>Abbreviation</td>
+</tr>
+<tr>
+<td>abbreviate / abbreviation</td>
+<td>abrv</td>
+</tr>
+<tr>
+<td>academic</td>
+<td>acad</td>
+</tr>
+<tr>
+<td>accept / acceptance / accepted</td>
+<td>acpt</td>
+</tr>
+<tr>
+<td>access</td>
+<td>accs</td>
+</tr>
+<tr>
+<td>accident</td>
+<td>acdnt</td>
+</tr>
+<tr>
+<td>accomplish / accomplishment /   accomplishments</td>
+<td>acmp</td>
+</tr>
+<tr>
+<td>accounting</td>
+<td>acctg</td>
+</tr>
+<tr>
+<td>accounts payable / advanced placement</td>
+<td>ap</td>
+</tr>
+<tr>
+<td>accounts receivable</td>
+<td>ar</td>
+</tr>
+<tr>
+<td>account</td>
+<td>acct</td>
+</tr>
+<tr>
+<td>accredited</td>
+<td>acrd</td>
+</tr>
+<tr>
+<td>accrual</td>
+<td>acrl</td>
+</tr>
+<tr>
+<td>accumulated</td>
+<td>accum</td>
+</tr>
+<tr>
+<td>accumulation / accumulative</td>
+<td>acum</td>
+</tr>
+<tr>
+<td>achieve / achievement</td>
+<td>achv</td>
+</tr>
+<tr>
+<td>acquisition</td>
+<td>acq</td>
+</tr>
+<tr>
+<td>act / active / activity / american   college test</td>
+<td>act</td>
+</tr>
+<tr>
+<td>action</td>
+<td>actn</td>
+</tr>
+<tr>
+<td>actual</td>
+<td>actl</td>
+</tr>
+<tr>
+<td>ad hoc</td>
+<td>adhc</td>
+</tr>
+<tr>
+<td>add / added</td>
+<td>add</td>
+</tr>
+<tr>
+<td>additional</td>
+<td>addl</td>
+</tr>
+<tr>
+<td>address</td>
+<td>addr</td>
+</tr>
+<tr>
+<td>adjudicate / adjudicated / adjudication</td>
+<td>adjd</td>
+</tr>
+<tr>
+<td>adjusted gross income</td>
+<td>agi</td>
+</tr>
+<tr>
+<td>adjustment</td>
+<td>adj</td>
+</tr>
+<tr>
+<td>administered / administrated /   administration</td>
+<td>adm</td>
+</tr>
+<tr>
+<td>administrator</td>
+<td>adm</td>
+</tr>
+<tr>
+<td>admissible / admission</td>
+<td>adms</td>
+</tr>
+<tr>
+<td>admittance / admitted</td>
+<td>admt</td>
+</tr>
+<tr>
+<td>advanced placement / accounts payable</td>
+<td>ap</td>
+</tr>
+<tr>
+<td>advice</td>
+<td>advc</td>
+</tr>
+<tr>
+<td>affiliation</td>
+<td>affl</td>
+</tr>
+<tr>
+<td>after</td>
+<td>aft</td>
+</tr>
+<tr>
+<td>agency</td>
+<td>agcy</td>
+</tr>
+<tr>
+<td>agent</td>
+<td>agnt</td>
+</tr>
+<tr>
+<td>alien</td>
+<td>aln</td>
+</tr>
+<tr>
+<td>allocate / allocation</td>
+<td>alloc</td>
+</tr>
+<tr>
+<td>alpha</td>
+<td>alph</td>
+</tr>
+<tr>
+<td>alter / alternate</td>
+<td>alt</td>
+</tr>
+<tr>
+<td>alumni / alumnus</td>
+<td>almn</td>
+</tr>
+<tr>
+<td>american college test / act / active /   activity</td>
+<td>act</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>amt</td>
+</tr>
+<tr>
+<td>analysis</td>
+<td>anls</td>
+</tr>
+<tr>
+<td>annual</td>
+<td>annl</td>
+</tr>
+<tr>
+<td>anonymous</td>
+<td>anon</td>
+</tr>
+<tr>
+<td>answer</td>
+<td>ans</td>
+</tr>
+<tr>
+<td>apartment</td>
+<td>apt</td>
+</tr>
+<tr>
+<td>appeal / appealed</td>
+<td>apel</td>
+</tr>
+<tr>
+<td>applicant</td>
+<td>app</td>
+</tr>
+<tr>
+<td>application</td>
+<td>app / appl</td>
+</tr>
+<tr>
+<td>appointment</td>
+<td>appt</td>
+</tr>
+<tr>
+<td>approval / approve</td>
+<td>aprv</td>
+</tr>
+<tr>
+<td>argument</td>
+<td>arg</td>
+</tr>
+<tr>
+<td>array</td>
+<td>a</td>
+</tr>
+<tr>
+<td>arrears</td>
+<td>arrs</td>
+</tr>
+<tr>
+<td>ascending</td>
+<td>asc</td>
+</tr>
+<tr>
+<td>assemble</td>
+<td>asm</td>
+</tr>
+<tr>
+<td>assign / assigned / assignment</td>
+<td>asgn</td>
+</tr>
+<tr>
+<td>association</td>
+<td>assc</td>
+</tr>
+<tr>
+<td>assumption</td>
+<td>asmp</td>
+</tr>
+<tr>
+<td>asynchronization</td>
+<td>asyn</td>
+</tr>
+<tr>
+<td>athlete / athletic</td>
+<td>athl</td>
+</tr>
+<tr>
+<td>attach</td>
+<td>atch</td>
+</tr>
+<tr>
+<td>attempt</td>
+<td>atmpt</td>
+</tr>
+<tr>
+<td>attend / attendance</td>
+<td>atnd</td>
+</tr>
+<tr>
+<td>attention</td>
+<td>attn</td>
+</tr>
+<tr>
+<td>attribute</td>
+<td>attr</td>
+</tr>
+<tr>
+<td>audit / audited</td>
+<td>adt</td>
+</tr>
+<tr>
+<td>authority / authorize</td>
+<td>auth</td>
+</tr>
+<tr>
+<td>auxiliary</td>
+<td>aux</td>
+</tr>
+<tr>
+<td>availability / available</td>
+<td>avl</td>
+</tr>
+<tr>
+<td>average cumulative grade</td>
+<td>acg</td>
+</tr>
+<tr>
+<td>average</td>
+<td>avg</td>
+</tr>
+<tr>
+<td>award / awarded</td>
+<td>awrd</td>
+</tr>
+<tr>
+<td>background</td>
+<td>bg</td>
+</tr>
+<tr>
+<td>back</td>
+<td>bk</td>
+</tr>
+<tr>
+<td>balance</td>
+<td>bal</td>
+</tr>
+<tr>
+<td>bank</td>
+<td>bnk</td>
+</tr>
+<tr>
+<td>bargain</td>
+<td>barg</td>
+</tr>
+<tr>
+<td>base / basic</td>
+<td>bas</td>
+</tr>
+<tr>
+<td>batch</td>
+<td>btch</td>
+</tr>
+<tr>
+<td>before</td>
+<td>bef</td>
+</tr>
+<tr>
+<td>begin / beginning</td>
+<td>begn</td>
+</tr>
+<tr>
+<td>beginning of term</td>
+<td>bot</td>
+</tr>
+<tr>
+<td>benefits</td>
+<td>ben</td>
+</tr>
+<tr>
+<td>bill / billing</td>
+<td>bill</td>
+</tr>
+<tr>
+<td>billing and receivables system</td>
+<td>brs</td>
+</tr>
+<tr>
+<td>birth</td>
+<td>brth</td>
+</tr>
+<tr>
+<td>bitmap</td>
+<td>bmp</td>
+</tr>
+<tr>
+<td>board</td>
+<td>brd</td>
+</tr>
+<tr>
+<td>bool (int)</td>
+<td>b</td>
+</tr>
+<tr>
+<td>break</td>
+<td>brk</td>
+</tr>
+<tr>
+<td>budget / budgetable</td>
+<td>bud</td>
+</tr>
+<tr>
+<td>budget balance account</td>
+<td>bba</td>
+</tr>
+<tr>
+<td>buffer</td>
+<td>buf</td>
+</tr>
+<tr>
+<td>build / building</td>
+<td>bld</td>
+</tr>
+<tr>
+<td>business unit</td>
+<td>bu</td>
+</tr>
+<tr>
+<td>business</td>
+<td>bus</td>
+</tr>
+<tr>
+<td>button</td>
+<td>btn</td>
+</tr>
+<tr>
+<td>buy / buyer</td>
+<td>buy</td>
+</tr>
+<tr>
+<td>calculate / calculated / calculation</td>
+<td>calc</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>calc</td>
+</tr>
+<tr>
+<td>calendar</td>
+<td>cal</td>
+</tr>
+<tr>
+<td>campaign</td>
+<td>cmpn</td>
+</tr>
+<tr>
+<td>campus</td>
+<td>cmps</td>
+</tr>
+<tr>
+<td>cancel / canceled</td>
+<td>can</td>
+</tr>
+<tr>
+<td>capacity</td>
+<td>cap</td>
+</tr>
+<tr>
+<td>capitalization</td>
+<td>cplz</td>
+</tr>
+<tr>
+<td>card</td>
+<td>crd</td>
+</tr>
+<tr>
+<td>career</td>
+<td>car</td>
+</tr>
+<tr>
+<td>carrier</td>
+<td>crir</td>
+</tr>
+<tr>
+<td>cartridge</td>
+<td>cart</td>
+</tr>
+<tr>
+<td>case</td>
+<td>cse</td>
+</tr>
+<tr>
+<td>cash</td>
+<td>csh</td>
+</tr>
+<tr>
+<td>catalog</td>
+<td>ctlg</td>
+</tr>
+<tr>
+<td>category</td>
+<td>catg</td>
+</tr>
+<tr>
+<td>census</td>
+<td>cens</td>
+</tr>
+<tr>
+<td>center</td>
+<td>ctr</td>
+</tr>
+<tr>
+<td>certificate / certification</td>
+<td>cert</td>
+</tr>
+<tr>
+<td>change / changed</td>
+<td>chg</td>
+</tr>
+<tr>
+<td>change</td>
+<td>chg</td>
+</tr>
+<tr>
+<td>chapter</td>
+<td>chap</td>
+</tr>
+<tr>
+<td>character</td>
+<td>char</td>
+</tr>
+<tr>
+<td>charge</td>
+<td>crg</td>
+</tr>
+<tr>
+<td>chartfield</td>
+<td>chartf</td>
+</tr>
+<tr>
+<td>char</td>
+<td>c</td>
+</tr>
+<tr>
+<td>check / checked</td>
+<td>chk</td>
+</tr>
+<tr>
+<td>citizen / citizenship</td>
+<td>ctzn</td>
+</tr>
+<tr>
+<td>city</td>
+<td>cty</td>
+</tr>
+<tr>
+<td>class</td>
+<td>clas</td>
+</tr>
+<tr>
+<td>clear / cleared</td>
+<td>clr</td>
+</tr>
+<tr>
+<td>click</td>
+<td>clk</td>
+</tr>
+<tr>
+<td>close</td>
+<td>clo</td>
+</tr>
+<tr>
+<td>club</td>
+<td>clb</td>
+</tr>
+<tr>
+<td>cobra</td>
+<td>cbr</td>
+</tr>
+<tr>
+<td>code</td>
+<td>cd</td>
+</tr>
+<tr>
+<td>collect / collection</td>
+<td>clct</td>
+</tr>
+<tr>
+<td>college</td>
+<td>colg</td>
+</tr>
+<tr>
+<td>color</td>
+<td>cr / clr</td>
+</tr>
+<tr>
+<td>column</td>
+<td>col</td>
+</tr>
+<tr>
+<td>combination / combine</td>
+<td>comb</td>
+</tr>
+<tr>
+<td>command</td>
+<td>cmd</td>
+</tr>
+<tr>
+<td>comment</td>
+<td>cmt</td>
+</tr>
+<tr>
+<td>committee</td>
+<td>cmmttee</td>
+</tr>
+<tr>
+<td>company</td>
+<td>co</td>
+</tr>
+<tr>
+<td>comparative</td>
+<td>compa</td>
+</tr>
+<tr>
+<td>compare</td>
+<td>cmp</td>
+</tr>
+<tr>
+<td>competitor</td>
+<td>cptr</td>
+</tr>
+<tr>
+<td>complete / completion / compliance</td>
+<td>cmpl</td>
+</tr>
+<tr>
+<td>component</td>
+<td>cmpt</td>
+</tr>
+<tr>
+<td>composite / compensation</td>
+<td>comp</td>
+</tr>
+<tr>
+<td>conditional</td>
+<td>cond</td>
+</tr>
+<tr>
+<td>confidential</td>
+<td>cnfd</td>
+</tr>
+<tr>
+<td>confirm / confirmation</td>
+<td>conf</td>
+</tr>
+<tr>
+<td>constant</td>
+<td>cnst / cst</td>
+</tr>
+<tr>
+<td>contact</td>
+<td>ctct</td>
+</tr>
+<tr>
+<td>continue / continuing / continuous</td>
+<td>cont</td>
+</tr>
+<tr>
+<td>contract / contractor</td>
+<td>cntr</td>
+</tr>
+<tr>
+<td>control</td>
+<td>ctl / ctrl</td>
+</tr>
+<tr>
+<td>conversation</td>
+<td>convr</td>
+</tr>
+<tr>
+<td>conversion / convert / converted</td>
+<td>cnv</td>
+</tr>
+<tr>
+<td>coordinates</td>
+<td>coord</td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cpy</td>
+</tr>
+<tr>
+<td>correspondence</td>
+<td>crsp</td>
+</tr>
+<tr>
+<td>count / counter</td>
+<td>cnt</td>
+</tr>
+<tr>
+<td>count of bytes</td>
+<td>cb</td>
+</tr>
+<tr>
+<td>count of x (short)</td>
+<td>cx</td>
+</tr>
+<tr>
+<td>country</td>
+<td>ctry</td>
+</tr>
+<tr>
+<td>county</td>
+<td>cnty</td>
+</tr>
+<tr>
+<td>course</td>
+<td>crse</td>
+</tr>
+<tr>
+<td>coverage</td>
+<td>covrg</td>
+</tr>
+<tr>
+<td>create</td>
+<td>cre</td>
+</tr>
+<tr>
+<td>credential</td>
+<td>crdl</td>
+</tr>
+<tr>
+<td>credit</td>
+<td>cr / crdt</td>
+</tr>
+<tr>
+<td>cross list / cross listed</td>
+<td>xlst</td>
+</tr>
+<tr>
+<td>cross reference</td>
+<td>xref</td>
+</tr>
+<tr>
+<td>cross</td>
+<td>crs</td>
+</tr>
+<tr>
+<td>cumulative</td>
+<td>cum</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>curr</td>
+</tr>
+<tr>
+<td>current</td>
+<td>cur</td>
+</tr>
+<tr>
+<td>cursor</td>
+<td>crsr</td>
+</tr>
+<tr>
+<td>custodian</td>
+<td>cstn</td>
+</tr>
+<tr>
+<td>customer</td>
+<td>cust</td>
+</tr>
+<tr>
+<td>cylinder</td>
+<td>cyl</td>
+</tr>
+<tr>
+<td>daily</td>
+<td>dly</td>
+</tr>
+<tr>
+<td>data member of a class</td>
+<td>m_</td>
+</tr>
+<tr>
+<td>data processing</td>
+<td>dp</td>
+</tr>
+<tr>
+<td>database</td>
+<td>db</td>
+</tr>
+<tr>
+<td>date-time stamp</td>
+<td>dttm</td>
+</tr>
+<tr>
+<td>date</td>
+<td>dt</td>
+</tr>
+<tr>
+<td>day</td>
+<td>dd / dy</td>
+</tr>
+<tr>
+<td>dead / death / deceased</td>
+<td>dead</td>
+</tr>
+<tr>
+<td>debit</td>
+<td>dr</td>
+</tr>
+<tr>
+<td>debug</td>
+<td>dbg</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>dec</td>
+</tr>
+<tr>
+<td>decrease</td>
+<td>dec</td>
+</tr>
+<tr>
+<td>deduct / deduction</td>
+<td>ded</td>
+</tr>
+<tr>
+<td>default</td>
+<td>def / dflt</td>
+</tr>
+<tr>
+<td>deficit</td>
+<td>dfct</td>
+</tr>
+<tr>
+<td>definition</td>
+<td>defn</td>
+</tr>
+<tr>
+<td>degree</td>
+<td>deg</td>
+</tr>
+<tr>
+<td>delete</td>
+<td>del</td>
+</tr>
+<tr>
+<td>deliver / delivery</td>
+<td>dlvr</td>
+</tr>
+<tr>
+<td>demo</td>
+<td>dmo</td>
+</tr>
+<tr>
+<td>dental</td>
+<td>dntl</td>
+</tr>
+<tr>
+<td>department of motor vehicles</td>
+<td>dmv</td>
+</tr>
+<tr>
+<td>department</td>
+<td>dept</td>
+</tr>
+<tr>
+<td>dependency / dependent / depends</td>
+<td>dep</td>
+</tr>
+<tr>
+<td>deposit</td>
+<td>dpst</td>
+</tr>
+<tr>
+<td>depreciation</td>
+<td>depr</td>
+</tr>
+<tr>
+<td>description</td>
+<td>descr / dsc</td>
+</tr>
+<tr>
+<td>design</td>
+<td>dsgn</td>
+</tr>
+<tr>
+<td>destination</td>
+<td>dest / dst</td>
+</tr>
+<tr>
+<td>detail</td>
+<td>detl</td>
+</tr>
+<tr>
+<td>develop / development / deviation</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>device</td>
+<td>dev</td>
+</tr>
+<tr>
+<td>dialog</td>
+<td>dlg</td>
+</tr>
+<tr>
+<td>dictionary</td>
+<td>dict</td>
+</tr>
+<tr>
+<td>difference / differential</td>
+<td>diff</td>
+</tr>
+<tr>
+<td>different</td>
+<td>diff</td>
+</tr>
+<tr>
+<td>digit</td>
+<td>dgt</td>
+</tr>
+<tr>
+<td>direct / direction / directional</td>
+<td>dir</td>
+</tr>
+<tr>
+<td>directory</td>
+<td>dir</td>
+</tr>
+<tr>
+<td>disability / disabled</td>
+<td>disa</td>
+</tr>
+<tr>
+<td>disbursed / disbursement</td>
+<td>dsb</td>
+</tr>
+<tr>
+<td>discount</td>
+<td>disc</td>
+</tr>
+<tr>
+<td>displacement</td>
+<td>dspl</td>
+</tr>
+<tr>
+<td>display</td>
+<td>disp</td>
+</tr>
+<tr>
+<td>disposition</td>
+<td>dsp</td>
+</tr>
+<tr>
+<td>distribute / distribution</td>
+<td>dist</td>
+</tr>
+<tr>
+<td>district</td>
+<td>dstr</td>
+</tr>
+<tr>
+<td>divide</td>
+<td>div</td>
+</tr>
+<tr>
+<td>division of continuing education</td>
+<td>dce</td>
+</tr>
+<tr>
+<td>division</td>
+<td>div</td>
+</tr>
+<tr>
+<td>document</td>
+<td>doc</td>
+</tr>
+<tr>
+<td>donor</td>
+<td>donr</td>
+</tr>
+<tr>
+<td>double</td>
+<td>dbl</td>
+</tr>
+<tr>
+<td>down</td>
+<td>dn</td>
+</tr>
+<tr>
+<td>drive / driver</td>
+<td>drv</td>
+</tr>
+<tr>
+<td>driver</td>
+<td>drv</td>
+</tr>
+<tr>
+<td>drop</td>
+<td>drp</td>
+</tr>
+<tr>
+<td>duplicate / duplication</td>
+<td>dup</td>
+</tr>
+<tr>
+<td>dword (unsigned long)</td>
+<td>dw</td>
+</tr>
+<tr>
+<td>dynamic</td>
+<td>dyna</td>
+</tr>
+<tr>
+<td>each</td>
+<td>ea</td>
+</tr>
+<tr>
+<td>early</td>
+<td>erly</td>
+</tr>
+<tr>
+<td>earn / earned / earnings</td>
+<td>earn</td>
+</tr>
+<tr>
+<td>earned income credit</td>
+<td>eic</td>
+</tr>
+<tr>
+<td>edit</td>
+<td>edt</td>
+</tr>
+<tr>
+<td>educate / education</td>
+<td>edu</td>
+</tr>
+<tr>
+<td>effect / effective</td>
+<td>eff</td>
+</tr>
+<tr>
+<td>effective date sequence</td>
+<td>effseq</td>
+</tr>
+<tr>
+<td>effective date</td>
+<td>effdt</td>
+</tr>
+<tr>
+<td>effort</td>
+<td>efrt</td>
+</tr>
+<tr>
+<td>elect / elected / elective</td>
+<td>elct</td>
+</tr>
+<tr>
+<td>electronic data interchange</td>
+<td>edi</td>
+</tr>
+<tr>
+<td>electronic funds transfer</td>
+<td>eft</td>
+</tr>
+<tr>
+<td>electronic mail</td>
+<td>em</td>
+</tr>
+<tr>
+<td>eligibility / eligible</td>
+<td>elig</td>
+</tr>
+<tr>
+<td>emergency</td>
+<td>emrg</td>
+</tr>
+<tr>
+<td>emphasis</td>
+<td>emph</td>
+</tr>
+<tr>
+<td>employee id</td>
+<td>emplid</td>
+</tr>
+<tr>
+<td>employee</td>
+<td>ee / empl</td>
+</tr>
+<tr>
+<td>employer</td>
+<td>er</td>
+</tr>
+<tr>
+<td>employment</td>
+<td>emplmt</td>
+</tr>
+<tr>
+<td>encumber / encumbrance</td>
+<td>encb</td>
+</tr>
+<tr>
+<td>end / ending</td>
+<td>end</td>
+</tr>
+<tr>
+<td>end of term</td>
+<td>eot</td>
+</tr>
+<tr>
+<td>endorse / endorsement</td>
+<td>endr</td>
+</tr>
+<tr>
+<td>endorsement</td>
+<td>endr</td>
+</tr>
+<tr>
+<td>endow / endowment</td>
+<td>endw</td>
+</tr>
+<tr>
+<td>engineer / engineering</td>
+<td>engn</td>
+</tr>
+<tr>
+<td>english</td>
+<td>engl</td>
+</tr>
+<tr>
+<td>enrichment</td>
+<td>enrch</td>
+</tr>
+<tr>
+<td>enrollment</td>
+<td>enrl</td>
+</tr>
+<tr>
+<td>enter / entered / entry</td>
+<td>entr</td>
+</tr>
+<tr>
+<td>entitle / entitlement</td>
+<td>entl</td>
+</tr>
+<tr>
+<td>environment</td>
+<td>env</td>
+</tr>
+<tr>
+<td>equal / equality / equivalence /   equivalent</td>
+<td>eq</td>
+</tr>
+<tr>
+<td>equal employment opportunity / equal   opportunity</td>
+<td>eeo</td>
+</tr>
+<tr>
+<td>equip</td>
+<td>eqp</td>
+</tr>
+<tr>
+<td>error</td>
+<td>err</td>
+</tr>
+<tr>
+<td>escape</td>
+<td>esc</td>
+</tr>
+<tr>
+<td>establishment</td>
+<td>estb</td>
+</tr>
+<tr>
+<td>ethnic</td>
+<td>ethn</td>
+</tr>
+<tr>
+<td>evaluation / evaluator</td>
+<td>eval</td>
+</tr>
+<tr>
+<td>event</td>
+<td>evnt</td>
+</tr>
+<tr>
+<td>exam</td>
+<td>exm</td>
+</tr>
+<tr>
+<td>exception</td>
+<td>excp</td>
+</tr>
+<tr>
+<td>exclude / exclusion</td>
+<td>excl</td>
+</tr>
+<tr>
+<td>execute / execution</td>
+<td>exec</td>
+</tr>
+<tr>
+<td>execute</td>
+<td>exec</td>
+</tr>
+<tr>
+<td>exempt / exemption</td>
+<td>exmt</td>
+</tr>
+<tr>
+<td>expect / expected</td>
+<td>expc</td>
+</tr>
+<tr>
+<td>expected family contribution</td>
+<td>efc</td>
+</tr>
+<tr>
+<td>expedite</td>
+<td>xpdt</td>
+</tr>
+<tr>
+<td>expense / export / express</td>
+<td>exp</td>
+</tr>
+<tr>
+<td>experimental</td>
+<td>expm</td>
+</tr>
+<tr>
+<td>expiration / expire</td>
+<td>expr</td>
+</tr>
+<tr>
+<td>export / expense</td>
+<td>exp</td>
+</tr>
+<tr>
+<td>extend / extended / extension</td>
+<td>ext</td>
+</tr>
+<tr>
+<td>extend</td>
+<td>ex/ext</td>
+</tr>
+<tr>
+<td>external</td>
+<td>extr</td>
+</tr>
+<tr>
+<td>facility</td>
+<td>fclt</td>
+</tr>
+<tr>
+<td>faculty</td>
+<td>fac</td>
+</tr>
+<tr>
+<td>family eduaction rights and privacy act</td>
+<td>ferpa</td>
+</tr>
+<tr>
+<td>family</td>
+<td>fmly</td>
+</tr>
+<tr>
+<td>fast</td>
+<td>fst</td>
+</tr>
+<tr>
+<td>father</td>
+<td>fath</td>
+</tr>
+<tr>
+<td>federal labor and security act</td>
+<td>flsa</td>
+</tr>
+<tr>
+<td>federal</td>
+<td>fed</td>
+</tr>
+<tr>
+<td>feet / full time</td>
+<td>ft</td>
+</tr>
+<tr>
+<td>field / fields</td>
+<td>fld</td>
+</tr>
+<tr>
+<td>final</td>
+<td>fnl</td>
+</tr>
+<tr>
+<td>financial aid</td>
+<td>fa</td>
+</tr>
+<tr>
+<td>financial</td>
+<td>fin</td>
+</tr>
+<tr>
+<td>first</td>
+<td>frst</td>
+</tr>
+<tr>
+<td>fiscal year to date</td>
+<td>fytd</td>
+</tr>
+<tr>
+<td>fiscal year</td>
+<td>fy</td>
+</tr>
+<tr>
+<td>fiscal</td>
+<td>fisc</td>
+</tr>
+<tr>
+<td>fix / fixed</td>
+<td>fix</td>
+</tr>
+<tr>
+<td>flag</td>
+<td>flg</td>
+</tr>
+<tr>
+<td>flexible spending account</td>
+<td>fsa</td>
+</tr>
+<tr>
+<td>floor</td>
+<td>flr</td>
+</tr>
+<tr>
+<td>foreign key</td>
+<td>fk</td>
+</tr>
+<tr>
+<td>foreign</td>
+<td>fgn</td>
+</tr>
+<tr>
+<td>format</td>
+<td>fmt</td>
+</tr>
+<tr>
+<td>former</td>
+<td>formr</td>
+</tr>
+<tr>
+<td>form</td>
+<td>frm</td>
+</tr>
+<tr>
+<td>frame</td>
+<td>frm</td>
+</tr>
+<tr>
+<td>free application for federal student aid</td>
+<td>fafsa</td>
+</tr>
+<tr>
+<td>free on board</td>
+<td>fob</td>
+</tr>
+<tr>
+<td>freeze / frozen</td>
+<td>frz</td>
+</tr>
+<tr>
+<td>frequency</td>
+<td>freq</td>
+</tr>
+<tr>
+<td>fresh / freshman</td>
+<td>frsh</td>
+</tr>
+<tr>
+<td>from</td>
+<td>fr</td>
+</tr>
+<tr>
+<td>fulfill / fulfilled</td>
+<td>fulf</td>
+</tr>
+<tr>
+<td>full time equivalent</td>
+<td>fte</td>
+</tr>
+<tr>
+<td>full time</td>
+<td>ft</td>
+</tr>
+<tr>
+<td>function / functional</td>
+<td>fcn</td>
+</tr>
+<tr>
+<td>function</td>
+<td>func / fn</td>
+</tr>
+<tr>
+<td>fund / funding</td>
+<td>fund</td>
+</tr>
+<tr>
+<td>future</td>
+<td>fut</td>
+</tr>
+<tr>
+<td>garnishment</td>
+<td>garn</td>
+</tr>
+<tr>
+<td>general education degree</td>
+<td>ged</td>
+</tr>
+<tr>
+<td>general ledger</td>
+<td>gl</td>
+</tr>
+<tr>
+<td>general</td>
+<td>genl</td>
+</tr>
+<tr>
+<td>geographic / geography</td>
+<td>geog</td>
+</tr>
+<tr>
+<td>gift</td>
+<td>gft</td>
+</tr>
+<tr>
+<td>global</td>
+<td>g / glbl</td>
+</tr>
+<tr>
+<td>government</td>
+<td>govt</td>
+</tr>
+<tr>
+<td>grade point average</td>
+<td>gpa</td>
+</tr>
+<tr>
+<td>grade</td>
+<td>gde / grd</td>
+</tr>
+<tr>
+<td>graduate</td>
+<td>grad</td>
+</tr>
+<tr>
+<td>grant / granted</td>
+<td>grnt</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>grd</td>
+</tr>
+<tr>
+<td>gross</td>
+<td>gros</td>
+</tr>
+<tr>
+<td>group</td>
+<td>grp</td>
+</tr>
+<tr>
+<td>guaranteed student loan</td>
+<td>gsl</td>
+</tr>
+<tr>
+<td>guarantee</td>
+<td>guar</td>
+</tr>
+<tr>
+<td>guest</td>
+<td>gst</td>
+</tr>
+<tr>
+<td>handicap / handicapped</td>
+<td>hand</td>
+</tr>
+<tr>
+<td>handle</td>
+<td>h</td>
+</tr>
+<tr>
+<td>header</td>
+<td>hdr</td>
+</tr>
+<tr>
+<td>health</td>
+<td>hlth</td>
+</tr>
+<tr>
+<td>held / hold</td>
+<td>hld</td>
+</tr>
+<tr>
+<td>help</td>
+<td>hlp</td>
+</tr>
+<tr>
+<td>hierarchy</td>
+<td>hier</td>
+</tr>
+<tr>
+<td>high school services</td>
+<td>hss</td>
+</tr>
+<tr>
+<td>high school</td>
+<td>hs</td>
+</tr>
+<tr>
+<td>higher education</td>
+<td>hed</td>
+</tr>
+<tr>
+<td>highway</td>
+<td>hway</td>
+</tr>
+<tr>
+<td>high</td>
+<td>h</td>
+</tr>
+<tr>
+<td>history</td>
+<td>hst</td>
+</tr>
+<tr>
+<td>home</td>
+<td>hm</td>
+</tr>
+<tr>
+<td>honor society</td>
+<td>hsc</td>
+</tr>
+<tr>
+<td>honor</td>
+<td>honr</td>
+</tr>
+<tr>
+<td>horizontal</td>
+<td>horz</td>
+</tr>
+<tr>
+<td>hospital</td>
+<td>hosp</td>
+</tr>
+<tr>
+<td>hourly</td>
+<td>hrly</td>
+</tr>
+<tr>
+<td>hours</td>
+<td>hrs</td>
+</tr>
+<tr>
+<td>hour</td>
+<td>hh</td>
+</tr>
+<tr>
+<td>house / housing</td>
+<td>hse</td>
+</tr>
+<tr>
+<td>identification / identifier / indicator</td>
+<td>id</td>
+</tr>
+<tr>
+<td>image</td>
+<td>img</td>
+</tr>
+<tr>
+<td>immune / immunization</td>
+<td>imun</td>
+</tr>
+<tr>
+<td>impact</td>
+<td>impc</td>
+</tr>
+<tr>
+<td>implementation</td>
+<td>impl</td>
+</tr>
+<tr>
+<td>implement</td>
+<td>impl</td>
+</tr>
+<tr>
+<td>import/export</td>
+<td>impexp</td>
+</tr>
+<tr>
+<td>import</td>
+<td>imp</td>
+</tr>
+<tr>
+<td>inch</td>
+<td>in</td>
+</tr>
+<tr>
+<td>include</td>
+<td>incl</td>
+</tr>
+<tr>
+<td>income</td>
+<td>incm</td>
+</tr>
+<tr>
+<td>increase / increment</td>
+<td>incr</td>
+</tr>
+<tr>
+<td>increase</td>
+<td>inc</td>
+</tr>
+<tr>
+<td>increment</td>
+<td>inc</td>
+</tr>
+<tr>
+<td>index</td>
+<td>idx / indx</td>
+</tr>
+<tr>
+<td>indicator</td>
+<td>id / ind</td>
+</tr>
+<tr>
+<td>individual student information report</td>
+<td>isir</td>
+</tr>
+<tr>
+<td>individual</td>
+<td>indv</td>
+</tr>
+<tr>
+<td>information</td>
+<td>info</td>
+</tr>
+<tr>
+<td>initial / initialize</td>
+<td>init</td>
+</tr>
+<tr>
+<td>initial/initialize/initialization</td>
+<td>init</td>
+</tr>
+<tr>
+<td>initial</td>
+<td>init</td>
+</tr>
+<tr>
+<td>injury</td>
+<td>inj</td>
+</tr>
+<tr>
+<td>inoculation</td>
+<td>inoc</td>
+</tr>
+<tr>
+<td>input</td>
+<td>inpt</td>
+</tr>
+<tr>
+<td>inquiry</td>
+<td>inq</td>
+</tr>
+<tr>
+<td>insert</td>
+<td>ins / isrt</td>
+</tr>
+<tr>
+<td>instance</td>
+<td>inst</td>
+</tr>
+<tr>
+<td>institution</td>
+<td>inst</td>
+</tr>
+<tr>
+<td>instruction / instructional / instructor</td>
+<td>istr</td>
+</tr>
+<tr>
+<td>instructional need analysis system</td>
+<td>inas</td>
+</tr>
+<tr>
+<td>insurance</td>
+<td>ins</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>i</td>
+</tr>
+<tr>
+<td>inter-unit</td>
+<td>iu</td>
+</tr>
+<tr>
+<td>interest</td>
+<td>int</td>
+</tr>
+<tr>
+<td>interface</td>
+<td>intfc</td>
+</tr>
+<tr>
+<td>internal</td>
+<td>intr</td>
+</tr>
+<tr>
+<td>international</td>
+<td>intl</td>
+</tr>
+<tr>
+<td>interrupt</td>
+<td>int / intr</td>
+</tr>
+<tr>
+<td>interval</td>
+<td>invl</td>
+</tr>
+<tr>
+<td>interview / interviewer</td>
+<td>intv</td>
+</tr>
+<tr>
+<td>inventory</td>
+<td>inv</td>
+</tr>
+<tr>
+<td>invent</td>
+<td>invn</td>
+</tr>
+<tr>
+<td>investment</td>
+<td>invest</td>
+</tr>
+<tr>
+<td>invitation / invite</td>
+<td>invt</td>
+</tr>
+<tr>
+<td>invoice</td>
+<td>invc</td>
+</tr>
+<tr>
+<td>issue / issued</td>
+<td>iss</td>
+</tr>
+<tr>
+<td>item</td>
+<td>itm</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>jrnl</td>
+</tr>
+<tr>
+<td>junior science</td>
+<td>js</td>
+</tr>
+<tr>
+<td>junior</td>
+<td>jr</td>
+</tr>
+<tr>
+<td>label</td>
+<td>lbl</td>
+</tr>
+<tr>
+<td>lable</td>
+<td>lab</td>
+</tr>
+<tr>
+<td>laboratory</td>
+<td>lab</td>
+</tr>
+<tr>
+<td>labor</td>
+<td>lbr</td>
+</tr>
+<tr>
+<td>language</td>
+<td>lng</td>
+</tr>
+<tr>
+<td>last / list</td>
+<td>lst</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>lat</td>
+</tr>
+<tr>
+<td>layoff</td>
+<td>layf</td>
+</tr>
+<tr>
+<td>leave</td>
+<td>lv</td>
+</tr>
+<tr>
+<td>lecture</td>
+<td>lctr</td>
+</tr>
+<tr>
+<td>ledger</td>
+<td>led</td>
+</tr>
+<tr>
+<td>legal</td>
+<td>lgl</td>
+</tr>
+<tr>
+<td>lender</td>
+<td>lndr</td>
+</tr>
+<tr>
+<td>length</td>
+<td>len</td>
+</tr>
+<tr>
+<td>letter</td>
+<td>ltr</td>
+</tr>
+<tr>
+<td>level</td>
+<td>lvl</td>
+</tr>
+<tr>
+<td>liaison</td>
+<td>lisn</td>
+</tr>
+<tr>
+<td>liberal education</td>
+<td>lbd</td>
+</tr>
+<tr>
+<td>library</td>
+<td>lib</td>
+</tr>
+<tr>
+<td>license plate number</td>
+<td>lic_plte_nbr</td>
+</tr>
+<tr>
+<td>license</td>
+<td>lic</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>lim</td>
+</tr>
+<tr>
+<td>line / loan</td>
+<td>ln</td>
+</tr>
+<tr>
+<td>link / linked</td>
+<td>lnk</td>
+</tr>
+<tr>
+<td>link</td>
+<td>lnk</td>
+</tr>
+<tr>
+<td>liquid</td>
+<td>liq</td>
+</tr>
+<tr>
+<td>list / last</td>
+<td>lst</td>
+</tr>
+<tr>
+<td>list</td>
+<td>lst</td>
+</tr>
+<tr>
+<td>literal</td>
+<td>ltrl</td>
+</tr>
+<tr>
+<td>loan / line</td>
+<td>ln</td>
+</tr>
+<tr>
+<td>locate / location</td>
+<td>loc</td>
+</tr>
+<tr>
+<td>locker</td>
+<td>lkr</td>
+</tr>
+<tr>
+<td>lock</td>
+<td>lk</td>
+</tr>
+<tr>
+<td>log on</td>
+<td>logon</td>
+</tr>
+<tr>
+<td>logical</td>
+<td>log</td>
+</tr>
+<tr>
+<td>long / longest</td>
+<td>long</td>
+</tr>
+<tr>
+<td>long term care</td>
+<td>ltc</td>
+</tr>
+<tr>
+<td>long term disability</td>
+<td>ltd</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>lon</td>
+</tr>
+<tr>
+<td>long</td>
+<td>l</td>
+</tr>
+<tr>
+<td>mail / mailer / mailing</td>
+<td>mail</td>
+</tr>
+<tr>
+<td>maintenance</td>
+<td>maint</td>
+</tr>
+<tr>
+<td>major</td>
+<td>mjr</td>
+</tr>
+<tr>
+<td>make</td>
+<td>mk</td>
+</tr>
+<tr>
+<td>manage / manager</td>
+<td>mgr / man</td>
+</tr>
+<tr>
+<td>manager</td>
+<td>mgr / mngr</td>
+</tr>
+<tr>
+<td>marital</td>
+<td>mrtl</td>
+</tr>
+<tr>
+<td>mask</td>
+<td>msk</td>
+</tr>
+<tr>
+<td>master academic records system</td>
+<td>mars</td>
+</tr>
+<tr>
+<td>match / matching</td>
+<td>mtch</td>
+</tr>
+<tr>
+<td>math</td>
+<td>mth</td>
+</tr>
+<tr>
+<td>matriculated / matriculation</td>
+<td>mtrc</td>
+</tr>
+<tr>
+<td>maximum</td>
+<td>max</td>
+</tr>
+<tr>
+<td>medical / medicinal</td>
+<td>med</td>
+</tr>
+<tr>
+<td>meet / meeting</td>
+<td>mt</td>
+</tr>
+<tr>
+<td>membership</td>
+<td>mshp</td>
+</tr>
+<tr>
+<td>member</td>
+<td>mbr</td>
+</tr>
+<tr>
+<td>memo / memorandum</td>
+<td>mmo</td>
+</tr>
+<tr>
+<td>memorial</td>
+<td>memr</td>
+</tr>
+<tr>
+<td>memory</td>
+<td>mem</td>
+</tr>
+<tr>
+<td>merchandise</td>
+<td>merchnds</td>
+</tr>
+<tr>
+<td>merchant</td>
+<td>merch</td>
+</tr>
+<tr>
+<td>merit</td>
+<td>mert</td>
+</tr>
+<tr>
+<td>message / messages</td>
+<td>msg</td>
+</tr>
+<tr>
+<td>message agent server</td>
+<td>mas</td>
+</tr>
+<tr>
+<td>message</td>
+<td>msg</td>
+</tr>
+<tr>
+<td>meter</td>
+<td>mtr</td>
+</tr>
+<tr>
+<td>method</td>
+<td>meth</td>
+</tr>
+<tr>
+<td>microfilm</td>
+<td>mfilm</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>mid</td>
+</tr>
+<tr>
+<td>military</td>
+<td>mil</td>
+</tr>
+<tr>
+<td>minimum</td>
+<td>min</td>
+</tr>
+<tr>
+<td>minor</td>
+<td>minr</td>
+</tr>
+<tr>
+<td>minute</td>
+<td>mnt / mm</td>
+</tr>
+<tr>
+<td>miscellaneous</td>
+<td>misc</td>
+</tr>
+<tr>
+<td>mode</td>
+<td>mde</td>
+</tr>
+<tr>
+<td>modification / modifier</td>
+<td>mod</td>
+</tr>
+<tr>
+<td>monetary / money</td>
+<td>mony</td>
+</tr>
+<tr>
+<td>month-to-date</td>
+<td>mtd</td>
+</tr>
+<tr>
+<td>month</td>
+<td>mm / mn</td>
+</tr>
+<tr>
+<td>mother</td>
+<td>moth</td>
+</tr>
+<tr>
+<td>multiple</td>
+<td>mult</td>
+</tr>
+<tr>
+<td>multiply</td>
+<td>mul</td>
+</tr>
+<tr>
+<td>name</td>
+<td>nm / nme</td>
+</tr>
+<tr>
+<td>national association of college and   university business officers</td>
+<td>nacubo</td>
+</tr>
+<tr>
+<td>national student loan direct system</td>
+<td>nslds</td>
+</tr>
+<tr>
+<td>national</td>
+<td>natl</td>
+</tr>
+<tr>
+<td>navigation</td>
+<td>nav</td>
+</tr>
+<tr>
+<td>next of kin</td>
+<td>nok</td>
+</tr>
+<tr>
+<td>next</td>
+<td>nxt</td>
+</tr>
+<tr>
+<td>no charge</td>
+<td>nc</td>
+</tr>
+<tr>
+<td>no credit</td>
+<td>nocr</td>
+</tr>
+<tr>
+<td>no print</td>
+<td>nprt</td>
+</tr>
+<tr>
+<td>nominal</td>
+<td>nom</td>
+</tr>
+<tr>
+<td>non-personal services</td>
+<td>nps</td>
+</tr>
+<tr>
+<td>not applicable</td>
+<td>na</td>
+</tr>
+<tr>
+<td>note / notice / notification / notify</td>
+<td>note</td>
+</tr>
+<tr>
+<td>number / numeric</td>
+<td>nbr</td>
+</tr>
+<tr>
+<td>number</td>
+<td>num</td>
+</tr>
+<tr>
+<td>object / objective</td>
+<td>obj</td>
+</tr>
+<tr>
+<td>object</td>
+<td>obj</td>
+</tr>
+<tr>
+<td>occupation</td>
+<td>ocp</td>
+</tr>
+<tr>
+<td>occurs</td>
+<td>occ</td>
+</tr>
+<tr>
+<td>offer / offered</td>
+<td>offr</td>
+</tr>
+<tr>
+<td>officer</td>
+<td>ofcr</td>
+</tr>
+<tr>
+<td>office</td>
+<td>offc</td>
+</tr>
+<tr>
+<td>official</td>
+<td>ofcl</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>ofs</td>
+</tr>
+<tr>
+<td>online</td>
+<td>onln</td>
+</tr>
+<tr>
+<td>open</td>
+<td>opn</td>
+</tr>
+<tr>
+<td>operator</td>
+<td>opr</td>
+</tr>
+<tr>
+<td>option / optional / options</td>
+<td>opt</td>
+</tr>
+<tr>
+<td>oracle</td>
+<td>ora</td>
+</tr>
+<tr>
+<td>order</td>
+<td>ordr</td>
+</tr>
+<tr>
+<td>organization / organize</td>
+<td>org</td>
+</tr>
+<tr>
+<td>orientation</td>
+<td>ornt</td>
+</tr>
+<tr>
+<td>origin / original / origination</td>
+<td>orig</td>
+</tr>
+<tr>
+<td>origin / original</td>
+<td>org</td>
+</tr>
+<tr>
+<td>other</td>
+<td>othr</td>
+</tr>
+<tr>
+<td>overhead</td>
+<td>oh</td>
+</tr>
+<tr>
+<td>override</td>
+<td>ovrd</td>
+</tr>
+<tr>
+<td>overtime</td>
+<td>ot</td>
+</tr>
+<tr>
+<td>over</td>
+<td>ovr</td>
+</tr>
+<tr>
+<td>own / owned</td>
+<td>own</td>
+</tr>
+<tr>
+<td>owner</td>
+<td>ownr</td>
+</tr>
+<tr>
+<td>packaged</td>
+<td>pack</td>
+</tr>
+<tr>
+<td>package</td>
+<td>pkg</td>
+</tr>
+<tr>
+<td>panorama</td>
+<td>pano</td>
+</tr>
+<tr>
+<td>paper</td>
+<td>ppr</td>
+</tr>
+<tr>
+<td>parameter</td>
+<td>param / parm</td>
+</tr>
+<tr>
+<td>parent</td>
+<td>par</td>
+</tr>
+<tr>
+<td>parity / priority</td>
+<td>prty</td>
+</tr>
+<tr>
+<td>park</td>
+<td>prk</td>
+</tr>
+<tr>
+<td>part / partial</td>
+<td>prt</td>
+</tr>
+<tr>
+<td>part time</td>
+<td>pt</td>
+</tr>
+<tr>
+<td>participation</td>
+<td>prtp</td>
+</tr>
+<tr>
+<td>pass / passed</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>password</td>
+<td>pwd / psw</td>
+</tr>
+<tr>
+<td>patron</td>
+<td>ptrn</td>
+</tr>
+<tr>
+<td>pay / payable / payment</td>
+<td>pay</td>
+</tr>
+<tr>
+<td>payroll</td>
+<td>pyrl</td>
+</tr>
+<tr>
+<td>pedestrian</td>
+<td>ped</td>
+</tr>
+<tr>
+<td>pell (pell grant)</td>
+<td>pel</td>
+</tr>
+<tr>
+<td>pending</td>
+<td>pend</td>
+</tr>
+<tr>
+<td>pension</td>
+<td>pens</td>
+</tr>
+<tr>
+<td>percent / percentage / percentile</td>
+<td>pct</td>
+</tr>
+<tr>
+<td>period-to-date</td>
+<td>ptd</td>
+</tr>
+<tr>
+<td>period</td>
+<td>pd</td>
+</tr>
+<tr>
+<td>perkins loan</td>
+<td>nslds</td>
+</tr>
+<tr>
+<td>permanent</td>
+<td>perm</td>
+</tr>
+<tr>
+<td>permit</td>
+<td>prmt</td>
+</tr>
+<tr>
+<td>personal / personnel</td>
+<td>psnl</td>
+</tr>
+<tr>
+<td>personal identification</td>
+<td>pin</td>
+</tr>
+<tr>
+<td>personnel action notification</td>
+<td>pan</td>
+</tr>
+<tr>
+<td>person</td>
+<td>pers</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>phn</td>
+</tr>
+<tr>
+<td>physics</td>
+<td>phys</td>
+</tr>
+<tr>
+<td>picture</td>
+<td>pic</td>
+</tr>
+<tr>
+<td>place</td>
+<td>plce</td>
+</tr>
+<tr>
+<td>plan</td>
+<td>pln</td>
+</tr>
+<tr>
+<td>plate</td>
+<td>plte</td>
+</tr>
+<tr>
+<td>pledge</td>
+<td>pldg</td>
+</tr>
+<tr>
+<td>pointer</td>
+<td>p / ptr</td>
+</tr>
+<tr>
+<td>point</td>
+<td>pnt / pt</td>
+</tr>
+<tr>
+<td>policy</td>
+<td>plcy</td>
+</tr>
+<tr>
+<td>position</td>
+<td>pos</td>
+</tr>
+<tr>
+<td>post / posted</td>
+<td>post</td>
+</tr>
+<tr>
+<td>postal</td>
+<td>pstl</td>
+</tr>
+<tr>
+<td>potential</td>
+<td>potn</td>
+</tr>
+<tr>
+<td>predicted</td>
+<td>pred</td>
+</tr>
+<tr>
+<td>preference / preferred</td>
+<td>pref</td>
+</tr>
+<tr>
+<td>prefix</td>
+<td>prfx</td>
+</tr>
+<tr>
+<td>premium</td>
+<td>prem</td>
+</tr>
+<tr>
+<td>prerequisite</td>
+<td>preq</td>
+</tr>
+<tr>
+<td>prescribed</td>
+<td>pscr</td>
+</tr>
+<tr>
+<td>presentation</td>
+<td>prst</td>
+</tr>
+<tr>
+<td>president</td>
+<td>pres</td>
+</tr>
+<tr>
+<td>previous / prior</td>
+<td>prev</td>
+</tr>
+<tr>
+<td>previous</td>
+<td>pre / prev</td>
+</tr>
+<tr>
+<td>price level</td>
+<td>pl</td>
+</tr>
+<tr>
+<td>price</td>
+<td>prc</td>
+</tr>
+<tr>
+<td>primary key</td>
+<td>pk</td>
+</tr>
+<tr>
+<td>primary</td>
+<td>prim</td>
+</tr>
+<tr>
+<td>principal / principle</td>
+<td>prin</td>
+</tr>
+<tr>
+<td>principal investigator</td>
+<td>pi</td>
+</tr>
+<tr>
+<td>print / printed</td>
+<td>prn</td>
+</tr>
+<tr>
+<td>print</td>
+<td>prn</td>
+</tr>
+<tr>
+<td>prior / previous</td>
+<td>prev</td>
+</tr>
+<tr>
+<td>priority / parity</td>
+<td>prty</td>
+</tr>
+<tr>
+<td>probation / problem</td>
+<td>prob</td>
+</tr>
+<tr>
+<td>procedure / process</td>
+<td>proc</td>
+</tr>
+<tr>
+<td>process / procedure</td>
+<td>proc</td>
+</tr>
+<tr>
+<td>profession / professional</td>
+<td>prfs</td>
+</tr>
+<tr>
+<td>proficiency</td>
+<td>prfc</td>
+</tr>
+<tr>
+<td>profile</td>
+<td>prof</td>
+</tr>
+<tr>
+<td>program</td>
+<td>prg / prog</td>
+</tr>
+<tr>
+<td>project / projected</td>
+<td>proj</td>
+</tr>
+<tr>
+<td>promissory</td>
+<td>prms</td>
+</tr>
+<tr>
+<td>promotion</td>
+<td>prom</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>prop</td>
+</tr>
+<tr>
+<td>proposal</td>
+<td>prps</td>
+</tr>
+<tr>
+<td>prospect</td>
+<td>prsp</td>
+</tr>
+<tr>
+<td>province</td>
+<td>prvn</td>
+</tr>
+<tr>
+<td>public</td>
+<td>pub</td>
+</tr>
+<tr>
+<td>purchase order</td>
+<td>po</td>
+</tr>
+<tr>
+<td>purchase</td>
+<td>pur</td>
+</tr>
+<tr>
+<td>purge</td>
+<td>prg</td>
+</tr>
+<tr>
+<td>purpose</td>
+<td>purp</td>
+</tr>
+<tr>
+<td>qualitative / quality</td>
+<td>qal</td>
+</tr>
+<tr>
+<td>quantitative / quantity</td>
+<td>qty</td>
+</tr>
+<tr>
+<td>quantity-to-date / quarter-to-date</td>
+<td>qtd</td>
+</tr>
+<tr>
+<td>quarter</td>
+<td>qtr</td>
+</tr>
+<tr>
+<td>question</td>
+<td>qstn</td>
+</tr>
+<tr>
+<td>range</td>
+<td>rng</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>rnk</td>
+</tr>
+<tr>
+<td>rate</td>
+<td>rt</td>
+</tr>
+<tr>
+<td>read / reading</td>
+<td>read</td>
+</tr>
+<tr>
+<td>real / reallocation</td>
+<td>real</td>
+</tr>
+<tr>
+<td>reason</td>
+<td>rsn</td>
+</tr>
+<tr>
+<td>recall</td>
+<td>rcl</td>
+</tr>
+<tr>
+<td>receipt</td>
+<td>rcpt</td>
+</tr>
+<tr>
+<td>receive / received</td>
+<td>recv</td>
+</tr>
+<tr>
+<td>receiver</td>
+<td>rcvr</td>
+</tr>
+<tr>
+<td>recharge</td>
+<td>rchg</td>
+</tr>
+<tr>
+<td>recognition / recognize</td>
+<td>recg</td>
+</tr>
+<tr>
+<td>recommend</td>
+<td>rcmd</td>
+</tr>
+<tr>
+<td>reconciliation</td>
+<td>recon</td>
+</tr>
+<tr>
+<td>record</td>
+<td>rec</td>
+</tr>
+<tr>
+<td>recreate / recreation</td>
+<td>recr</td>
+</tr>
+<tr>
+<td>recruit / recruiting</td>
+<td>rcrt</td>
+</tr>
+<tr>
+<td>rect</td>
+<td>rc</td>
+</tr>
+<tr>
+<td>reduce / reduced / reduction</td>
+<td>red</td>
+</tr>
+<tr>
+<td>refer / reference / referral / referred</td>
+<td>ref</td>
+</tr>
+<tr>
+<td>reference</td>
+<td>ref</td>
+</tr>
+<tr>
+<td>refund</td>
+<td>rfnd</td>
+</tr>
+<tr>
+<td>regional</td>
+<td>rgnl</td>
+</tr>
+<tr>
+<td>region</td>
+<td>rgn</td>
+</tr>
+<tr>
+<td>register</td>
+<td>reg</td>
+</tr>
+<tr>
+<td>registrar</td>
+<td>regr</td>
+</tr>
+<tr>
+<td>registration</td>
+<td>reg</td>
+</tr>
+<tr>
+<td>reject / rejection</td>
+<td>rjct</td>
+</tr>
+<tr>
+<td>relate / relation / relationship</td>
+<td>rlat</td>
+</tr>
+<tr>
+<td>release</td>
+<td>rlse</td>
+</tr>
+<tr>
+<td>religion / religious</td>
+<td>relg</td>
+</tr>
+<tr>
+<td>remaining</td>
+<td>rmng</td>
+</tr>
+<tr>
+<td>reminder</td>
+<td>rmdr</td>
+</tr>
+<tr>
+<td>renewal</td>
+<td>rnwl</td>
+</tr>
+<tr>
+<td>repeat / repeatable / repeated</td>
+<td>rept</td>
+</tr>
+<tr>
+<td>replace / replaced</td>
+<td>repl</td>
+</tr>
+<tr>
+<td>reply</td>
+<td>rply</td>
+</tr>
+<tr>
+<td>report</td>
+<td>rpt</td>
+</tr>
+<tr>
+<td>request / requested / require / required   / requisition</td>
+<td>req</td>
+</tr>
+<tr>
+<td>request</td>
+<td>req</td>
+</tr>
+<tr>
+<td>requirements</td>
+<td>rqmt</td>
+</tr>
+<tr>
+<td>research</td>
+<td>res</td>
+</tr>
+<tr>
+<td>reserve / reserved</td>
+<td>rsrv</td>
+</tr>
+<tr>
+<td>reserve officers training corps</td>
+<td>rotc</td>
+</tr>
+<tr>
+<td>residence / residency / resident</td>
+<td>rsdt</td>
+</tr>
+<tr>
+<td>resign</td>
+<td>rsgn</td>
+</tr>
+<tr>
+<td>resource</td>
+<td>res / rsrc</td>
+</tr>
+<tr>
+<td>response</td>
+<td>resp</td>
+</tr>
+<tr>
+<td>restart</td>
+<td>rst</td>
+</tr>
+<tr>
+<td>restock</td>
+<td>rstk</td>
+</tr>
+<tr>
+<td>restrict / restricted / restrictions</td>
+<td>rstr</td>
+</tr>
+<tr>
+<td>result</td>
+<td>rslt</td>
+</tr>
+<tr>
+<td>retire / retirement</td>
+<td>ret</td>
+</tr>
+<tr>
+<td>retroactive</td>
+<td>retr</td>
+</tr>
+<tr>
+<td>return</td>
+<td>ret / rtn</td>
+</tr>
+<tr>
+<td>revenue</td>
+<td>rev</td>
+</tr>
+<tr>
+<td>review</td>
+<td>rvw</td>
+</tr>
+<tr>
+<td>revision</td>
+<td>revs</td>
+</tr>
+<tr>
+<td>revoke</td>
+<td>revk</td>
+</tr>
+<tr>
+<td>roll up</td>
+<td>rlup</td>
+</tr>
+<tr>
+<td>roll</td>
+<td>rl</td>
+</tr>
+<tr>
+<td>room</td>
+<td>rm</td>
+</tr>
+<tr>
+<td>route</td>
+<td>rout</td>
+</tr>
+<tr>
+<td>run control</td>
+<td>runctl</td>
+</tr>
+<tr>
+<td>salary</td>
+<td>sal</td>
+</tr>
+<tr>
+<td>salutation</td>
+<td>sltn</td>
+</tr>
+<tr>
+<td>same</td>
+<td>sm</td>
+</tr>
+<tr>
+<td>scale</td>
+<td>scal</td>
+</tr>
+<tr>
+<td>schedule / scheduled / scheduling</td>
+<td>sched</td>
+</tr>
+<tr>
+<td>scholar / scholarship</td>
+<td>schlr</td>
+</tr>
+<tr>
+<td>scholastic / school</td>
+<td>schl</td>
+</tr>
+<tr>
+<td>scholastic aptitude test</td>
+<td>sat</td>
+</tr>
+<tr>
+<td>science</td>
+<td>sci</td>
+</tr>
+<tr>
+<td>score</td>
+<td>scr</td>
+</tr>
+<tr>
+<td>screen</td>
+<td>scr</td>
+</tr>
+<tr>
+<td>search</td>
+<td>srch</td>
+</tr>
+<tr>
+<td>second</td>
+<td>scnd / ss / sec</td>
+</tr>
+<tr>
+<td>section</td>
+<td>sctn</td>
+</tr>
+<tr>
+<td>secure / security</td>
+<td>sec</td>
+</tr>
+<tr>
+<td>segment</td>
+<td>seg</td>
+</tr>
+<tr>
+<td>select / selection / selective</td>
+<td>sel</td>
+</tr>
+<tr>
+<td>select</td>
+<td>sel</td>
+</tr>
+<tr>
+<td>semester</td>
+<td>sem</td>
+</tr>
+<tr>
+<td>semi finalist</td>
+<td>semf</td>
+</tr>
+<tr>
+<td>senate / senator</td>
+<td>sen</td>
+</tr>
+<tr>
+<td>send</td>
+<td>snd</td>
+</tr>
+<tr>
+<td>senior</td>
+<td>sr</td>
+</tr>
+<tr>
+<td>sent</td>
+<td>snt</td>
+</tr>
+<tr>
+<td>separate</td>
+<td>sepr</td>
+</tr>
+<tr>
+<td>sequence</td>
+<td>seq</td>
+</tr>
+<tr>
+<td>serial</td>
+<td>serl</td>
+</tr>
+<tr>
+<td>server</td>
+<td>svr / srv</td>
+</tr>
+<tr>
+<td>service</td>
+<td>serv</td>
+</tr>
+<tr>
+<td>session</td>
+<td>sessn</td>
+</tr>
+<tr>
+<td>sharing</td>
+<td>shr</td>
+</tr>
+<tr>
+<td>sheet</td>
+<td>shet</td>
+</tr>
+<tr>
+<td>shelter</td>
+<td>shlt</td>
+</tr>
+<tr>
+<td>shift</td>
+<td>shft</td>
+</tr>
+<tr>
+<td>shipping</td>
+<td>ship</td>
+</tr>
+<tr>
+<td>short int</td>
+<td>n</td>
+</tr>
+<tr>
+<td>short</td>
+<td>shrt</td>
+</tr>
+<tr>
+<td>sign</td>
+<td>sgn</td>
+</tr>
+<tr>
+<td>simulated</td>
+<td>sim</td>
+</tr>
+<tr>
+<td>size</td>
+<td>sz</td>
+</tr>
+<tr>
+<td>skill</td>
+<td>skl</td>
+</tr>
+<tr>
+<td>skip</td>
+<td>skp</td>
+</tr>
+<tr>
+<td>social / society</td>
+<td>soc</td>
+</tr>
+<tr>
+<td>social security number</td>
+<td>ssn</td>
+</tr>
+<tr>
+<td>soft</td>
+<td>sft</td>
+</tr>
+<tr>
+<td>solid</td>
+<td>slid</td>
+</tr>
+<tr>
+<td>sophomore</td>
+<td>soph</td>
+</tr>
+<tr>
+<td>sort</td>
+<td>srt</td>
+</tr>
+<tr>
+<td>source</td>
+<td>src</td>
+</tr>
+<tr>
+<td>special / specialty</td>
+<td>spcl</td>
+</tr>
+<tr>
+<td>specific / specification</td>
+<td>spec</td>
+</tr>
+<tr>
+<td>sponsor / sponsored</td>
+<td>spon</td>
+</tr>
+<tr>
+<td>sports</td>
+<td>sprt</td>
+</tr>
+<tr>
+<td>spouse</td>
+<td>spse</td>
+</tr>
+<tr>
+<td>square</td>
+<td>sq</td>
+</tr>
+<tr>
+<td>stack</td>
+<td>stck</td>
+</tr>
+<tr>
+<td>staff</td>
+<td>stf</td>
+</tr>
+<tr>
+<td>stage</td>
+<td>stg</td>
+</tr>
+<tr>
+<td>stamp</td>
+<td>stmp</td>
+</tr>
+<tr>
+<td>standard deviation</td>
+<td>stdv</td>
+</tr>
+<tr>
+<td>standard</td>
+<td>std</td>
+</tr>
+<tr>
+<td>start / starting</td>
+<td>strt</td>
+</tr>
+<tr>
+<td>statement</td>
+<td>stmt</td>
+</tr>
+<tr>
+<td>state</td>
+<td>st</td>
+</tr>
+<tr>
+<td>static</td>
+<td>stc</td>
+</tr>
+<tr>
+<td>statistics</td>
+<td>stat</td>
+</tr>
+<tr>
+<td>statistic</td>
+<td>stat</td>
+</tr>
+<tr>
+<td>status</td>
+<td>sts</td>
+</tr>
+<tr>
+<td>step</td>
+<td>stp</td>
+</tr>
+<tr>
+<td>stipend</td>
+<td>stpd</td>
+</tr>
+<tr>
+<td>stock</td>
+<td>stk</td>
+</tr>
+<tr>
+<td>storage</td>
+<td>stg</td>
+</tr>
+<tr>
+<td>stream</td>
+<td>stm</td>
+</tr>
+<tr>
+<td>street</td>
+<td>str</td>
+</tr>
+<tr>
+<td>string</td>
+<td>str / s</td>
+</tr>
+<tr>
+<td>structure</td>
+<td>strc</td>
+</tr>
+<tr>
+<td>student academic records</td>
+<td>sar</td>
+</tr>
+<tr>
+<td>student credit hour</td>
+<td>sch</td>
+</tr>
+<tr>
+<td>student</td>
+<td>stu</td>
+</tr>
+<tr>
+<td>study</td>
+<td>stdy</td>
+</tr>
+<tr>
+<td>subcampaign</td>
+<td>scmp</td>
+</tr>
+<tr>
+<td>subject</td>
+<td>subj</td>
+</tr>
+<tr>
+<td>subordinate</td>
+<td>sub</td>
+</tr>
+<tr>
+<td>subsidiary</td>
+<td>subs</td>
+</tr>
+<tr>
+<td>subtract</td>
+<td>sub</td>
+</tr>
+<tr>
+<td>suffix</td>
+<td>sfx</td>
+</tr>
+<tr>
+<td>summation / summary</td>
+<td>sum</td>
+</tr>
+<tr>
+<td>summation</td>
+<td>sum</td>
+</tr>
+<tr>
+<td>supervisor / support</td>
+<td>sup</td>
+</tr>
+<tr>
+<td>supplement / supplemental</td>
+<td>supl</td>
+</tr>
+<tr>
+<td>survey</td>
+<td>srvy</td>
+</tr>
+<tr>
+<td>suspense</td>
+<td>susp / suspn</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>flg / sw</td>
+</tr>
+<tr>
+<td>sybase</td>
+<td>syb</td>
+</tr>
+<tr>
+<td>synchronization</td>
+<td>sync</td>
+</tr>
+<tr>
+<td>system</td>
+<td>sys</td>
+</tr>
+<tr>
+<td>table / tables</td>
+<td>tbl</td>
+</tr>
+<tr>
+<td>table</td>
+<td>tbl</td>
+</tr>
+<tr>
+<td>taken</td>
+<td>tkn</td>
+</tr>
+<tr>
+<td>target</td>
+<td>trgt</td>
+</tr>
+<tr>
+<td>taught</td>
+<td>tght</td>
+</tr>
+<tr>
+<td>tax / taxable</td>
+<td>tx</td>
+</tr>
+<tr>
+<td>tax id number</td>
+<td>tin</td>
+</tr>
+<tr>
+<td>template</td>
+<td>tmpl</td>
+</tr>
+<tr>
+<td>temporary</td>
+<td>tmp / temp</td>
+</tr>
+<tr>
+<td>tenure</td>
+<td>tenr</td>
+</tr>
+<tr>
+<td>terminal</td>
+<td>trml</td>
+</tr>
+<tr>
+<td>terminate</td>
+<td>trmt</td>
+</tr>
+<tr>
+<td>term</td>
+<td>trm</td>
+</tr>
+<tr>
+<td>test</td>
+<td>tst</td>
+</tr>
+<tr>
+<td>text metric</td>
+<td>tm</td>
+</tr>
+<tr>
+<td>text</td>
+<td>txt</td>
+</tr>
+<tr>
+<td>thermidor</td>
+<td>therm</td>
+</tr>
+<tr>
+<td>ticket</td>
+<td>tkt</td>
+</tr>
+<tr>
+<td>time keeping</td>
+<td>tmkp</td>
+</tr>
+<tr>
+<td>time-stamp</td>
+<td>ts</td>
+</tr>
+<tr>
+<td>time</td>
+<td>tm</td>
+</tr>
+<tr>
+<td>title</td>
+<td>titl</td>
+</tr>
+<tr>
+<td>today</td>
+<td>tdy</td>
+</tr>
+<tr>
+<td>total</td>
+<td>tot</td>
+</tr>
+<tr>
+<td>town</td>
+<td>cty</td>
+</tr>
+<tr>
+<td>track / tracking</td>
+<td>trk</td>
+</tr>
+<tr>
+<td>traditional</td>
+<td>trad</td>
+</tr>
+<tr>
+<td>training</td>
+<td>trn</td>
+</tr>
+<tr>
+<td>transact / transaction</td>
+<td>trans</td>
+</tr>
+<tr>
+<td>transcript</td>
+<td>tscp</td>
+</tr>
+<tr>
+<td>transfer</td>
+<td>xfer</td>
+</tr>
+<tr>
+<td>translate / translation</td>
+<td>xlt</td>
+</tr>
+<tr>
+<td>translate/transation/transparent</td>
+<td>tran / trans</td>
+</tr>
+<tr>
+<td>transmit / transmittal</td>
+<td>xmit</td>
+</tr>
+<tr>
+<td>travel</td>
+<td>trvl</td>
+</tr>
+<tr>
+<td>tuition</td>
+<td>tuit</td>
+</tr>
+<tr>
+<td>type</td>
+<td>typ</td>
+</tr>
+<tr>
+<td>undergraduate</td>
+<td>ugrd</td>
+</tr>
+<tr>
+<td>unemployment</td>
+<td>unempl</td>
+</tr>
+<tr>
+<td>unit of measure</td>
+<td>uom</td>
+</tr>
+<tr>
+<td>universal</td>
+<td>unvrsl</td>
+</tr>
+<tr>
+<td>university</td>
+<td>univ</td>
+</tr>
+<tr>
+<td>unknown</td>
+<td>unk</td>
+</tr>
+<tr>
+<td>unpaid</td>
+<td>unpd</td>
+</tr>
+<tr>
+<td>unsecure / unsecured</td>
+<td>unsec</td>
+</tr>
+<tr>
+<td>unsigned char (byte)</td>
+<td>by</td>
+</tr>
+<tr>
+<td>unsigned int</td>
+<td>u</td>
+</tr>
+<tr>
+<td>unsigned long (ulong)</td>
+<td>ul</td>
+</tr>
+<tr>
+<td>up to</td>
+<td>max</td>
+</tr>
+<tr>
+<td>update / updated</td>
+<td>updt</td>
+</tr>
+<tr>
+<td>update</td>
+<td>upd</td>
+</tr>
+<tr>
+<td>upgrade</td>
+<td>upg</td>
+</tr>
+<tr>
+<td>upper</td>
+<td>upr</td>
+</tr>
+<tr>
+<td>us department of education</td>
+<td>usde</td>
+</tr>
+<tr>
+<td>use / used</td>
+<td>use</td>
+</tr>
+<tr>
+<td>user</td>
+<td>usr</td>
+</tr>
+<tr>
+<td>utility</td>
+<td>util</td>
+</tr>
+<tr>
+<td>vacation</td>
+<td>vacn</td>
+</tr>
+<tr>
+<td>valedictorian</td>
+<td>vldc</td>
+</tr>
+<tr>
+<td>valid / validate / validation</td>
+<td>vld</td>
+</tr>
+<tr>
+<td>value</td>
+<td>val</td>
+</tr>
+<tr>
+<td>variable</td>
+<td>var</td>
+</tr>
+<tr>
+<td>vehicle</td>
+<td>veh</td>
+</tr>
+<tr>
+<td>vendor</td>
+<td>vend</td>
+</tr>
+<tr>
+<td>verbal</td>
+<td>vrbl</td>
+</tr>
+<tr>
+<td>verify / verified</td>
+<td>verf</td>
+</tr>
+<tr>
+<td>version</td>
+<td>ver</td>
+</tr>
+<tr>
+<td>vertical</td>
+<td>vert</td>
+</tr>
+<tr>
+<td>veteran</td>
+<td>vet</td>
+</tr>
+<tr>
+<td>vice president</td>
+<td>vp</td>
+</tr>
+<tr>
+<td>violation</td>
+<td>vio</td>
+</tr>
+<tr>
+<td>virus</td>
+<td>vir</td>
+</tr>
+<tr>
+<td>visit</td>
+<td>vst</td>
+</tr>
+<tr>
+<td>void</td>
+<td>v</td>
+</tr>
+<tr>
+<td>voucher</td>
+<td>vchr</td>
+</tr>
+<tr>
+<td>waived</td>
+<td>wved</td>
+</tr>
+<tr>
+<td>week / work / worked / worker(s)</td>
+<td>wk</td>
+</tr>
+<tr>
+<td>width</td>
+<td>wid</td>
+</tr>
+<tr>
+<td>window</td>
+<td>win / wnd</td>
+</tr>
+<tr>
+<td>withdrawal</td>
+<td>wdrl</td>
+</tr>
+<tr>
+<td>withhold / withholding</td>
+<td>whld</td>
+</tr>
+<tr>
+<td>with</td>
+<td>w</td>
+</tr>
+<tr>
+<td>women</td>
+<td>wmn</td>
+</tr>
+<tr>
+<td>word (unsigned short)</td>
+<td>w</td>
+</tr>
+<tr>
+<td>worksheet</td>
+<td>wkst</td>
+</tr>
+<tr>
+<td>write / written</td>
+<td>wrt</td>
+</tr>
+<tr>
+<td>x, y coordinates (short)</td>
+<td>x,y</td>
+</tr>
+<tr>
+<td>year-to-date</td>
+<td>ytd</td>
+</tr>
+<tr>
+<td>year</td>
+<td>yr / yy</td>
+</tr>
+<tr>
+<td>zero terminated string</td>
+<td>sz</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/40996b72.html" rel="bookmark">软件开发常用对仗词</a></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="xLsDg 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="xLsDg 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>xLsDg
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://xlsdg.org/p/52d82459.html" title="常用变量名缩写">https://xlsdg.org/p/52d82459.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Development/" rel="tag"># Development</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/p/40996b72.html" rel="prev" title="软件开发常用对仗词">
+      <i class="fa fa-chevron-left"></i> 软件开发常用对仗词
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/p/4819d03.html" rel="next" title="Sublime Text 3 配置">
+      Sublime Text 3 配置 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清单"><span class="nav-number">2.</span> <span class="nav-text">清单</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="xLsDg"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">xLsDg</p>
+  <div class="site-description" itemprop="description">Developer making the web an awesome place.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xlsdg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xlsdg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:xlsdg@qq.com" title="E-Mail → mailto:xlsdg@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/xlsdg" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;xlsdg" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/xlsdg" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;xlsdg" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://guofh.github.io/" title="https:&#x2F;&#x2F;guofh.github.io&#x2F;" rel="noopener" target="_blank">郭峰浩</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://happyer.github.io/" title="https:&#x2F;&#x2F;happyer.github.io&#x2F;" rel="noopener" target="_blank">成旭</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xLsDg</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">126k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:55</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
+  </div>
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI',
+      appKey     : 'uqTkCbm6jRHkwFOiIDe2qb3i',
+      placeholder: "文明社会，理性评论",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+  <link rel="manifest" href="/images/site.webmanifest">
+  <meta name="msapplication-config" content="/images/browserconfig.xml">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
+  <meta name="msvalidate.01" content="CF69BFDC6D5AD24F7037CBEF9B558B84">
+  <meta name="yandex-verification" content="20d8ac9dbb5dee76">
+  <meta name="baidu-site-verification" content="zc2MlowHRQ">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="字符串字面量1let someString &#x3D; &quot;Some string literal value&quot;  初始化空字符串123var emptyString &#x3D; &quot;&quot;               &#x2F;&#x2F; empty string literalvar anotherEmptyString &#x3D; String()  &#x2F;&#x2F; initializer syntax&#x2F;&#x2F; these two strings ar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift 语言之字符串与字符学习笔记">
+<meta property="og:url" content="https://xlsdg.org/p/a9bf149e.html">
+<meta property="og:site_name" content="xLsDg">
+<meta property="og:description" content="字符串字面量1let someString &#x3D; &quot;Some string literal value&quot;  初始化空字符串123var emptyString &#x3D; &quot;&quot;               &#x2F;&#x2F; empty string literalvar anotherEmptyString &#x3D; String()  &#x2F;&#x2F; initializer syntax&#x2F;&#x2F; these two strings ar">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2015-04-20T01:00:00.000Z">
+<meta property="article:modified_time" content="2019-05-02T01:44:12.619Z">
+<meta property="article:author" content="xLsDg">
+<meta property="article:tag" content="iOS">
+<meta property="article:tag" content="Swift">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://xlsdg.org/p/a9bf149e.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Swift 语言之字符串与字符学习笔记 | xLsDg</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-62013560-3');
+      }
+    </script>
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  <script>
+    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
+    gio('init', '93b1fecf6ab1be1a', {});
+    gio('send');
+  </script>
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="xLsDg" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">xLsDg</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Xiao Lu Software Development Group</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">25</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">14</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">41</span></a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-fw fa-sitemap"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-fw fa-heartbeat"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/xlsdg" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xlsdg.org/p/a9bf149e.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="xLsDg">
+      <meta itemprop="description" content="Developer making the web an awesome place.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xLsDg">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Swift 语言之字符串与字符学习笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-04-20 09:00:00" itemprop="dateCreated datePublished" datetime="2015-04-20T09:00:00+08:00">2015-04-20</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-05-02 09:44:12" itemprop="dateModified" datetime="2019-05-02T09:44:12+08:00">2019-05-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/02-%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">02.学习</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/p/a9bf149e.html" class="post-meta-item leancloud_visitors" data-flag-title="Swift 语言之字符串与字符学习笔记" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/p/a9bf149e.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/p/a9bf149e.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.9k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="字符串字面量"><a href="#字符串字面量" class="headerlink" title="字符串字面量"></a>字符串字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> someString = <span class="string">"Some string literal value"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="初始化空字符串"><a href="#初始化空字符串" class="headerlink" title="初始化空字符串"></a>初始化空字符串</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> emptyString = <span class="string">""</span>               <span class="comment">// empty string literal</span></span><br><span class="line"><span class="keyword">var</span> anotherEmptyString = <span class="type">String</span>()  <span class="comment">// initializer syntax</span></span><br><span class="line"><span class="comment">// these two strings are both empty, and are equivalent to each other</span></span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>判断字符串是否为空：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> emptyString.isEmpty &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"Nothing to see here"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints "Nothing to see here"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串可变性"><a href="#字符串可变性" class="headerlink" title="字符串可变性"></a>字符串可变性</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> variableString = <span class="string">"Horse"</span></span><br><span class="line">variableString += <span class="string">" and carriage"</span></span><br><span class="line"><span class="comment">// variableString is now "Horse and carriage"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> constantString = <span class="string">"Highlander"</span></span><br><span class="line">constantString += <span class="string">" and another Highlander"</span></span><br><span class="line"><span class="comment">// this reports a compile-time error - a constant string cannot be modified</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="使用字符"><a href="#使用字符" class="headerlink" title="使用字符"></a>使用字符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> catCharacters: [<span class="type">Character</span>] = [<span class="string">"C"</span>, <span class="string">"a"</span>, <span class="string">"t"</span>, <span class="string">"!"</span>, <span class="string">"🐱"</span>]</span><br><span class="line"><span class="keyword">let</span> catString = <span class="type">String</span>(catCharacters)</span><br><span class="line"><span class="built_in">println</span>(catString)</span><br><span class="line"><span class="comment">// prints "Cat!🐱"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="连接字符串和字符"><a href="#连接字符串和字符" class="headerlink" title="连接字符串和字符"></a>连接字符串和字符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> string1 = <span class="string">"hello"</span></span><br><span class="line"><span class="keyword">let</span> string2 = <span class="string">" there"</span></span><br><span class="line"><span class="keyword">var</span> welcome = string1 + string2</span><br><span class="line"><span class="comment">// welcome now equals "hello there"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> instruction = <span class="string">"look over"</span></span><br><span class="line">instruction += string2</span><br><span class="line"><span class="comment">// instruction now equals "look over there"</span></span><br><span class="line"><span class="keyword">let</span> exclamationMark: <span class="type">Character</span> = <span class="string">"!"</span></span><br><span class="line">welcome.append(exclamationMark)</span><br><span class="line"><span class="comment">// welcome now equals "hello there!"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串插值"><a href="#字符串插值" class="headerlink" title="字符串插值"></a>字符串插值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> multiplier = <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> message = <span class="string">"\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"</span></span><br><span class="line"><span class="comment">// message is "3 times 2.5 is 7.5"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字面量中的特殊字符（-0-t-n-r-“-39-）"><a href="#字面量中的特殊字符（-0-t-n-r-“-39-）" class="headerlink" title="字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）"></a>字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wiseWords = <span class="string">"\"Imagination is more important than knowledge\" - Einstein"</span></span><br><span class="line"><span class="comment">// "Imagination is more important than knowledge" - Einstein</span></span><br><span class="line"><span class="keyword">let</span> dollarSign = <span class="string">"\u&#123;24&#125;"</span>        <span class="comment">// $,  Unicode scalar U+0024</span></span><br><span class="line"><span class="keyword">let</span> blackHeart = <span class="string">"\u&#123;2665&#125;"</span>      <span class="comment">// ♥,  Unicode scalar U+2665</span></span><br><span class="line"><span class="keyword">let</span> sparklingHeart = <span class="string">"\u&#123;1F496&#125;"</span> <span class="comment">// 💖, Unicode scalar U+1F496</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="计算字符数量"><a href="#计算字符数量" class="headerlink" title="计算字符数量"></a>计算字符数量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> unusualMenagerie = <span class="string">"Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪"</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">"unusualMenagerie has \(count(unusualMenagerie)) characters"</span>)</span><br><span class="line"><span class="comment">// prints "unusualMenagerie has 40 characters"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串索引"><a href="#字符串索引" class="headerlink" title="字符串索引"></a>字符串索引</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> greeting = <span class="string">"Guten Tag"</span></span><br><span class="line"><span class="comment">// prints "greeting: String = "Guten Tag""</span></span><br><span class="line"><span class="built_in">println</span>(greeting.startIndex)</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line"><span class="built_in">println</span>(greeting.endIndex)</span><br><span class="line"><span class="comment">// 9</span></span><br><span class="line">greeting[greeting.startIndex.successor()]</span><br><span class="line"><span class="comment">// u</span></span><br><span class="line">greeting[greeting.endIndex.predecessor()]</span><br><span class="line"><span class="comment">// g</span></span><br><span class="line"><span class="keyword">let</span> index = <span class="built_in">advance</span>(greeting.startIndex, <span class="number">7</span>)</span><br><span class="line">greeting[index]</span><br><span class="line"><span class="comment">// a</span></span><br><span class="line">greeting.endIndex.successor() <span class="comment">// fatal error: can not increment endIndex</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串插入和删除"><a href="#字符串插入和删除" class="headerlink" title="字符串插入和删除"></a>字符串插入和删除</h3><p>在某个位置插入字符：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> welcome = <span class="string">"hello"</span></span><br><span class="line">welcome.insert(<span class="string">"!"</span>, atIndex: welcome.endIndex)</span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints "hello!"</span></span><br></pre></td></tr></table></figure>
+
+<p>在某个位置插入字符串：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">welcome.splice(<span class="string">" there"</span>, atIndex: welcome.endIndex.predecessor())</span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints "hello there!"</span></span><br></pre></td></tr></table></figure>
+
+<p>删除某个位置的字符：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">welcome.removeAtIndex(welcome.endIndex.predecessor())</span><br><span class="line"><span class="comment">// !</span></span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints "hello there"</span></span><br></pre></td></tr></table></figure>
+
+<p>删除某个范围的字符串：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> range = <span class="built_in">advance</span>(welcome.endIndex, -<span class="number">6</span>)..&lt;welcome.endIndex</span><br><span class="line">welcome.removeRange(range)</span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints "hello"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串和字符比较"><a href="#字符串和字符比较" class="headerlink" title="字符串和字符比较"></a>字符串和字符比较</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> quotation = <span class="string">"We're a lot alike, you and I."</span></span><br><span class="line"><span class="keyword">let</span> sameQuotation = <span class="string">"We're a lot alike, you and I."</span></span><br><span class="line"><span class="keyword">if</span> quotation == sameQuotation &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"These two strings are considered equal"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints "These two strings are considered equal"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串前缀-后缀相等"><a href="#字符串前缀-后缀相等" class="headerlink" title="字符串前缀/后缀相等"></a>字符串前缀/后缀相等</h3><p>前缀相等：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> romeoAndJuliet = [</span><br><span class="line">    <span class="string">"Act 1 Scene 1: Verona, A public place"</span>,</span><br><span class="line">    <span class="string">"Act 1 Scene 2: Capulet's mansion"</span>,</span><br><span class="line">    <span class="string">"Act 1 Scene 3: A room in Capulet's mansion"</span>,</span><br><span class="line">    <span class="string">"Act 1 Scene 4: A street outside Capulet's mansion"</span>,</span><br><span class="line">    <span class="string">"Act 1 Scene 5: The Great Hall in Capulet's mansion"</span>,</span><br><span class="line">    <span class="string">"Act 2 Scene 1: Outside Capulet's mansion"</span>,</span><br><span class="line">    <span class="string">"Act 2 Scene 2: Capulet's orchard"</span>,</span><br><span class="line">    <span class="string">"Act 2 Scene 3: Outside Friar Lawrence's cell"</span>,</span><br><span class="line">    <span class="string">"Act 2 Scene 4: A street in Verona"</span>,</span><br><span class="line">    <span class="string">"Act 2 Scene 5: Capulet's mansion"</span>,</span><br><span class="line">    <span class="string">"Act 2 Scene 6: Friar Lawrence's cell"</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> act1SceneCount = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> scene <span class="keyword">in</span> romeoAndJuliet &#123;</span><br><span class="line">    <span class="keyword">if</span> scene.hasPrefix(<span class="string">"Act 1 "</span>) &#123;</span><br><span class="line">        ++act1SceneCount</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">"There are \(act1SceneCount) scenes in Act 1"</span>)</span><br><span class="line"><span class="comment">// prints "There are 5 scenes in Act 1"</span></span><br></pre></td></tr></table></figure>
+
+<p>后缀相等：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mansionCount = <span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> cellCount = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> scene <span class="keyword">in</span> romeoAndJuliet &#123;</span><br><span class="line">    <span class="keyword">if</span> scene.hasSuffix(<span class="string">"Capulet's mansion"</span>) &#123;</span><br><span class="line">        ++mansionCount</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> scene.hasSuffix(<span class="string">"Friar Lawrence's cell"</span>) &#123;</span><br><span class="line">        ++cellCount</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">"\(mansionCount) mansion scenes; \(cellCount) cell scenes"</span>)</span><br><span class="line"><span class="comment">// prints "6 mansion scenes; 2 cell scenes"</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> codeUnit <span class="keyword">in</span> dogString.utf8 &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"\(codeUnit) "</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"\n"</span>)</span><br><span class="line"><span class="comment">// 68 111 103 226 128 188 240 159 144 182</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> codeUnit <span class="keyword">in</span> dogString.utf16 &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"\(codeUnit) "</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"\n"</span>)</span><br><span class="line"><span class="comment">// 68 111 103 8252 55357 56374</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Unicode标量"><a href="#Unicode标量" class="headerlink" title="Unicode标量"></a>Unicode标量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> scalar <span class="keyword">in</span> dogString.unicodeScalars &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">"\(scalar.value) "</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">"\n"</span>)</span><br><span class="line"><span class="comment">// 68 111 103 8252 128054</span></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/dd188d84.html" rel="bookmark">Swift 语言之基本运算符学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/b20d6f2b.html" rel="bookmark">Swift 语言之集合类型学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/c1165248.html" rel="bookmark">Swift 语言之闭包学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/d414fd72.html" rel="bookmark">Swift 语言之控制流学习笔记</a></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="xLsDg 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="xLsDg 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>xLsDg
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://xlsdg.org/p/a9bf149e.html" title="Swift 语言之字符串与字符学习笔记">https://xlsdg.org/p/a9bf149e.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-ND</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
+            <span class="icon">
+              <i class="fa fa-twitter"></i>
+            </span>
+
+            <span class="label">Twitter</span>
+          </a>
+        </div>
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/iOS/" rel="tag"># iOS</a>
+              <a href="/tags/Swift/" rel="tag"># Swift</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/p/dd188d84.html" rel="prev" title="Swift 语言之基本运算符学习笔记">
+      <i class="fa fa-chevron-left"></i> Swift 语言之基本运算符学习笔记
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/p/b20d6f2b.html" rel="next" title="Swift 语言之集合类型学习笔记">
+      Swift 语言之集合类型学习笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串字面量"><span class="nav-number">1.</span> <span class="nav-text">字符串字面量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化空字符串"><span class="nav-number">2.</span> <span class="nav-text">初始化空字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串可变性"><span class="nav-number">3.</span> <span class="nav-text">字符串可变性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用字符"><span class="nav-number">4.</span> <span class="nav-text">使用字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#连接字符串和字符"><span class="nav-number">5.</span> <span class="nav-text">连接字符串和字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串插值"><span class="nav-number">6.</span> <span class="nav-text">字符串插值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字面量中的特殊字符（-0-t-n-r-“-39-）"><span class="nav-number">7.</span> <span class="nav-text">字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算字符数量"><span class="nav-number">8.</span> <span class="nav-text">计算字符数量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串索引"><span class="nav-number">9.</span> <span class="nav-text">字符串索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串插入和删除"><span class="nav-number">10.</span> <span class="nav-text">字符串插入和删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串和字符比较"><span class="nav-number">11.</span> <span class="nav-text">字符串和字符比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串前缀-后缀相等"><span class="nav-number">12.</span> <span class="nav-text">字符串前缀&#x2F;后缀相等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UTF-8"><span class="nav-number">13.</span> <span class="nav-text">UTF-8</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#UTF-16"><span class="nav-number">14.</span> <span class="nav-text">UTF-16</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unicode标量"><span class="nav-number">15.</span> <span class="nav-text">Unicode标量</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="xLsDg"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">xLsDg</p>
+  <div class="site-description" itemprop="description">Developer making the web an awesome place.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xlsdg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xlsdg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:xlsdg@qq.com" title="E-Mail → mailto:xlsdg@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/xlsdg" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;xlsdg" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/xlsdg" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;xlsdg" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-nd.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://guofh.github.io/" title="https:&#x2F;&#x2F;guofh.github.io&#x2F;" rel="noopener" target="_blank">郭峰浩</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://happyer.github.io/" title="https:&#x2F;&#x2F;happyer.github.io&#x2F;" rel="noopener" target="_blank">成旭</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xLsDg</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    <span title="站点总字数">126k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:55</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
+  </div>
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI',
+      appKey     : 'uqTkCbm6jRHkwFOiIDe2qb3i',
+      placeholder: "文明社会，理性评论",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
