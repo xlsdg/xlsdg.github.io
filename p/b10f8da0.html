@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -326,7 +326,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -356,9 +356,9 @@
 <p>声明：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> directionToHead = <span class="type">CompassPoint</span>.<span class="type">West</span></span><br><span class="line">directionToHead = .<span class="type">East</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="使用switch语句匹配枚举值"><a href="#使用switch语句匹配枚举值" class="headerlink" title="使用switch语句匹配枚举值"></a>使用switch语句匹配枚举值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">directionToHead = .<span class="type">South</span></span><br><span class="line"><span class="keyword">switch</span> directionToHead &#123;</span><br><span class="line"><span class="keyword">case</span> .<span class="type">North</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"Lots of planets have a north"</span>)</span><br><span class="line"><span class="keyword">case</span> .<span class="type">South</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"Watch out for penguins"</span>)</span><br><span class="line"><span class="keyword">case</span> .<span class="type">East</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"Where the sun rises"</span>)</span><br><span class="line"><span class="keyword">case</span> .<span class="type">West</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"Where the skies are blue"</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints "Watch out for penguins"</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用switch语句匹配枚举值"><a href="#使用switch语句匹配枚举值" class="headerlink" title="使用switch语句匹配枚举值"></a>使用switch语句匹配枚举值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">directionToHead = .<span class="type">South</span></span><br><span class="line"><span class="keyword">switch</span> directionToHead &#123;</span><br><span class="line"><span class="keyword">case</span> .<span class="type">North</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Lots of planets have a north&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> .<span class="type">South</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Watch out for penguins&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> .<span class="type">East</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Where the sun rises&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> .<span class="type">West</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Where the skies are blue&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Watch out for penguins&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="关联值"><a href="#关联值" class="headerlink" title="关联值"></a>关联值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Barcode</span> </span>&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="type">UPCA</span>(<span class="type">Int</span>, <span class="type">Int</span>, <span class="type">Int</span>, <span class="type">Int</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="type">QRCode</span>(<span class="type">String</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> productBarcode = <span class="type">Barcode</span>.<span class="type">UPCA</span>(<span class="number">8</span>, <span class="number">85909</span>, <span class="number">51226</span>, <span class="number">3</span>)</span><br><span class="line">productBarcode = .<span class="type">QRCode</span>(<span class="string">"ABCDEFGHIJKLMNOP"</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span> productBarcode &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> .<span class="type">UPCA</span>(numberSystem, manufacturer, product, check):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"UPC-A: \(numberSystem), \(manufacturer), \(product), \(check)."</span>)</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> .<span class="type">QRCode</span>(productCode):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">"QR code: \(productCode)."</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints "QR code: ABCDEFGHIJKLMNOP."</span></span><br></pre></td></tr></table></figure>
+<h3 id="关联值"><a href="#关联值" class="headerlink" title="关联值"></a>关联值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Barcode</span> </span>&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="type">UPCA</span>(<span class="type">Int</span>, <span class="type">Int</span>, <span class="type">Int</span>, <span class="type">Int</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="type">QRCode</span>(<span class="type">String</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> productBarcode = <span class="type">Barcode</span>.<span class="type">UPCA</span>(<span class="number">8</span>, <span class="number">85909</span>, <span class="number">51226</span>, <span class="number">3</span>)</span><br><span class="line">productBarcode = .<span class="type">QRCode</span>(<span class="string">&quot;ABCDEFGHIJKLMNOP&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span> productBarcode &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> .<span class="type">UPCA</span>(numberSystem, manufacturer, product, check):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;UPC-A: \(numberSystem), \(manufacturer), \(product), \(check).&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> .<span class="type">QRCode</span>(productCode):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;QR code: \(productCode).&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;QR code: ABCDEFGHIJKLMNOP.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="原始值"><a href="#原始值" class="headerlink" title="原始值"></a>原始值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Planet</span>: <span class="title">Int</span> </span>&#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="type">Mercury</span> = <span class="number">1</span>, <span class="type">Venus</span>, <span class="type">Earth</span>, <span class="type">Mars</span>, <span class="type">Jupiter</span>, <span class="type">Saturn</span>, <span class="type">Uranus</span>, <span class="type">Neptune</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> earthsOrder = <span class="type">Planet</span>.<span class="type">Earth</span>.rawValue</span><br><span class="line"><span class="comment">// earthsOrder is 3</span></span><br></pre></td></tr></table></figure>
 
@@ -374,19 +374,19 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/a9bf149e.html" rel="bookmark">Swift 语言之字符串与字符学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/dd188d84.html" rel="bookmark">Swift 语言之基本运算符学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/a9bf149e.html" rel="bookmark">Swift 语言之字符串与字符学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/b20d6f2b.html" rel="bookmark">Swift 语言之集合类型学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/c1165248.html" rel="bookmark">Swift 语言之闭包学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/d414fd72.html" rel="bookmark">Swift 语言之控制流学习笔记</a></div>
     </li>
   </ul>
 
@@ -535,7 +535,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#枚举语法"><span class="nav-number">1.</span> <span class="nav-text">枚举语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用switch语句匹配枚举值"><span class="nav-number">2.</span> <span class="nav-text">使用switch语句匹配枚举值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关联值"><span class="nav-number">3.</span> <span class="nav-text">关联值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原始值"><span class="nav-number">4.</span> <span class="nav-text">原始值</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%9A%E4%B8%BE%E8%AF%AD%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">枚举语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8switch%E8%AF%AD%E5%8F%A5%E5%8C%B9%E9%85%8D%E6%9E%9A%E4%B8%BE%E5%80%BC"><span class="nav-number">2.</span> <span class="nav-text">使用switch语句匹配枚举值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E8%81%94%E5%80%BC"><span class="nav-number">3.</span> <span class="nav-text">关联值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%A7%8B%E5%80%BC"><span class="nav-number">4.</span> <span class="nav-text">原始值</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -631,12 +631,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">126k</span>
+    <span title="站点总字数">139k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:55</span>
+    <span title="站点阅读时长">2:07</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>

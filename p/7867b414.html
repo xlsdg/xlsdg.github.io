@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
+<meta name="generator" content="Hexo 5.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
@@ -331,7 +331,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>735</span>
+              <span>755</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -350,37 +350,37 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>访问 <a href="https://cloudinary.com/users/register/free" target="_blank" rel="noopener">https://cloudinary.com/users/register/free</a> 注册账号。</p>
+        <h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>访问 <a target="_blank" rel="noopener" href="https://cloudinary.com/users/register/free">https://cloudinary.com/users/register/free</a> 注册账号。</p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013182606.png" alt="Assigned cloud name"></p>
 <p>记住 <code>Assigned cloud name</code> 或自定义。</p>
 <a id="more"></a>
 
-<h2 id="Cloudinary-设置"><a href="#Cloudinary-设置" class="headerlink" title="Cloudinary 设置"></a>Cloudinary 设置</h2><p>访问 <a href="https://cloudinary.com/console/settings/upload" target="_blank" rel="noopener">https://cloudinary.com/console/settings/upload</a> 添加 <code>Upload preset</code>。</p>
+<h2 id="Cloudinary-设置"><a href="#Cloudinary-设置" class="headerlink" title="Cloudinary 设置"></a>Cloudinary 设置</h2><p>访问 <a target="_blank" rel="noopener" href="https://cloudinary.com/console/settings/upload">https://cloudinary.com/console/settings/upload</a> 添加 <code>Upload preset</code>。</p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013183134.png" alt="Add upload preset"></p>
 <p>记住 <code>Upload preset name</code> 或自定义，修改 <code>Signing Mode</code> 为 <code>Unsigned</code>，自定义 <code>Folder</code> 为上传文件夹，最后点击 <code>Save</code> 保存。</p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013183403.png" alt="Upload preset"></p>
-<p>访问 <a href="https://cloudinary.com/console" target="_blank" rel="noopener">https://cloudinary.com/console</a> 查看 <code>API Base URL</code>。</p>
+<p>访问 <a target="_blank" rel="noopener" href="https://cloudinary.com/console">https://cloudinary.com/console</a> 查看 <code>API Base URL</code>。</p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013183958.png" alt="API Base URL"></p>
 <h2 id="MWeb-配置"><a href="#MWeb-配置" class="headerlink" title="MWeb 配置"></a>MWeb 配置</h2><p>基本信息：</p>
 <ol>
 <li>名称：<code>Cloudinary</code></li>
-<li>API 地址：<code>${API Base URL}/image/upload</code></li>
+<li>API 地址：<code>$&#123;API Base URL&#125;/image/upload</code></li>
 <li>POST 文件名：<code>file</code></li>
 <li>图片 URL 路径：<code>secure_url</code></li>
 </ol>
 <p>增加两个 <code>POST BODY</code> 字段：</p>
 <ol>
-<li><code>upload_preset</code>：<code>${Upload preset name}</code></li>
+<li><code>upload_preset</code>：<code>$&#123;Upload preset name&#125;</code></li>
 <li><code>tags</code>：<code>browser_upload</code></li>
 </ol>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013184326.png" alt="MWeb"></p>
 <p>最后验证一下配置是否正确。</p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013185154.png"></p>
-<p>访问 <a href="https://cloudinary.com/console/media_library/folders/all/" target="_blank" rel="noopener">https://cloudinary.com/console/media_library/folders/all/</a> 后台可以看到刚刚上传的图片。</p>
-<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><h3 id="上传接口请求参数"><a href="#上传接口请求参数" class="headerlink" title="上传接口请求参数"></a>上传接口请求参数</h3><p>查看 <a href="https://cloudinary.com/documentation/upload_images#uploading_with_a_direct_call_to_the_api" target="_blank" rel="noopener">https://cloudinary.com/documentation/upload_images#uploading_with_a_direct_call_to_the_api</a></p>
-<p>在线例子：<a href="https://codepen.io/team/Cloudinary/pen/QgpyOK" target="_blank" rel="noopener">https://codepen.io/team/Cloudinary/pen/QgpyOK</a></p>
+<p>访问 <a target="_blank" rel="noopener" href="https://cloudinary.com/console/media_library/folders/all/">https://cloudinary.com/console/media_library/folders/all/</a> 后台可以看到刚刚上传的图片。</p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><h3 id="上传接口请求参数"><a href="#上传接口请求参数" class="headerlink" title="上传接口请求参数"></a>上传接口请求参数</h3><p>查看 <a target="_blank" rel="noopener" href="https://cloudinary.com/documentation/upload_images#uploading_with_a_direct_call_to_the_api">https://cloudinary.com/documentation/upload_images#uploading_with_a_direct_call_to_the_api</a></p>
+<p>在线例子：<a target="_blank" rel="noopener" href="https://codepen.io/team/Cloudinary/pen/QgpyOK">https://codepen.io/team/Cloudinary/pen/QgpyOK</a></p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013193641.png" alt="Required parameters for unauthenticated requests"></p>
-<h3 id="上传接口返回参数"><a href="#上传接口返回参数" class="headerlink" title="上传接口返回参数"></a>上传接口返回参数</h3><p>查看 <a href="https://cloudinary.com/documentation/upload_images#upload_response" target="_blank" rel="noopener">https://cloudinary.com/documentation/upload_images#upload_response</a></p>
+<h3 id="上传接口返回参数"><a href="#上传接口返回参数" class="headerlink" title="上传接口返回参数"></a>上传接口返回参数</h3><p>查看 <a target="_blank" rel="noopener" href="https://cloudinary.com/documentation/upload_images#upload_response">https://cloudinary.com/documentation/upload_images#upload_response</a></p>
 <p><img src="https://raw.githubusercontent.com/xlsdg/gallery/master/upload/20181013192817.png" alt="Upload response"></p>
 
     </div>
@@ -535,7 +535,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册"><span class="nav-number">1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloudinary-设置"><span class="nav-number">2.</span> <span class="nav-text">Cloudinary 设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MWeb-配置"><span class="nav-number">3.</span> <span class="nav-text">MWeb 配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#说明"><span class="nav-number">4.</span> <span class="nav-text">说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#上传接口请求参数"><span class="nav-number">4.1.</span> <span class="nav-text">上传接口请求参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#上传接口返回参数"><span class="nav-number">4.2.</span> <span class="nav-text">上传接口返回参数</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C"><span class="nav-number">1.</span> <span class="nav-text">注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cloudinary-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">Cloudinary 设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MWeb-%E9%85%8D%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">MWeb 配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%B4%E6%98%8E"><span class="nav-number">4.</span> <span class="nav-text">说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E6%8E%A5%E5%8F%A3%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">上传接口请求参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8A%E4%BC%A0%E6%8E%A5%E5%8F%A3%E8%BF%94%E5%9B%9E%E5%8F%82%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">上传接口返回参数</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -631,12 +631,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">126k</span>
+    <span title="站点总字数">139k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:55</span>
+    <span title="站点阅读时长">2:07</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
