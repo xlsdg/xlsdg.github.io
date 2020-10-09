@@ -86,21 +86,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/352cfd88.html</loc>
-    
-    <lastmod>2019-05-02</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/p/c1165248.html</loc>
-    
-    <lastmod>2019-05-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xlsdg.org/p/7ea6a9f4.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -114,7 +100,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/d414fd72.html</loc>
+    <loc>https://xlsdg.org/p/352cfd88.html</loc>
+    
+    <lastmod>2019-05-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/p/7ea6a9f4.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -128,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/ef567bc8.html</loc>
+    <loc>https://xlsdg.org/p/d414fd72.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/4819d03.html</loc>
+    <loc>https://xlsdg.org/p/ef567bc8.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -149,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/ef16a836.html</loc>
+    <loc>https://xlsdg.org/p/4819d03.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/a9bf149e.html</loc>
+    <loc>https://xlsdg.org/p/ef16a836.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -170,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/cd6aacea.html</loc>
+    <loc>https://xlsdg.org/p/a9bf149e.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -178,6 +171,13 @@
   
   <url>
     <loc>https://xlsdg.org/p/4273b484.html</loc>
+    
+    <lastmod>2019-05-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/p/cd6aacea.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -212,14 +212,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/d565ea50.html</loc>
-    
-    <lastmod>2019-05-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xlsdg.org/p/c6f8aa91.html</loc>
+    <loc>https://xlsdg.org/p/61d0424f.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -233,21 +226,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/61d0424f.html</loc>
+    <loc>https://xlsdg.org/p/c6f8aa91.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/54a1cf5b.html</loc>
-    
-    <lastmod>2019-05-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://xlsdg.org/p/6dc860e9.html</loc>
+    <loc>https://xlsdg.org/p/d565ea50.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -261,6 +247,13 @@
   </url>
   
   <url>
+    <loc>https://xlsdg.org/p/54a1cf5b.html</loc>
+    
+    <lastmod>2019-05-02</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://xlsdg.org/p/b46b5ca3.html</loc>
     
     <lastmod>2019-05-02</lastmod>
@@ -268,7 +261,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/40996b72.html</loc>
+    <loc>https://xlsdg.org/p/6dc860e9.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -276,6 +269,13 @@
   
   <url>
     <loc>https://xlsdg.org/p/68f1da70.html</loc>
+    
+    <lastmod>2019-05-02</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/p/40996b72.html</loc>
     
     <lastmod>2019-05-02</lastmod>
     
@@ -375,13 +375,6 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Development/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/tags/Flower-Password/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
@@ -410,7 +403,28 @@
   </url>
   
   <url>
+    <loc>https://xlsdg.org/tags/Development/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/tags/JavaScript/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xlsdg.org/tags/PHP/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/tags/Python/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -424,7 +438,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Gulp/</loc>
+    <loc>https://xlsdg.org/tags/Grunt/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -432,6 +446,13 @@
   
   <url>
     <loc>https://xlsdg.org/tags/Node-js/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/tags/Gulp/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -452,13 +473,6 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/JavaScript/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/tags/MWeb/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
@@ -467,13 +481,6 @@
   
   <url>
     <loc>https://xlsdg.org/tags/Cloudinary/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xlsdg.org/tags/Grunt/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -494,14 +501,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Sublime-Text/</loc>
+    <loc>https://xlsdg.org/tags/MySQL/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/MySQL/</loc>
+    <loc>https://xlsdg.org/tags/Sublime-Text/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -528,13 +535,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://xlsdg.org/tags/Python/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   
   <url>
@@ -552,14 +552,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%BC%96%E7%A8%8B/</loc>
+    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E8%8A%B1%E5%AF%86/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E8%8A%B1%E5%AF%86/</loc>
+    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -580,13 +580,6 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%90%8E%E7%AB%AF/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/Html/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
@@ -601,21 +594,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/JavaScript/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2020-10-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -630,6 +609,27 @@
   
   <url>
     <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/SQL/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/JavaScript/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%90%8E%E7%AB%AF/</loc>
+    <lastmod>2020-10-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2020-10-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
