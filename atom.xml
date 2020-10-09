@@ -247,9 +247,9 @@
     <category term="前端" scheme="https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Grunt" scheme="https://xlsdg.org/tags/Grunt/"/>
-    
     <category term="Gulp" scheme="https://xlsdg.org/tags/Gulp/"/>
+    
+    <category term="Grunt" scheme="https://xlsdg.org/tags/Grunt/"/>
     
   </entry>
   
@@ -273,9 +273,9 @@
     <category term="前端" scheme="https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Grunt" scheme="https://xlsdg.org/tags/Grunt/"/>
-    
     <category term="Node.js" scheme="https://xlsdg.org/tags/Node-js/"/>
+    
+    <category term="Grunt" scheme="https://xlsdg.org/tags/Grunt/"/>
     
   </entry>
   
@@ -299,9 +299,9 @@
     <category term="前端" scheme="https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="Node.js" scheme="https://xlsdg.org/tags/Node-js/"/>
-    
     <category term="Gulp" scheme="https://xlsdg.org/tags/Gulp/"/>
+    
+    <category term="Node.js" scheme="https://xlsdg.org/tags/Node-js/"/>
     
   </entry>
   
