@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
   <link rel="manifest" href="/images/manifest.json">
-  <meta name="msapplication-config" content="/images/browserconfig.xml">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
@@ -22,17 +23,16 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-
-  <meta name="description" content="一键安装优点：简单、快捷、方便、省事。 缺点：以这个方法安装的Node.js版本比较低。 1$ sudo aptitude install nodejs">
+<meta name="description" content="一键安装优点：简单、快捷、方便、省事。 缺点：以这个方法安装的Node.js版本比较低。 1$ sudo aptitude install nodejs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="树莓派之 Node.js 环境配置">
 <meta property="og:url" content="https://xlsdg.org/p/7ae04527.html">
@@ -40,7 +40,7 @@
 <meta property="og:description" content="一键安装优点：简单、快捷、方便、省事。 缺点：以这个方法安装的Node.js版本比较低。 1$ sudo aptitude install nodejs">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-06-02T13:30:00.000Z">
-<meta property="article:modified_time" content="2019-05-02T01:44:12.616Z">
+<meta property="article:modified_time" content="2019-05-02T01:44:12.000Z">
 <meta property="article:author" content="xLsDg">
 <meta property="article:tag" content="Raspberry Pi">
 <meta property="article:tag" content="Node.js">
@@ -60,8 +60,7 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>树莓派之 Node.js 环境配置 | xLsDg</title>
+<title>树莓派之 Node.js 环境配置 | xLsDg</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
     <script>
@@ -73,7 +72,6 @@
       }
     </script>
 
-
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -84,13 +82,11 @@
     })();
   </script>
 
-
   <script>
     !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
     gio('init', '93b1fecf6ab1be1a', {});
     gio('send');
   </script>
-
 
   <noscript>
   <style>
@@ -210,8 +206,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -254,14 +249,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">一键安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">源码安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">软件包安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87NVM%E5%AE%89%E8%A3%85"><span class="nav-number">4.</span> <span class="nav-text">通过NVM安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87n%E6%A8%A1%E5%9D%97%E6%9B%B4%E6%96%B0Node-js"><span class="nav-number">5.</span> <span class="nav-text">通过n模块更新Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85CNPM"><span class="nav-number">6.</span> <span class="nav-text">安装CNPM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3NPM%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">7.</span> <span class="nav-text">解决NPM慢的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85io-js"><span class="nav-number">8.</span> <span class="nav-text">安装io.js</span></a></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">一键安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">源码安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">软件包安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87NVM%E5%AE%89%E8%A3%85"><span class="nav-number">4.</span> <span class="nav-text">通过NVM安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%80%9A%E8%BF%87n%E6%A8%A1%E5%9D%97%E6%9B%B4%E6%96%B0Node-js"><span class="nav-number">5.</span> <span class="nav-text">通过n模块更新Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85CNPM"><span class="nav-number">6.</span> <span class="nav-text">安装CNPM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3NPM%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">7.</span> <span class="nav-text">解决NPM慢的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85io-js"><span class="nav-number">8.</span> <span class="nav-text">安装io.js</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="xLsDg"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">xLsDg</p>
@@ -323,7 +319,8 @@
     </ul>
   </div>
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -345,9 +342,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -419,20 +414,6 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/p/7ae04527.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/7ae04527.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -461,71 +442,49 @@
         <h2 id="一键安装"><a href="#一键安装" class="headerlink" title="一键安装"></a>一键安装</h2><p>优点：简单、快捷、方便、省事。</p>
 <p>缺点：以这个方法安装的Node.js版本比较低。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo aptitude install nodejs</span><br></pre></td></tr></table></figure>
-
 <a id="more"></a>
 
 <h2 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h2><p>优点：能安装最新版或任意版本的Node.js。</p>
 <p>缺点：源码编译时间的时间比较长。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ wget http://nodejs.org/dist/node-latest.tar.gz</span><br><span class="line">$ tar -xvzf node-latest.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> node-latest/</span><br><span class="line">$ ./configure</span><br><span class="line">$ make</span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
-
 <h2 id="软件包安装"><a href="#软件包安装" class="headerlink" title="软件包安装"></a>软件包安装</h2><p>优点：简单、快捷、方便、省事，可以安装到比较新的版本。</p>
 <p>缺点：暂未发现。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ wget http://node-arm.herokuapp.com/node_latest_armhf.deb</span><br><span class="line">$ sudo dpkg -i node_latest_armhf.deb</span><br></pre></td></tr></table></figure>
-
 <h2 id="通过NVM安装"><a href="#通过NVM安装" class="headerlink" title="通过NVM安装"></a>通过NVM安装</h2><p>优点：官网v0.10.28之前的任意版本都可以直接安装；可以任意切换不同版本；</p>
 <p>缺点：v0.10.28之后的版本都要以源码编译的方式安装。</p>
 <ol>
 <li><p>安装NVM：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/creationix/nvm.git ~/.nvm &amp;&amp; <span class="built_in">cd</span> ~/.nvm &amp;&amp; git checkout `git describe --abbrev=0 --tags`</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/creationix/nvm.git ~/.nvm &amp;&amp; <span class="built_in">cd</span> ~/.nvm &amp;&amp; git checkout `git describe --abbrev=0 --tags`</span><br></pre></td></tr></table></figure></li>
 <li><p>编辑 <code>~/.bashrc</code> 或 <code>~/.profile</code> 或 <code>~/.zshrc</code> 或 <code>~/.bash_profile</code> 文件（如果存在的话），添加下面代码到最后一行：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -f ~/.nvm/nvm.sh ]; <span class="keyword">then</span></span><br><span class="line"> <span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node</span><br><span class="line"> <span class="built_in">export</span> NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs</span><br><span class="line">    . ~/.nvm/nvm.sh</span><br><span class="line">    [[ -r ~/.nvm/bash_completion ]] &amp;&amp; . ~/.nvm/bash_completion</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -f ~/.nvm/nvm.sh ]; <span class="keyword">then</span></span><br><span class="line"> <span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node</span><br><span class="line"> <span class="built_in">export</span> NVM_IOJS_ORG_MIRROR=http://npm.taobao.org/mirrors/iojs</span><br><span class="line">    . ~/.nvm/nvm.sh</span><br><span class="line">    [[ -r ~/.nvm/bash_completion ]] &amp;&amp; . ~/.nvm/bash_completion</span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure></li>
 <li><p>通过以下类似命令安装任意版本的Node.js，以v0.10.28为例：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm install v0.10.28</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm install v0.10.28</span><br></pre></td></tr></table></figure></li>
 <li><p>切换或使用特定版本的Node.js：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm use v0.10.27</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm use v0.10.27</span><br></pre></td></tr></table></figure></li>
 <li><p>查看使用的Node.js版本：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ nvm ls</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="通过n模块更新Node-js"><a href="#通过n模块更新Node-js" class="headerlink" title="通过n模块更新Node.js"></a>通过n模块更新Node.js</h2><ol>
+<h2 id="通过n模块更新Node-js"><a href="#通过n模块更新Node-js" class="headerlink" title="通过n模块更新Node.js"></a>通过n模块更新Node.js</h2></li>
 <li><p>安装n模块:</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g n</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g n</span><br></pre></td></tr></table></figure></li>
 <li><p>更新最新版Node.js:</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo n latest</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="安装CNPM"><a href="#安装CNPM" class="headerlink" title="安装CNPM"></a>安装CNPM</h2><ol>
+<h2 id="安装CNPM"><a href="#安装CNPM" class="headerlink" title="安装CNPM"></a>安装CNPM</h2></li>
 <li><p>具体参考：<a target="_blank" rel="noopener" href="http://npm.taobao.org/" title="淘宝 NPM 镜像">淘宝 NPM 镜像</a></p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g cnpm --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure></li>
 <li><p>通过CNPM安装模块</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install [name]</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="解决NPM慢的问题"><a href="#解决NPM慢的问题" class="headerlink" title="解决NPM慢的问题"></a>解决NPM慢的问题</h2><ol>
+<h2 id="解决NPM慢的问题"><a href="#解决NPM慢的问题" class="headerlink" title="解决NPM慢的问题"></a>解决NPM慢的问题</h2></li>
 <li><p>使用淘宝NPM镜像：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm config <span class="built_in">set</span> registry http://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure></li>
 <li><p>使用代理：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm config <span class="built_in">set</span> proxy http://hx.gy:1080</span><br><span class="line">$ sudo npm config <span class="built_in">set</span> https-proxy http://hx.gy:1080</span><br></pre></td></tr></table></figure>
-</li>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm config <span class="built_in">set</span> proxy http://hx.gy:1080</span><br><span class="line">$ sudo npm config <span class="built_in">set</span> https-proxy http://hx.gy:1080</span><br></pre></td></tr></table></figure></li>
 <li><p>查看配置：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm config list</span><br></pre></td></tr></table></figure>
-
-</li>
+<h2 id="安装io-js"><a href="#安装io-js" class="headerlink" title="安装io.js"></a>安装io.js</h2></li>
 </ol>
-<h2 id="安装io-js"><a href="#安装io-js" class="headerlink" title="安装io.js"></a>安装io.js</h2><p>io.js的安装相对比较简单，官方已有编译好的二进制文件下载。</p>
+<p>io.js的安装相对比较简单，官方已有编译好的二进制文件下载。</p>
 <p>访问<a target="_blank" rel="noopener" href="https://iojs.org/dist/latest/">io.js官网</a>，选择相应的系统平台安装包，然后输入以下命令（这个方法卸载的时候比较麻烦）：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~</span><br><span class="line">$ wget https://iojs.org/dist/latest/iojs-v3.3.0-linux-armv7l.tar.gz</span><br><span class="line">$ tar -xvzf iojs-v3.3.0-linux-armv7l.tar.gz</span><br><span class="line">$ <span class="built_in">cd</span> iojs-v3.3.0-linux-armv7l/</span><br><span class="line">$ rm -f ./*.md</span><br><span class="line">$ rm -f ./LICENSE</span><br><span class="line">$ sudo cp -rf --remove-destination ./* /usr/<span class="built_in">local</span>/</span><br><span class="line">$ <span class="built_in">cd</span> ..</span><br><span class="line">$ rm -rf iojs-v3.3.0-linux-armv7l/</span><br></pre></td></tr></table></figure>
-
     </div>
 
     
@@ -588,34 +547,32 @@
 </ul>
 </div>
 
-          
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
 
-  <div class="followme">
-    <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
 
-    <div class="social-list">
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
+          <span class="label">Twitter</span>
+        </a>
+      </div>
 
-            <span class="label">Twitter</span>
-          </a>
-        </div>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
+          <span class="label">RSS</span>
+        </a>
+      </div>
   </div>
+</div>
 
           <div class="post-tags">
               <a href="/tags/Raspberry-Pi/" rel="tag"># Raspberry Pi</a>
@@ -646,8 +603,11 @@
 
 
 
-      
-    <div class="comments" id="valine-comments"></div>
+    
+  <div class="comments">
+    <div id="utterances-container"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -670,18 +630,14 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   &copy; 2015 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -728,7 +684,7 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
@@ -742,18 +698,7 @@
     })();
   </script>
 
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
+<script src="/js/local-search.js"></script>
 
 
 
@@ -780,33 +725,113 @@
     });
   </script>
 
-
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
   <div style="display: none;">
     <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
   </div>
 
 
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
 
 
-
-
-  
-
-  
 
 <script>
-NexT.utils.loadComments('#valine-comments', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
-    new Valine(Object.assign({"enable":true,"appId":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","appKey":"uqTkCbm6jRHkwFOiIDe2qb3i","serverURLs":null,"placeholder":"文明社会，理性评论","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":["nick","mail"]}, {
-      el: '#valine-comments',
-      path: "/p/7ae04527.html",
-      serverURLs: "https://ks9fc0id.api.lncldglobal.com"
-    }));
-  }, window.Valine);
+NexT.utils.loadComments('#utterances-container', () => {
+  const script = document.createElement('script');
+  script.src = 'https://utteranc.es/client.js';
+  script.setAttribute('repo', "xlsdg/blog-comments");
+  script.setAttribute('issue-term', "pathname");
+  script.setAttribute('theme', "github-light");
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  document.querySelector('#utterances-container').appendChild(script);
 });
 </script>
 

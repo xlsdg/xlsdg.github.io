@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
   <link rel="manifest" href="/images/manifest.json">
-  <meta name="msapplication-config" content="/images/browserconfig.xml">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
@@ -22,17 +23,16 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-
-  <meta name="description" content="实现简单表1.控制器头文件声明遵循的协议： 12@interface ViewController : UIViewController &lt;UITableViewDelegate, UITableViewDataSource&gt;@end">
+<meta name="description" content="实现简单表1.控制器头文件声明遵循的协议： 12@interface ViewController : UIViewController &lt;UITableViewDelegate, UITableViewDataSource&gt;@end">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《精通 iOS 开发》第 08 章学习笔记">
 <meta property="og:url" content="https://xlsdg.org/p/59e141c1.html">
@@ -40,7 +40,7 @@
 <meta property="og:description" content="实现简单表1.控制器头文件声明遵循的协议： 12@interface ViewController : UIViewController &lt;UITableViewDelegate, UITableViewDataSource&gt;@end">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-05-01T13:00:00.000Z">
-<meta property="article:modified_time" content="2019-05-02T01:44:12.612Z">
+<meta property="article:modified_time" content="2019-05-02T01:44:12.000Z">
 <meta property="article:author" content="xLsDg">
 <meta property="article:tag" content="iOS">
 <meta property="article:tag" content="Objective-C">
@@ -59,8 +59,7 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>《精通 iOS 开发》第 08 章学习笔记 | xLsDg</title>
+<title>《精通 iOS 开发》第 08 章学习笔记 | xLsDg</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
     <script>
@@ -72,7 +71,6 @@
       }
     </script>
 
-
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -83,13 +81,11 @@
     })();
   </script>
 
-
   <script>
     !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
     gio('init', '93b1fecf6ab1be1a', {});
     gio('send');
   </script>
-
 
   <noscript>
   <style>
@@ -209,8 +205,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -253,14 +248,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">实现简单表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%AE%9A%E5%88%B6%E8%A1%A8%E8%A7%86%E5%9B%BE%E5%8D%95%E5%85%83"><span class="nav-number">2.</span> <span class="nav-text">代码实现定制表视图单元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nib%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%AE%9E%E7%8E%B0%E5%AE%9A%E5%88%B6%E8%A1%A8%E8%A7%86%E5%9B%BE%E5%8D%95%E5%85%83"><span class="nav-number">3.</span> <span class="nav-text">Nib文件加载实现定制表视图单元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%88%86%E7%BB%84%E5%88%86%E5%8C%BA"><span class="nav-number">4.</span> <span class="nav-text">实现分组分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E7%B4%A2%E5%BC%95%E5%88%86%E5%8C%BA"><span class="nav-number">5.</span> <span class="nav-text">实现索引分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E6%A0%8F"><span class="nav-number">6.</span> <span class="nav-text">实现搜索栏</span></a></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E7%AE%80%E5%8D%95%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">实现简单表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0%E5%AE%9A%E5%88%B6%E8%A1%A8%E8%A7%86%E5%9B%BE%E5%8D%95%E5%85%83"><span class="nav-number">2.</span> <span class="nav-text">代码实现定制表视图单元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nib%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%AE%9E%E7%8E%B0%E5%AE%9A%E5%88%B6%E8%A1%A8%E8%A7%86%E5%9B%BE%E5%8D%95%E5%85%83"><span class="nav-number">3.</span> <span class="nav-text">Nib文件加载实现定制表视图单元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%88%86%E7%BB%84%E5%88%86%E5%8C%BA"><span class="nav-number">4.</span> <span class="nav-text">实现分组分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E7%B4%A2%E5%BC%95%E5%88%86%E5%8C%BA"><span class="nav-number">5.</span> <span class="nav-text">实现索引分区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E6%90%9C%E7%B4%A2%E6%A0%8F"><span class="nav-number">6.</span> <span class="nav-text">实现搜索栏</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="xLsDg"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">xLsDg</p>
@@ -322,7 +318,8 @@
     </ul>
   </div>
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -344,9 +341,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -422,20 +417,6 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/p/59e141c1.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/59e141c1.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -463,84 +444,58 @@
     <div class="post-body" itemprop="articleBody">
         <h3 id="实现简单表"><a href="#实现简单表" class="headerlink" title="实现简单表"></a>实现简单表</h3><p>1.控制器头文件声明遵循的协议：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">ViewController</span> : <span class="title">UIViewController</span> &lt;<span class="title">UITableViewDelegate</span>, <span class="title">UITableViewDataSource</span>&gt;</span></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
  <a id="more"></a>
 
 <p>2.视图加载完毕后调整表的顶部位置：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UITableView</span> *tableView = (<span class="keyword">id</span>)[<span class="keyword">self</span>.view viewWithTag:<span class="number">1</span>];</span><br><span class="line"><span class="built_in">UIEdgeInsets</span> contentInsert = tableView.contentInset;</span><br><span class="line">contentInsert.top = <span class="number">20</span>;</span><br><span class="line">[tableView setContentInset:contentInsert];</span><br></pre></td></tr></table></figure>
-
 <p>3.设置表的总行数：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSInteger</span>)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line"> numberOfRowsInSection:(<span class="built_in">NSInteger</span>)section &#123;</span><br><span class="line">  <span class="keyword">return</span> [<span class="keyword">self</span>.dwarves count];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>4.设置表的各行数据（UITableViewCellStyleDefault参数修改表的样式）：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">UITableViewCell</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">         cellForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  <span class="keyword">static</span> <span class="built_in">NSString</span> *simpleTableIdentifier = <span class="string">@&quot;SimpleTableIdentifier&quot;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">UITableViewCell</span> *cell =</span><br><span class="line">      [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (cell == <span class="literal">nil</span>) &#123;</span><br><span class="line">    cell = [[<span class="built_in">UITableViewCell</span> alloc] initWithStyle:<span class="built_in">UITableViewCellStyleDefault</span></span><br><span class="line">                                  reuseIdentifier:simpleTableIdentifier];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">UIImage</span> *image = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@&quot;star&quot;</span>];</span><br><span class="line">  cell.imageView.image = image;</span><br><span class="line"></span><br><span class="line">  cell.textLabel.text = <span class="keyword">self</span>.dwarves[indexPath.row];</span><br><span class="line">  cell.textLabel.font = [<span class="built_in">UIFont</span> boldSystemFontOfSize:<span class="number">50</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (indexPath.row &lt; <span class="number">7</span>) &#123;</span><br><span class="line">    cell.detailTextLabel.text = <span class="string">@&quot;Mr. Disney&quot;</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    cell.detailTextLabel.text = <span class="string">@&quot;Mr. Tolkien&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>5.设置表的每行缩进：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSInteger</span>)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">    indentationLevelForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  <span class="keyword">return</span> indexPath.row;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>6.设置表的某一行不能被选择：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSIndexPath</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">  willSelectRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  <span class="keyword">if</span> (indexPath.row == <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nil</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> indexPath;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>7.设置表的每行高度：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">    heightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">70</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>8.当表的某一行被选中后的操作：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">    didSelectRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  <span class="built_in">NSString</span> *rowValue = <span class="keyword">self</span>.dwarves[indexPath.row];</span><br><span class="line">  <span class="built_in">NSString</span> *message =</span><br><span class="line">      [[<span class="built_in">NSString</span> alloc] initWithFormat:<span class="string">@&quot;You selected %@&quot;</span>, rowValue];</span><br><span class="line"></span><br><span class="line">  <span class="built_in">UIAlertView</span> *alert = [[<span class="built_in">UIAlertView</span> alloc] initWithTitle:<span class="string">@&quot;Row Selected!&quot;</span></span><br><span class="line">                                                  message:message</span><br><span class="line">                                                 delegate:<span class="literal">nil</span></span><br><span class="line">                                        cancelButtonTitle:<span class="string">@&quot;Yes, I Did&quot;</span></span><br><span class="line">                                        otherButtonTitles:<span class="literal">nil</span>];</span><br><span class="line"></span><br><span class="line">  [alert show];</span><br><span class="line">  [tableView deselectRowAtIndexPath:indexPath animated:<span class="literal">YES</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="代码实现定制表视图单元"><a href="#代码实现定制表视图单元" class="headerlink" title="代码实现定制表视图单元"></a>代码实现定制表视图单元</h3><p>1.单元格类代码布局：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">id</span>)initWithStyle:(<span class="built_in">UITableViewCellStyle</span>)style</span><br><span class="line">    reuseIdentifier:(<span class="built_in">NSString</span> *)reuseIdentifier &#123;</span><br><span class="line">  <span class="keyword">self</span> = [<span class="keyword">super</span> initWithStyle:style reuseIdentifier:reuseIdentifier];</span><br><span class="line">  <span class="keyword">if</span> (<span class="keyword">self</span>) &#123;</span><br><span class="line">    <span class="built_in">CGRect</span> nameLabelRect = <span class="built_in">CGRectMake</span>(<span class="number">0</span>, <span class="number">5</span>, <span class="number">70</span>, <span class="number">15</span>);</span><br><span class="line">    <span class="built_in">UILabel</span> *nameMarker = [[<span class="built_in">UILabel</span> alloc] initWithFrame:nameLabelRect];</span><br><span class="line"></span><br><span class="line">    nameMarker.textAlignment = <span class="built_in">NSTextAlignmentRight</span>;</span><br><span class="line">    nameMarker.text = <span class="string">@&quot;Name:&quot;</span>;</span><br><span class="line">    nameMarker.font = [<span class="built_in">UIFont</span> boldSystemFontOfSize:<span class="number">12</span>];</span><br><span class="line">    [<span class="keyword">self</span>.contentView addSubview:nameMarker];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">CGRect</span> colorLabelRect = <span class="built_in">CGRectMake</span>(<span class="number">0</span>, <span class="number">26</span>, <span class="number">70</span>, <span class="number">15</span>);</span><br><span class="line">    <span class="built_in">UILabel</span> *colorMarker = [[<span class="built_in">UILabel</span> alloc] initWithFrame:colorLabelRect];</span><br><span class="line"></span><br><span class="line">    colorMarker.textAlignment = <span class="built_in">NSTextAlignmentRight</span>;</span><br><span class="line">    colorMarker.text = <span class="string">@&quot;Color:&quot;</span>;</span><br><span class="line">    colorMarker.font = [<span class="built_in">UIFont</span> boldSystemFontOfSize:<span class="number">12</span>];</span><br><span class="line">    [<span class="keyword">self</span>.contentView addSubview:colorMarker];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">CGRect</span> nameValueRect = <span class="built_in">CGRectMake</span>(<span class="number">80</span>, <span class="number">5</span>, <span class="number">200</span>, <span class="number">15</span>);</span><br><span class="line">    _nameLabel = [[<span class="built_in">UILabel</span> alloc] initWithFrame:nameValueRect];</span><br><span class="line">    [<span class="keyword">self</span>.contentView addSubview:_nameLabel];</span><br><span class="line"></span><br><span class="line">    <span class="built_in">CGRect</span> colorValueRect = <span class="built_in">CGRectMake</span>(<span class="number">80</span>, <span class="number">25</span>, <span class="number">200</span>, <span class="number">15</span>);</span><br><span class="line">    _colorLabel = [[<span class="built_in">UILabel</span> alloc] initWithFrame:colorValueRect];</span><br><span class="line">    [<span class="keyword">self</span>.contentView addSubview:_colorLabel];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">self</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>2.定义全局复用的单元格标识：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="built_in">NSString</span> *CellTableIdentifier = <span class="string">@&quot;CellTableIdentifier&quot;</span>;</span><br></pre></td></tr></table></figure>
-
 <p>3.视图控制器加载完毕后，注册表单元类：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UITableView</span> *tableView = (<span class="keyword">id</span>)[<span class="keyword">self</span>.view viewWithTag:<span class="number">1</span>];</span><br><span class="line">[tableView registerClass:[NameAndColorTableViewCell <span class="keyword">class</span>]</span><br><span class="line">    forCellReuseIdentifier:CellTableIdentifier];</span><br></pre></td></tr></table></figure>
-
 <p>4.设置表的总行数：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSInteger</span>)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line"> numberOfRowsInSection:(<span class="built_in">NSInteger</span>)section &#123;</span><br><span class="line">  <span class="keyword">return</span> [<span class="keyword">self</span>.computers count];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>5.设置表的各行数据：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">UITableViewCell</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">         cellForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  NameAndColorTableViewCell *cell =</span><br><span class="line">      [tableView dequeueReusableCellWithIdentifier:CellTableIdentifier</span><br><span class="line">                                      forIndexPath:indexPath];</span><br><span class="line"></span><br><span class="line">  <span class="built_in">NSDictionary</span> *rowData = <span class="keyword">self</span>.computers[indexPath.row];</span><br><span class="line"></span><br><span class="line">  cell.name = rowData[<span class="string">@&quot;Name&quot;</span>];</span><br><span class="line">  cell.color = rowData[<span class="string">@&quot;Color&quot;</span>];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="Nib文件加载实现定制表视图单元"><a href="#Nib文件加载实现定制表视图单元" class="headerlink" title="Nib文件加载实现定制表视图单元"></a>Nib文件加载实现定制表视图单元</h3><p>1.视图控制器加载完毕后，从Nib文件中注册表单元类：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UITableView</span> *tableView = (<span class="keyword">id</span>)[<span class="keyword">self</span>.view viewWithTag:<span class="number">1</span>];</span><br><span class="line">tableView.rowHeight = <span class="number">65</span>;</span><br><span class="line"></span><br><span class="line"><span class="built_in">UINib</span> *nib = [<span class="built_in">UINib</span> nibWithNibName:<span class="string">@&quot;BIDNameAndColorCell&quot;</span> bundle:<span class="literal">nil</span>];</span><br><span class="line">[tableView registerNib:nib forCellReuseIdentifier:CellTableIdentifier];</span><br></pre></td></tr></table></figure>
-
 <h3 id="实现分组分区"><a href="#实现分组分区" class="headerlink" title="实现分组分区"></a>实现分组分区</h3><p>1.视图加载完成之后，加载数据：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UITableView</span> *tableView = (<span class="keyword">id</span>)[<span class="keyword">self</span>.view viewWithTag:<span class="number">1</span>];</span><br><span class="line">[tableView registerClass:[<span class="built_in">UITableViewCell</span> <span class="keyword">class</span>]</span><br><span class="line">  forCellReuseIdentifier:SectionTableIdentifier];</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSString</span> *path = [[<span class="built_in">NSBundle</span> mainBundle] pathForResource:<span class="string">@&quot;sortednames&quot;</span> ofType:<span class="string">@&quot;plist&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span>.names = [<span class="built_in">NSDictionary</span> dictionaryWithContentsOfFile:path];</span><br><span class="line"><span class="keyword">self</span>.keys = [[<span class="keyword">self</span>.names allKeys] sortedArrayUsingSelector:<span class="keyword">@selector</span>(compare:)];</span><br></pre></td></tr></table></figure>
-
 <p>2.设置每个分区的数据个数：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSInteger</span>)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">numberOfRowsInSection:(<span class="built_in">NSInteger</span>)section &#123;</span><br><span class="line">    <span class="built_in">NSString</span> *key = <span class="keyword">self</span>.keys[section];</span><br><span class="line">    <span class="built_in">NSArray</span> *nameSection = <span class="keyword">self</span>.names[key];</span><br><span class="line">    <span class="keyword">return</span> [nameSection count];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>3.设置每个分区的标题：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSString</span> *)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">titleForHeaderInSection:(<span class="built_in">NSInteger</span>)section &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">self</span>.keys[section];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="实现索引分区"><a href="#实现索引分区" class="headerlink" title="实现索引分区"></a>实现索引分区</h3><p>1.设置索引标题：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSArray</span> *)sectionIndexTitlesForTableView:(<span class="built_in">UITableView</span> *)tableView &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">self</span>.keys;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>2.处理顶端边缘偏移的问题：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (tableView.style == <span class="built_in">UITableViewStylePlain</span>) &#123;</span><br><span class="line">    <span class="built_in">UIEdgeInsets</span> contentInset = tableView.contentInset;</span><br><span class="line">    contentInset.top = <span class="number">20</span>;</span><br><span class="line">    [tableView setContentInset:contentInset];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>3.处理状态栏被干扰的问题：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">UIView</span> *barBackground =</span><br><span class="line">    [[<span class="built_in">UIView</span> alloc] initWithFrame:<span class="built_in">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">320</span>, <span class="number">20</span>)];</span><br><span class="line">barBackground.backgroundColor = [<span class="built_in">UIColor</span> colorWithWhite:<span class="number">1.0</span> alpha:<span class="number">1.0</span>];</span><br><span class="line">[<span class="keyword">self</span>.view addSubview:barBackground];</span><br></pre></td></tr></table></figure>
-
 <h3 id="实现搜索栏"><a href="#实现搜索栏" class="headerlink" title="实现搜索栏"></a>实现搜索栏</h3><p>1.控制器头文件声明遵循的协议：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">SectionsViewController</span></span></span><br><span class="line">    : <span class="built_in">UIViewController</span> &lt;<span class="built_in">UITableViewDelegate</span>, <span class="built_in">UITableViewDataSource</span>, <span class="built_in">UISearchDisplayDelegate</span>&gt;</span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
 <p>2.添加实例变量保存搜索匹配的名字：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSMutableArray</span> *filteredNames;</span><br><span class="line"><span class="built_in">UISearchDisplayController</span> *searchController;</span><br></pre></td></tr></table></figure>
-
 <p>3.搜索栏初始化操作：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">filteredNames = [<span class="built_in">NSMutableArray</span> array];</span><br><span class="line"><span class="built_in">UISearchBar</span> *searchBar = [[<span class="built_in">UISearchBar</span> alloc] initWithFrame:<span class="built_in">CGRectMake</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">320</span>, <span class="number">44</span>)];</span><br><span class="line"></span><br><span class="line">tableView.tableHeaderView = searchBar;</span><br><span class="line">searchController = [[<span class="built_in">UISearchDisplayController</span> alloc] initWithSearchBar:searchBar contentsController:<span class="keyword">self</span>];</span><br><span class="line">searchController.delegate = <span class="keyword">self</span>;</span><br><span class="line">searchController.searchResultsDataSource = <span class="keyword">self</span>;</span><br></pre></td></tr></table></figure>
-
 <p>4.加载搜索结果：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)searchDisplayController:(<span class="built_in">UISearchDisplayController</span> *)controller</span><br><span class="line">  didLoadSearchResultsTableView:(<span class="built_in">UITableView</span> *)tableView &#123;</span><br><span class="line">  [tableView registerClass:[<span class="built_in">UITableViewCell</span> <span class="keyword">class</span>]</span><br><span class="line">      forCellReuseIdentifier:SectionTableIdentifier];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>5.需重新加载搜索结果：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)searchDisplayController:(<span class="built_in">UISearchDisplayController</span> *)controller</span><br><span class="line">    shouldReloadTableForSearchString:(<span class="built_in">NSString</span> *)searchString &#123;</span><br><span class="line">  [filteredNames removeAllObjects];</span><br><span class="line">  <span class="keyword">if</span> (searchString.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="built_in">NSPredicate</span> *predicate =</span><br><span class="line">        [<span class="built_in">NSPredicate</span> predicateWithBlock:^<span class="built_in">BOOL</span>(<span class="built_in">NSString</span> *name, <span class="built_in">NSDictionary</span> *b) &#123;</span><br><span class="line">          <span class="built_in">NSRange</span> range =</span><br><span class="line">              [name rangeOfString:searchString options:<span class="built_in">NSCaseInsensitiveSearch</span>];</span><br><span class="line">          <span class="keyword">return</span> range.location != <span class="built_in">NSNotFound</span>;</span><br><span class="line">        &#125;];</span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">NSString</span> *key <span class="keyword">in</span> <span class="keyword">self</span>.keys) &#123;</span><br><span class="line">      <span class="built_in">NSArray</span> *matches =</span><br><span class="line">          [<span class="keyword">self</span>.names[key] filteredArrayUsingPredicate:predicate];</span><br><span class="line">      [filteredNames addObjectsFromArray:matches];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>6.设置分区索引的颜色：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tableView.sectionIndexBackgroundColor = [<span class="built_in">UIColor</span> blackColor];</span><br><span class="line">tableView.sectionIndexTrackingBackgroundColor = [<span class="built_in">UIColor</span> darkGrayColor];</span><br><span class="line">tableView.sectionIndexColor = [<span class="built_in">UIColor</span> whiteColor];</span><br></pre></td></tr></table></figure>
-
     </div>
 
     
@@ -556,10 +511,10 @@
       <div class="popular-posts-title"><a href="/p/50ab0398.html" rel="bookmark">《精通 iOS 开发》第 05 章学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/d70b26fb.html" rel="bookmark">《精通 iOS 开发》第 07 章学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/7963b76a.html" rel="bookmark">《精通 iOS 开发》第 06 章学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/7963b76a.html" rel="bookmark">《精通 iOS 开发》第 06 章学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/d70b26fb.html" rel="bookmark">《精通 iOS 开发》第 07 章学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/f789d050.html" rel="bookmark">《精通 iOS 开发》第 09 章学习笔记</a></div>
@@ -603,34 +558,32 @@
 </ul>
 </div>
 
-          
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
 
-  <div class="followme">
-    <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
 
-    <div class="social-list">
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
+          <span class="label">Twitter</span>
+        </a>
+      </div>
 
-            <span class="label">Twitter</span>
-          </a>
-        </div>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
+          <span class="label">RSS</span>
+        </a>
+      </div>
   </div>
+</div>
 
           <div class="post-tags">
               <a href="/tags/iOS/" rel="tag"># iOS</a>
@@ -660,8 +613,11 @@
 
 
 
-      
-    <div class="comments" id="valine-comments"></div>
+    
+  <div class="comments">
+    <div id="utterances-container"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -684,18 +640,14 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   &copy; 2015 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -742,7 +694,7 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
@@ -756,18 +708,7 @@
     })();
   </script>
 
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
+<script src="/js/local-search.js"></script>
 
 
 
@@ -794,33 +735,113 @@
     });
   </script>
 
-
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
   <div style="display: none;">
     <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
   </div>
 
 
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
 
 
-
-
-  
-
-  
 
 <script>
-NexT.utils.loadComments('#valine-comments', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
-    new Valine(Object.assign({"enable":true,"appId":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","appKey":"uqTkCbm6jRHkwFOiIDe2qb3i","serverURLs":null,"placeholder":"文明社会，理性评论","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":["nick","mail"]}, {
-      el: '#valine-comments',
-      path: "/p/59e141c1.html",
-      serverURLs: "https://ks9fc0id.api.lncldglobal.com"
-    }));
-  }, window.Valine);
+NexT.utils.loadComments('#utterances-container', () => {
+  const script = document.createElement('script');
+  script.src = 'https://utteranc.es/client.js';
+  script.setAttribute('repo', "xlsdg/blog-comments");
+  script.setAttribute('issue-term', "pathname");
+  script.setAttribute('theme', "github-light");
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  document.querySelector('#utterances-container').appendChild(script);
 });
 </script>
 

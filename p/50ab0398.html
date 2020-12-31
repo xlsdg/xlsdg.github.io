@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
   <link rel="manifest" href="/images/manifest.json">
-  <meta name="msapplication-config" content="/images/browserconfig.xml">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
@@ -22,17 +23,16 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-
-  <meta name="description" content="单个控制器的旋转支持代码示例： 123- (NSUInteger)supportedInterfaceOrientations &amp;#123;  return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight)">
+<meta name="description" content="单个控制器的旋转支持代码示例： 123- (NSUInteger)supportedInterfaceOrientations &amp;#123;  return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="《精通 iOS 开发》第 05 章学习笔记">
 <meta property="og:url" content="https://xlsdg.org/p/50ab0398.html">
@@ -40,7 +40,7 @@
 <meta property="og:description" content="单个控制器的旋转支持代码示例： 123- (NSUInteger)supportedInterfaceOrientations &amp;#123;  return (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-04-28T09:00:00.000Z">
-<meta property="article:modified_time" content="2019-05-02T01:44:12.611Z">
+<meta property="article:modified_time" content="2019-05-02T01:44:12.000Z">
 <meta property="article:author" content="xLsDg">
 <meta property="article:tag" content="iOS">
 <meta property="article:tag" content="Objective-C">
@@ -59,8 +59,7 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>《精通 iOS 开发》第 05 章学习笔记 | xLsDg</title>
+<title>《精通 iOS 开发》第 05 章学习笔记 | xLsDg</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
     <script>
@@ -72,7 +71,6 @@
       }
     </script>
 
-
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -83,13 +81,11 @@
     })();
   </script>
 
-
   <script>
     !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
     gio('init', '93b1fecf6ab1be1a', {});
     gio('send');
   </script>
-
 
   <noscript>
   <style>
@@ -209,8 +205,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -253,14 +248,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E4%B8%AA%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E6%97%8B%E8%BD%AC%E6%94%AF%E6%8C%81"><span class="nav-number">1.</span> <span class="nav-text">单个控制器的旋转支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%B0%83%E6%95%B4%E7%95%8C%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="nav-number">2.</span> <span class="nav-text">代码调整界面布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E6%97%B6%E7%A7%BB%E5%8A%A8%E6%8C%89%E9%92%AE"><span class="nav-number">3.</span> <span class="nav-text">旋转时移动按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E8%A7%86%E5%9B%BE%E5%8A%A0%E8%BD%BD%E5%AE%8C%E5%90%8E%E7%9A%84%E5%B1%8F%E5%B9%95%E6%96%B9%E5%90%91"><span class="nav-number">4.</span> <span class="nav-text">获取视图加载完后的屏幕方向</span></a></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E4%B8%AA%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E6%97%8B%E8%BD%AC%E6%94%AF%E6%8C%81"><span class="nav-number">1.</span> <span class="nav-text">单个控制器的旋转支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E8%B0%83%E6%95%B4%E7%95%8C%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="nav-number">2.</span> <span class="nav-text">代码调整界面布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E6%97%B6%E7%A7%BB%E5%8A%A8%E6%8C%89%E9%92%AE"><span class="nav-number">3.</span> <span class="nav-text">旋转时移动按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E8%A7%86%E5%9B%BE%E5%8A%A0%E8%BD%BD%E5%AE%8C%E5%90%8E%E7%9A%84%E5%B1%8F%E5%B9%95%E6%96%B9%E5%90%91"><span class="nav-number">4.</span> <span class="nav-text">获取视图加载完后的屏幕方向</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="xLsDg"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">xLsDg</p>
@@ -322,7 +318,8 @@
     </ul>
   </div>
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -344,9 +341,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -422,20 +417,6 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/p/50ab0398.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/50ab0398.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -463,16 +444,13 @@
     <div class="post-body" itemprop="articleBody">
         <h3 id="单个控制器的旋转支持"><a href="#单个控制器的旋转支持" class="headerlink" title="单个控制器的旋转支持"></a>单个控制器的旋转支持</h3><p>代码示例：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">NSUInteger</span>)supportedInterfaceOrientations &#123;</span><br><span class="line">  <span class="keyword">return</span> (<span class="built_in">UIInterfaceOrientationMaskPortrait</span> | <span class="built_in">UIInterfaceOrientationMaskLandscapeLeft</span> | <span class="built_in">UIInterfaceOrientationMaskLandscapeRight</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <a id="more"></a>
 
 <h3 id="代码调整界面布局"><a href="#代码调整界面布局" class="headerlink" title="代码调整界面布局"></a>代码调整界面布局</h3><p>在界面构造器中，将<code>Use Autolayout</code>复选框取消选中。</p>
 <h3 id="旋转时移动按钮"><a href="#旋转时移动按钮" class="headerlink" title="旋转时移动按钮"></a>旋转时移动按钮</h3><p>代码示例：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)willAnimateRotationToInterfaceOrientation:(<span class="built_in">UIInterfaceOrientation</span>)toInterfaceOrientation duration:(<span class="built_in">NSTimeInterval</span>)duration &#123;</span><br><span class="line">  [<span class="keyword">self</span> doLayoutForOrientation:toInterfaceOrientation];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)doLayoutForOrientation:(<span class="built_in">UIInterfaceOrientation</span>)orientation &#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="built_in">UIInterfaceOrientationIsPortrait</span>(orientation)) &#123;</span><br><span class="line">    [<span class="keyword">self</span> layoutPortrait];</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    [<span class="keyword">self</span> layoutLandscape];</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="built_in">CGFloat</span> buttonHeight = <span class="number">40</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="built_in">CGFloat</span> buttonWidth = <span class="number">120</span>;</span><br><span class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="built_in">CGFloat</span> spacing = <span class="number">20</span>;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)layoutPortrait &#123;</span><br><span class="line">  <span class="built_in">CGRect</span> b = <span class="keyword">self</span>.view.bounds;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">CGFloat</span> contentWidth = <span class="built_in">CGRectGetWidth</span>(b) - (<span class="number">2</span> * spacing);</span><br><span class="line">  <span class="built_in">CGFloat</span> contentHeight = <span class="built_in">CGRectGetHeight</span>(b) - (<span class="number">4</span> * spacing) - (<span class="number">2</span> * buttonHeight);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">self</span>.contentView.frame = <span class="built_in">CGRectMake</span>(spacing, spacing, contentWidth, contentHeight);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">CGFloat</span> buttonRow1y = contentHeight + (<span class="number">2</span> * spacing);</span><br><span class="line">  <span class="built_in">CGFloat</span> buttonRow2y = buttonRow1y + buttonHeight + spacing;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">CGFloat</span> buttonCol1x = spacing;</span><br><span class="line">  <span class="built_in">CGFloat</span> buttonCol2x = <span class="built_in">CGRectGetWidth</span>(b) - buttonWidth - spacing;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">self</span>.actionButton1.frame = <span class="built_in">CGRectMake</span>(buttonCol1x, buttonRow1y, buttonWidth, buttonHeight);</span><br><span class="line">  <span class="keyword">self</span>.actionButton2.frame = <span class="built_in">CGRectMake</span>(buttonCol2x, buttonRow1y, buttonWidth, buttonHeight);</span><br><span class="line">  <span class="keyword">self</span>.actionButton3.frame = <span class="built_in">CGRectMake</span>(buttonCol1x, buttonRow2y, buttonWidth, buttonHeight);</span><br><span class="line">  <span class="keyword">self</span>.actionButton4.frame = <span class="built_in">CGRectMake</span>(buttonCol2x, buttonRow2y, buttonWidth, buttonHeight);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)layoutLandscape &#123;</span><br><span class="line">  <span class="built_in">CGRect</span> b = <span class="keyword">self</span>.view.bounds;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">CGFloat</span> contentWidth = <span class="built_in">CGRectGetWidth</span>(b) - buttonWidth - (<span class="number">3</span> * spacing);</span><br><span class="line">  <span class="built_in">CGFloat</span> contentHeight = <span class="built_in">CGRectGetHeight</span>(b) - (<span class="number">2</span> * spacing);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">self</span>.contentView.frame = <span class="built_in">CGRectMake</span>(spacing, spacing, contentWidth, contentHeight);</span><br><span class="line"></span><br><span class="line">  <span class="built_in">CGFloat</span> buttonX = <span class="built_in">CGRectGetWidth</span>(b) - buttonWidth - spacing;</span><br><span class="line">  <span class="built_in">CGFloat</span> buttonRow1y = spacing;</span><br><span class="line">  <span class="built_in">CGFloat</span> buttonRow4y = <span class="built_in">CGRectGetHeight</span>(b) - buttonHeight - spacing;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">CGFloat</span> buttonRow2y = buttonRow1y + floor((buttonRow4y - buttonRow1y) * <span class="number">0.333</span>);</span><br><span class="line">  <span class="built_in">CGFloat</span> buttonRow3y = buttonRow1y + floor((buttonRow4y - buttonRow1y) * <span class="number">0.667</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">self</span>.actionButton1.frame = <span class="built_in">CGRectMake</span>(buttonX, buttonRow1y, buttonWidth, buttonHeight);</span><br><span class="line">  <span class="keyword">self</span>.actionButton2.frame = <span class="built_in">CGRectMake</span>(buttonX, buttonRow2y, buttonWidth, buttonHeight);</span><br><span class="line">  <span class="keyword">self</span>.actionButton3.frame = <span class="built_in">CGRectMake</span>(buttonX, buttonRow3y, buttonWidth, buttonHeight);</span><br><span class="line">  <span class="keyword">self</span>.actionButton4.frame = <span class="built_in">CGRectMake</span>(buttonX, buttonRow4y, buttonWidth, buttonHeight);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <h3 id="获取视图加载完后的屏幕方向"><a href="#获取视图加载完后的屏幕方向" class="headerlink" title="获取视图加载完后的屏幕方向"></a>获取视图加载完后的屏幕方向</h3><p>代码示例：</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)viewDidLoad &#123;</span><br><span class="line">  [<span class="keyword">super</span> viewDidLoad];</span><br><span class="line">  <span class="comment">// Do any additional setup after loading the view, typically from a nib.</span></span><br><span class="line">  <span class="built_in">UIApplication</span> *app = [<span class="built_in">UIApplication</span> sharedApplication];</span><br><span class="line">  <span class="built_in">UIInterfaceOrientation</span> currentOrientation = app.statusBarOrientation;</span><br><span class="line">  [<span class="keyword">self</span> doLayoutForOrientation:currentOrientation];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
     </div>
 
     
@@ -485,10 +463,10 @@
       <div class="popular-posts-title"><a href="/p/fec39209.html" rel="bookmark">《精通 iOS 开发》第 04 章学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/d70b26fb.html" rel="bookmark">《精通 iOS 开发》第 07 章学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/7963b76a.html" rel="bookmark">《精通 iOS 开发》第 06 章学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/7963b76a.html" rel="bookmark">《精通 iOS 开发》第 06 章学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/d70b26fb.html" rel="bookmark">《精通 iOS 开发》第 07 章学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/59e141c1.html" rel="bookmark">《精通 iOS 开发》第 08 章学习笔记</a></div>
@@ -535,34 +513,32 @@
 </ul>
 </div>
 
-          
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
 
-  <div class="followme">
-    <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
 
-    <div class="social-list">
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
+          <span class="label">Twitter</span>
+        </a>
+      </div>
 
-            <span class="label">Twitter</span>
-          </a>
-        </div>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
+          <span class="label">RSS</span>
+        </a>
+      </div>
   </div>
+</div>
 
           <div class="post-tags">
               <a href="/tags/iOS/" rel="tag"># iOS</a>
@@ -592,8 +568,11 @@
 
 
 
-      
-    <div class="comments" id="valine-comments"></div>
+    
+  <div class="comments">
+    <div id="utterances-container"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -616,18 +595,14 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   &copy; 2015 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -674,7 +649,7 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
@@ -688,18 +663,7 @@
     })();
   </script>
 
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
+<script src="/js/local-search.js"></script>
 
 
 
@@ -726,33 +690,113 @@
     });
   </script>
 
-
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
   <div style="display: none;">
     <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
   </div>
 
 
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
 
 
-
-
-  
-
-  
 
 <script>
-NexT.utils.loadComments('#valine-comments', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
-    new Valine(Object.assign({"enable":true,"appId":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","appKey":"uqTkCbm6jRHkwFOiIDe2qb3i","serverURLs":null,"placeholder":"文明社会，理性评论","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":["nick","mail"]}, {
-      el: '#valine-comments',
-      path: "/p/50ab0398.html",
-      serverURLs: "https://ks9fc0id.api.lncldglobal.com"
-    }));
-  }, window.Valine);
+NexT.utils.loadComments('#utterances-container', () => {
+  const script = document.createElement('script');
+  script.src = 'https://utteranc.es/client.js';
+  script.setAttribute('repo', "xlsdg/blog-comments");
+  script.setAttribute('issue-term', "pathname");
+  script.setAttribute('theme', "github-light");
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  document.querySelector('#utterances-container').appendChild(script);
 });
 </script>
 

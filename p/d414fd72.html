@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.3.0">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
   <link rel="manifest" href="/images/manifest.json">
-  <meta name="msapplication-config" content="/images/browserconfig.xml">
   <meta http-equiv="Cache-Control" content="no-transform">
   <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
@@ -22,17 +23,16 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.0/css/all.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-
-  <meta name="description" content="for循环for-in（数组，集合，字典，字符串类似）： 12345678for index in 1...5 &amp;#123;    println(&quot;\(index) times 5 is \(index * 5)&quot;)&amp;#125;&#x2F;&#x2F; 1 times 5 is 5&#x2F;&#x2F; 2 times 5 is 10&#x2F;&#x2F; 3 times 5 is 15&#x2F;&#x2F; 4 times 5 is 20&#x2F;&#x2F; 5">
+<meta name="description" content="for循环for-in（数组，集合，字典，字符串类似）： 12345678for index in 1...5 &amp;#123;    println(&quot;\(index) times 5 is \(index * 5)&quot;)&amp;#125;&#x2F;&#x2F; 1 times 5 is 5&#x2F;&#x2F; 2 times 5 is 10&#x2F;&#x2F; 3 times 5 is 15&#x2F;&#x2F; 4 times 5 is 20&#x2F;&#x2F; 5">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift 语言之控制流学习笔记">
 <meta property="og:url" content="https://xlsdg.org/p/d414fd72.html">
@@ -40,7 +40,7 @@
 <meta property="og:description" content="for循环for-in（数组，集合，字典，字符串类似）： 12345678for index in 1...5 &amp;#123;    println(&quot;\(index) times 5 is \(index * 5)&quot;)&amp;#125;&#x2F;&#x2F; 1 times 5 is 5&#x2F;&#x2F; 2 times 5 is 10&#x2F;&#x2F; 3 times 5 is 15&#x2F;&#x2F; 4 times 5 is 20&#x2F;&#x2F; 5">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-04-22T01:00:00.000Z">
-<meta property="article:modified_time" content="2019-05-02T01:44:12.620Z">
+<meta property="article:modified_time" content="2019-05-02T01:44:12.000Z">
 <meta property="article:author" content="xLsDg">
 <meta property="article:tag" content="iOS">
 <meta property="article:tag" content="Swift">
@@ -59,8 +59,7 @@
     lang   : 'zh-CN'
   };
 </script>
-
-  <title>Swift 语言之控制流学习笔记 | xLsDg</title>
+<title>Swift 语言之控制流学习笔记 | xLsDg</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
     <script>
@@ -72,7 +71,6 @@
       }
     </script>
 
-
   <script>
     var _hmt = _hmt || [];
     (function() {
@@ -83,13 +81,11 @@
     })();
   </script>
 
-
   <script>
     !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
     gio('init', '93b1fecf6ab1be1a', {});
     gio('send');
   </script>
-
 
   <noscript>
   <style>
@@ -209,8 +205,7 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
+    <div class="popup search-popup"><div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -253,14 +248,15 @@
         </li>
       </ul>
 
-      <!--noindex-->
-      <section class="post-toc-wrap sidebar-panel">
-          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.</span> <span class="nav-text">while循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.</span> <span class="nav-text">条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6%E8%BD%AC%E7%A7%BB%E8%AF%AD%E5%8F%A5"><span class="nav-number">4.</span> <span class="nav-text">控制转移语句</span></a></li></ol></div>
-      </section>
-      <!--/noindex-->
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#for%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.</span> <span class="nav-text">for循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while%E5%BE%AA%E7%8E%AF"><span class="nav-number">2.</span> <span class="nav-text">while循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="nav-number">3.</span> <span class="nav-text">条件语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A7%E5%88%B6%E8%BD%AC%E7%A7%BB%E8%AF%AD%E5%8F%A5"><span class="nav-number">4.</span> <span class="nav-text">控制转移语句</span></a></li></ol></div>
+        </section>
+        <!--/noindex-->
 
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="xLsDg"
       src="/images/avatar.png">
   <p class="site-author-name" itemprop="name">xLsDg</p>
@@ -322,7 +318,8 @@
     </ul>
   </div>
 
-      </section>
+        </section>
+      </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -344,9 +341,7 @@
 
 
     <div class="main-inner post posts-expand">
-      
 
-      
 
   
 
@@ -422,20 +417,6 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/p/d414fd72.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/p/d414fd72.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -463,51 +444,36 @@
     <div class="post-body" itemprop="articleBody">
         <h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><p>for-in（数组，集合，字典，字符串类似）：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">1</span>...<span class="number">5</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(index) times 5 is \(index * 5)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1 times 5 is 5</span></span><br><span class="line"><span class="comment">// 2 times 5 is 10</span></span><br><span class="line"><span class="comment">// 3 times 5 is 15</span></span><br><span class="line"><span class="comment">// 4 times 5 is 20</span></span><br><span class="line"><span class="comment">// 5 times 5 is 25</span></span><br></pre></td></tr></table></figure>
-
 <a id="more"></a>
 
 <p>忽略对值的访问：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> base = <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> power = <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> answer = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> <span class="number">_</span> <span class="keyword">in</span> <span class="number">1</span>...power &#123;</span><br><span class="line">    answer *= base</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;\(base) to the power of \(power) is \(answer)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;3 to the power of 10 is 59049&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>for循环：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="keyword">var</span> index = <span class="number">0</span>; index &lt; <span class="number">3</span>; ++index &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;index is \(index)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// index is 0</span></span><br><span class="line"><span class="comment">// index is 1</span></span><br><span class="line"><span class="comment">// index is 2</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><p>while循环：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> square = <span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> diceRoll = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> square &lt; finalSquare &#123;</span><br><span class="line">    <span class="comment">// roll the dice</span></span><br><span class="line">    <span class="keyword">if</span> ++diceRoll == <span class="number">7</span> &#123; diceRoll = <span class="number">1</span> &#125;</span><br><span class="line">    <span class="comment">// move by the rolled amount</span></span><br><span class="line">    square += diceRoll</span><br><span class="line">    <span class="keyword">if</span> square &lt; board.<span class="built_in">count</span> &#123;</span><br><span class="line">        <span class="comment">// if we&#x27;re still on the board, move up or down for a snake or a ladder</span></span><br><span class="line">        square += board[square]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;Game over!&quot;</span>)</span><br></pre></td></tr></table></figure>
-
 <p>do-while循环：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> finalSquare = <span class="number">25</span></span><br><span class="line"><span class="keyword">var</span> board = [<span class="type">Int</span>](<span class="built_in">count</span>: finalSquare + <span class="number">1</span>, repeatedValue: <span class="number">0</span>)</span><br><span class="line">board[<span class="number">03</span>] = +<span class="number">08</span>; board[<span class="number">06</span>] = +<span class="number">11</span>; board[<span class="number">09</span>] = +<span class="number">09</span>; board[<span class="number">10</span>] = +<span class="number">02</span></span><br><span class="line">board[<span class="number">14</span>] = -<span class="number">10</span>; board[<span class="number">19</span>] = -<span class="number">11</span>; board[<span class="number">22</span>] = -<span class="number">02</span>; board[<span class="number">24</span>] = -<span class="number">08</span></span><br><span class="line"><span class="keyword">var</span> square = <span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> diceRoll = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="comment">// move up or down for a snake or ladder</span></span><br><span class="line">    square += board[square]</span><br><span class="line">    <span class="comment">// roll the dice</span></span><br><span class="line">    <span class="keyword">if</span> ++diceRoll == <span class="number">7</span> &#123; diceRoll = <span class="number">1</span> &#125;</span><br><span class="line">    <span class="comment">// move by the rolled amount</span></span><br><span class="line">    square += diceRoll</span><br><span class="line">&#125; <span class="keyword">while</span> square &lt; finalSquare</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;Game over!&quot;</span>)</span><br></pre></td></tr></table></figure>
-
 <h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><p>if语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">temperatureInFahrenheit = <span class="number">90</span></span><br><span class="line"><span class="keyword">if</span> temperatureInFahrenheit &lt;= <span class="number">32</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;It&#x27;s very cold. Consider wearing a scarf.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> temperatureInFahrenheit &gt;= <span class="number">86</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;It&#x27;s really warm. Don&#x27;t forget to wear sunscreen.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;It&#x27;s not that cold. Wear a t-shirt.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;It&#x27;s really warm. Don&#x27;t forget to wear sunscreen.&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>switch语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> someCharacter: <span class="type">Character</span> = <span class="string">&quot;e&quot;</span></span><br><span class="line"><span class="keyword">switch</span> someCharacter &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;a&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;i&quot;</span>, <span class="string">&quot;o&quot;</span>, <span class="string">&quot;u&quot;</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(someCharacter) is a vowel&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>, <span class="string">&quot;d&quot;</span>, <span class="string">&quot;f&quot;</span>, <span class="string">&quot;g&quot;</span>, <span class="string">&quot;h&quot;</span>, <span class="string">&quot;j&quot;</span>, <span class="string">&quot;k&quot;</span>, <span class="string">&quot;l&quot;</span>, <span class="string">&quot;m&quot;</span>,</span><br><span class="line"><span class="string">&quot;n&quot;</span>, <span class="string">&quot;p&quot;</span>, <span class="string">&quot;q&quot;</span>, <span class="string">&quot;r&quot;</span>, <span class="string">&quot;s&quot;</span>, <span class="string">&quot;t&quot;</span>, <span class="string">&quot;v&quot;</span>, <span class="string">&quot;w&quot;</span>, <span class="string">&quot;x&quot;</span>, <span class="string">&quot;y&quot;</span>, <span class="string">&quot;z&quot;</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(someCharacter) is a consonant&quot;</span>)</span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(someCharacter) is not a vowel or a consonant&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;e is a vowel&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>范围匹配：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="built_in">count</span> = <span class="number">3_000_000_000_000</span></span><br><span class="line"><span class="keyword">let</span> countedThings = <span class="string">&quot;stars in the Milky Way&quot;</span></span><br><span class="line"><span class="keyword">var</span> naturalCount: <span class="type">String</span></span><br><span class="line"><span class="keyword">switch</span> <span class="built_in">count</span> &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;no&quot;</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">1</span>...<span class="number">3</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;a few&quot;</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">4</span>...<span class="number">9</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;several&quot;</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">10</span>...<span class="number">99</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;tens of&quot;</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">100</span>...<span class="number">999</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;hundreds of&quot;</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">1000</span>...<span class="number">999_999</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;thousands of&quot;</span></span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    naturalCount = <span class="string">&quot;millions and millions of&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;There are \(naturalCount) \(countedThings).&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;There are millions and millions of stars in the Milky Way.&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>元组：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> somePoint = (<span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line"><span class="keyword">switch</span> somePoint &#123;</span><br><span class="line"><span class="keyword">case</span> (<span class="number">0</span>, <span class="number">0</span>):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(0, 0) is at the origin&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> (<span class="number">_</span>, <span class="number">0</span>):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(\(somePoint.0), 0) is on the x-axis&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> (<span class="number">0</span>, <span class="number">_</span>):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(0, \(somePoint.1)) is on the y-axis&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> (-<span class="number">2</span>...<span class="number">2</span>, -<span class="number">2</span>...<span class="number">2</span>):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(\(somePoint.0), \(somePoint.1)) is inside the box&quot;</span>)</span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(\(somePoint.0), \(somePoint.1)) is outside of the box&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;(1, 1) is inside the box&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>值绑定：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> anotherPoint = (<span class="number">2</span>, <span class="number">0</span>)</span><br><span class="line"><span class="keyword">switch</span> anotherPoint &#123;</span><br><span class="line"><span class="keyword">case</span> (<span class="keyword">let</span> x, <span class="number">0</span>):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;on the x-axis with an x value of \(x)&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> (<span class="number">0</span>, <span class="keyword">let</span> y):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;on the y-axis with a y value of \(y)&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> (x, y):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;somewhere else at (\(x), \(y))&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>where语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> yetAnotherPoint = (<span class="number">1</span>, -<span class="number">1</span>)</span><br><span class="line"><span class="keyword">switch</span> yetAnotherPoint &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> (x, y) <span class="keyword">where</span> x == y:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(\(x), \(y)) is on the line x == y&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> (x, y) <span class="keyword">where</span> x == -y:</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(\(x), \(y)) is on the line x == -y&quot;</span>)</span><br><span class="line"><span class="keyword">case</span> <span class="keyword">let</span> (x, y):</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;(\(x), \(y)) is just some arbitrary point&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;(1, -1) is on the line x == -y&quot;</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="控制转移语句"><a href="#控制转移语句" class="headerlink" title="控制转移语句"></a>控制转移语句</h3><p>continue语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> puzzleInput = <span class="string">&quot;great minds think alike&quot;</span></span><br><span class="line"><span class="keyword">var</span> puzzleOutput = <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="keyword">for</span> character <span class="keyword">in</span> puzzleInput &#123;</span><br><span class="line">    <span class="keyword">switch</span> character &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">&quot;a&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;i&quot;</span>, <span class="string">&quot;o&quot;</span>, <span class="string">&quot;u&quot;</span>, <span class="string">&quot; &quot;</span>:</span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        puzzleOutput.append(character)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(puzzleOutput)</span><br><span class="line"><span class="comment">// prints &quot;grtmndsthnklk&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>break语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> numberSymbol: <span class="type">Character</span> = <span class="string">&quot;三&quot;</span>  <span class="comment">// Simplified Chinese for the number 3</span></span><br><span class="line"><span class="keyword">var</span> possibleIntegerValue: <span class="type">Int?</span></span><br><span class="line"><span class="keyword">switch</span> numberSymbol &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;1&quot;</span>, <span class="string">&quot;١&quot;</span>, <span class="string">&quot;一&quot;</span>, <span class="string">&quot;๑&quot;</span>:</span><br><span class="line">    possibleIntegerValue = <span class="number">1</span></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;2&quot;</span>, <span class="string">&quot;٢&quot;</span>, <span class="string">&quot;二&quot;</span>, <span class="string">&quot;๒&quot;</span>:</span><br><span class="line">    possibleIntegerValue = <span class="number">2</span></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;3&quot;</span>, <span class="string">&quot;٣&quot;</span>, <span class="string">&quot;三&quot;</span>, <span class="string">&quot;๓&quot;</span>:</span><br><span class="line">    possibleIntegerValue = <span class="number">3</span></span><br><span class="line"><span class="keyword">case</span> <span class="string">&quot;4&quot;</span>, <span class="string">&quot;٤&quot;</span>, <span class="string">&quot;四&quot;</span>, <span class="string">&quot;๔&quot;</span>:</span><br><span class="line">    possibleIntegerValue = <span class="number">4</span></span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> integerValue = possibleIntegerValue &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The integer value of \(numberSymbol) is \(integerValue).&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;An integer value could not be found for \(numberSymbol).&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The integer value of 三 is 3.&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>fallthrough语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> integerToDescribe = <span class="number">5</span></span><br><span class="line"><span class="keyword">var</span> description = <span class="string">&quot;The number \(integerToDescribe) is&quot;</span></span><br><span class="line"><span class="keyword">switch</span> integerToDescribe &#123;</span><br><span class="line"><span class="keyword">case</span> <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">13</span>, <span class="number">17</span>, <span class="number">19</span>:</span><br><span class="line">    description += <span class="string">&quot; a prime number, and also&quot;</span></span><br><span class="line">    <span class="keyword">fallthrough</span></span><br><span class="line"><span class="keyword">default</span>:</span><br><span class="line">    description += <span class="string">&quot; an integer.&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(description)</span><br><span class="line"><span class="comment">// prints &quot;The number 5 is a prime number, and also an integer.&quot;</span></span><br></pre></td></tr></table></figure>
-
 <p>带标签的语句：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> finalSquare = <span class="number">25</span></span><br><span class="line"><span class="keyword">var</span> board = [<span class="type">Int</span>](<span class="built_in">count</span>: finalSquare + <span class="number">1</span>, repeatedValue: <span class="number">0</span>)</span><br><span class="line">board[<span class="number">03</span>] = +<span class="number">08</span>; board[<span class="number">06</span>] = +<span class="number">11</span>; board[<span class="number">09</span>] = +<span class="number">09</span>; board[<span class="number">10</span>] = +<span class="number">02</span></span><br><span class="line">board[<span class="number">14</span>] = -<span class="number">10</span>; board[<span class="number">19</span>] = -<span class="number">11</span>; board[<span class="number">22</span>] = -<span class="number">02</span>; board[<span class="number">24</span>] = -<span class="number">08</span></span><br><span class="line"><span class="keyword">var</span> square = <span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> diceRoll = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">gameLoop: <span class="keyword">while</span> square != finalSquare &#123;</span><br><span class="line">    <span class="keyword">if</span> ++diceRoll == <span class="number">7</span> &#123; diceRoll = <span class="number">1</span> &#125;</span><br><span class="line">    <span class="keyword">switch</span> square + diceRoll &#123;</span><br><span class="line">    <span class="keyword">case</span> finalSquare:</span><br><span class="line">        <span class="comment">// diceRoll will move us to the final square, so the game is over</span></span><br><span class="line">        <span class="keyword">break</span> gameLoop</span><br><span class="line">    <span class="keyword">case</span> <span class="keyword">let</span> newSquare <span class="keyword">where</span> newSquare &gt; finalSquare:</span><br><span class="line">        <span class="comment">// diceRoll will move us beyond the final square, so roll again</span></span><br><span class="line">        <span class="keyword">continue</span> gameLoop</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="comment">// this is a valid move, so find out its effect</span></span><br><span class="line">        square += diceRoll</span><br><span class="line">        square += board[square]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;Game over!&quot;</span>)</span><br></pre></td></tr></table></figure>
-
     </div>
 
     
@@ -570,34 +536,32 @@
 </ul>
 </div>
 
-          
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
 
-  <div class="followme">
-    <span>欢迎关注我的其它发布渠道</span>
+  <div class="social-list">
 
-    <div class="social-list">
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="https://twitter.com/xlsdg">
-            <span class="icon">
-              <i class="fab fa-twitter"></i>
-            </span>
+          <span class="label">Twitter</span>
+        </a>
+      </div>
 
-            <span class="label">Twitter</span>
-          </a>
-        </div>
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/atom.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
-    </div>
+          <span class="label">RSS</span>
+        </a>
+      </div>
   </div>
+</div>
 
           <div class="post-tags">
               <a href="/tags/iOS/" rel="tag"># iOS</a>
@@ -627,8 +591,11 @@
 
 
 
-      
-    <div class="comments" id="valine-comments"></div>
+    
+  <div class="comments">
+    <div id="utterances-container"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -651,18 +618,14 @@
     });
   }
 </script>
-
-    </div>
+</div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      
 
-      
 
 <div class="copyright">
-  
   &copy; 2015 – 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
@@ -709,7 +672,7 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
@@ -723,18 +686,7 @@
     })();
   </script>
 
-
-
-
-  <script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
+<script src="/js/local-search.js"></script>
 
 
 
@@ -761,33 +713,113 @@
     });
   </script>
 
-
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 
   <div style="display: none;">
     <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
   </div>
 
 
+<script>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
+
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
+</script>
 
 
-
-
-  
-
-  
 
 <script>
-NexT.utils.loadComments('#valine-comments', () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', () => {
-    new Valine(Object.assign({"enable":true,"appId":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","appKey":"uqTkCbm6jRHkwFOiIDe2qb3i","serverURLs":null,"placeholder":"文明社会，理性评论","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":true,"comment_count":true,"recordIP":true,"enableQQ":false,"requiredFields":["nick","mail"]}, {
-      el: '#valine-comments',
-      path: "/p/d414fd72.html",
-      serverURLs: "https://ks9fc0id.api.lncldglobal.com"
-    }));
-  }, window.Valine);
+NexT.utils.loadComments('#utterances-container', () => {
+  const script = document.createElement('script');
+  script.src = 'https://utteranc.es/client.js';
+  script.setAttribute('repo', "xlsdg/blog-comments");
+  script.setAttribute('issue-term', "pathname");
+  script.setAttribute('theme', "github-light");
+  script.crossOrigin = 'anonymous';
+  script.async = true;
+  document.querySelector('#utterances-container').appendChild(script);
 });
 </script>
 
