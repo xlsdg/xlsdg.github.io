@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.3.0">
+<meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
@@ -12,8 +12,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
   <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
   <link rel="manifest" href="/images/manifest.json">
-  <meta http-equiv="Cache-Control" content="no-transform">
-  <meta http-equiv="Cache-Control" content="no-siteapp">
   <meta name="google-site-verification" content="zhaw_tiwtlyG0csTTPqb0XVHgxiXKYgsLrWbLNrlFSA">
   <meta name="msvalidate.01" content="CF69BFDC6D5AD24F7037CBEF9B558B84">
   <meta name="yandex-verification" content="20d8ac9dbb5dee76">
@@ -23,21 +21,21 @@
 
 
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
-  <script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.1.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
-<meta name="description" content="赋值运算符1234let b &#x3D; 10var a &#x3D; 5a &#x3D; b&#x2F;&#x2F; a is now equal to 10 算术运算符123451 + 2       &#x2F;&#x2F; equals 35 - 3       &#x2F;&#x2F; equals 22 * 3       &#x2F;&#x2F; equals 610.0 &#x2F; 2.5  &#x2F;&#x2F; equals 4.0&quot;hello, &quot; + &quot;world&quot;">
+<meta name="description" content="赋值运算符1234let b &#x3D; 10var a &#x3D; 5a &#x3D; b&#x2F;&#x2F; a is now equal to 10  算术运算符123451 + 2       &#x2F;&#x2F; equals 35 - 3       &#x2F;&#x2F; equals 22 * 3       &#x2F;&#x2F; equals 610.0 &#x2F; 2.5  &#x2F;&#x2F; equals 4.0&quot;hello, &quot; + &quot;world&amp;quot">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift 语言之基本运算符学习笔记">
 <meta property="og:url" content="https://xlsdg.org/p/dd188d84.html">
 <meta property="og:site_name" content="xLsDg">
-<meta property="og:description" content="赋值运算符1234let b &#x3D; 10var a &#x3D; 5a &#x3D; b&#x2F;&#x2F; a is now equal to 10 算术运算符123451 + 2       &#x2F;&#x2F; equals 35 - 3       &#x2F;&#x2F; equals 22 * 3       &#x2F;&#x2F; equals 610.0 &#x2F; 2.5  &#x2F;&#x2F; equals 4.0&quot;hello, &quot; + &quot;world&quot;">
+<meta property="og:description" content="赋值运算符1234let b &#x3D; 10var a &#x3D; 5a &#x3D; b&#x2F;&#x2F; a is now equal to 10  算术运算符123451 + 2       &#x2F;&#x2F; equals 35 - 3       &#x2F;&#x2F; equals 22 * 3       &#x2F;&#x2F; equals 610.0 &#x2F; 2.5  &#x2F;&#x2F; equals 4.0&quot;hello, &quot; + &quot;world&amp;quot">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2015-04-19T01:00:00.000Z">
 <meta property="article:modified_time" content="2019-05-02T01:44:12.000Z">
@@ -87,6 +85,7 @@
     gio('send');
   </script>
 
+
   <noscript>
   <style>
   body { margin-top: 2rem; }
@@ -132,7 +131,7 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
+    <div class="toggle" aria-label="切换导航栏" role="button">
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
         <span class="toggle-line"></span>
@@ -160,41 +159,13 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">25</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">14</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">41</span></a>
-
-  </li>
-        <li class="menu-item menu-item-sitemap">
-
-    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
-
-  </li>
-        <li class="menu-item menu-item-commonweal">
-
-    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
-
-  </li>
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">25</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">14</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">41</span></a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+        <li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -214,7 +185,7 @@
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
-  <span class="popup-btn-close">
+  <span class="popup-btn-close" role="button">
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
@@ -230,7 +201,7 @@
 </div>
         
   
-  <div class="toggle sidebar-toggle">
+  <div class="toggle sidebar-toggle" role="button">
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
     <span class="toggle-line"></span>
@@ -250,12 +221,12 @@
 
       <div class="sidebar-panel-container">
         <!--noindex-->
-        <section class="post-toc-wrap sidebar-panel">
+        <div class="post-toc-wrap sidebar-panel">
             <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">2.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B1%82%E4%BD%99%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.</span> <span class="nav-text">求余运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E6%B1%82%E4%BD%99%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">4.</span> <span class="nav-text">浮点数求余运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%A2%9E%E5%92%8C%E8%87%AA%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.</span> <span class="nav-text">自增和自减运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8D%95%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">6.</span> <span class="nav-text">单目运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%8D%E5%90%88%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">7.</span> <span class="nav-text">复合赋值运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">8.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E7%9B%AE%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">9.</span> <span class="nav-text">三目条件运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nil%E5%90%88%E5%B9%B6%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">10.</span> <span class="nav-text">nil合并运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8C%BA%E9%97%B4%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">11.</span> <span class="nav-text">区间运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">12.</span> <span class="nav-text">逻辑运算符</span></a></li></ol></div>
-        </section>
+        </div>
         <!--/noindex-->
 
-        <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview-wrap sidebar-panel">
           <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="xLsDg"
       src="/images/avatar.png">
@@ -318,7 +289,7 @@
     </ul>
   </div>
 
-        </section>
+        </div>
       </div>
     </div>
   </aside>
@@ -328,7 +299,7 @@
     </header>
 
     
-  <div class="back-to-top">
+  <div class="back-to-top" role="button">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -443,34 +414,52 @@
     
     <div class="post-body" itemprop="articleBody">
         <h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> b = <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">5</span></span><br><span class="line">a = b</span><br><span class="line"><span class="comment">// a is now equal to 10</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">2</span>       <span class="comment">// equals 3</span></span><br><span class="line"><span class="number">5</span> - <span class="number">3</span>       <span class="comment">// equals 2</span></span><br><span class="line"><span class="number">2</span> * <span class="number">3</span>       <span class="comment">// equals 6</span></span><br><span class="line"><span class="number">10.0</span> / <span class="number">2.5</span>  <span class="comment">// equals 4.0</span></span><br><span class="line"><span class="string">&quot;hello, &quot;</span> + <span class="string">&quot;world&quot;</span>  <span class="comment">// equals &quot;hello, world&quot;</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
+
+<span id="more"></span>
 
 <h3 id="求余运算符"><a href="#求余运算符" class="headerlink" title="求余运算符"></a>求余运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">9</span> % <span class="number">4</span>    <span class="comment">// equals 1</span></span><br><span class="line">-<span class="number">9</span> % <span class="number">4</span>   <span class="comment">// equals -1</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="浮点数求余运算符"><a href="#浮点数求余运算符" class="headerlink" title="浮点数求余运算符"></a>浮点数求余运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">8</span> % <span class="number">2.5</span>   <span class="comment">// equals 0.5</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="自增和自减运算符"><a href="#自增和自减运算符" class="headerlink" title="自增和自减运算符"></a>自增和自减运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">0</span></span><br><span class="line"><span class="keyword">let</span> b = ++a</span><br><span class="line"><span class="comment">// a and b are now both equal to 1</span></span><br><span class="line"><span class="keyword">let</span> <span class="built_in">c</span> = a++</span><br><span class="line"><span class="comment">// a is now equal to 2, but c has been set to the pre-increment value of 1</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="单目运算符"><a href="#单目运算符" class="headerlink" title="单目运算符"></a>单目运算符</h3><p>单目负号运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> three = <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> minusThree = -three       <span class="comment">// minusThree equals -3</span></span><br><span class="line"><span class="keyword">let</span> plusThree = -minusThree   <span class="comment">// plusThree equals 3, or &quot;minus minus three&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>单目正号运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> minusSix = -<span class="number">6</span></span><br><span class="line"><span class="keyword">let</span> alsoMinusSix = +minusSix  <span class="comment">// alsoMinusSix equals -6</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="复合赋值运算符"><a href="#复合赋值运算符" class="headerlink" title="复合赋值运算符"></a>复合赋值运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span></span><br><span class="line">a += <span class="number">2</span></span><br><span class="line"><span class="comment">// a is now equal to 3</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> == <span class="number">1</span>   <span class="comment">// true, because 1 is equal to 1</span></span><br><span class="line"><span class="number">2</span> != <span class="number">1</span>   <span class="comment">// true, because 2 is not equal to 1</span></span><br><span class="line"><span class="number">2</span> &gt; <span class="number">1</span>    <span class="comment">// true, because 2 is greater than 1</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="number">2</span>    <span class="comment">// true, because 1 is less than 2</span></span><br><span class="line"><span class="number">1</span> &gt;= <span class="number">1</span>   <span class="comment">// true, because 1 is greater than or equal to 1</span></span><br><span class="line"><span class="number">2</span> &lt;= <span class="number">1</span>   <span class="comment">// false, because 2 is not less than or equal to 1</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="三目条件运算符"><a href="#三目条件运算符" class="headerlink" title="三目条件运算符"></a>三目条件运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> contentHeight = <span class="number">40</span></span><br><span class="line"><span class="keyword">let</span> hasHeader = <span class="literal">true</span></span><br><span class="line"><span class="keyword">let</span> rowHeight = contentHeight + (hasHeader ? <span class="number">50</span> : <span class="number">20</span>)</span><br><span class="line"><span class="comment">// rowHeight is equal to 90</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="nil合并运算符"><a href="#nil合并运算符" class="headerlink" title="nil合并运算符"></a>nil合并运算符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> defaultColorName = <span class="string">&quot;red&quot;</span></span><br><span class="line"><span class="keyword">var</span> userDefinedColorName: <span class="type">String?</span>   <span class="comment">// defaults to nil</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> colorNameToUse = userDefinedColorName ?? defaultColorName</span><br><span class="line"><span class="comment">// userDefinedColorName is nil, so colorNameToUse is set to the default of &quot;red&quot;</span></span><br><span class="line"></span><br><span class="line">userDefinedColorName = <span class="string">&quot;green&quot;</span></span><br><span class="line">colorNameToUse = userDefinedColorName ?? defaultColorName</span><br><span class="line"><span class="comment">// userDefinedColorName is not nil, so colorNameToUse is set to &quot;green&quot;</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="区间运算符"><a href="#区间运算符" class="headerlink" title="区间运算符"></a>区间运算符</h3><p>闭区间运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> index <span class="keyword">in</span> <span class="number">1</span>...<span class="number">5</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(index) times 5 is \(index * 5)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 1 times 5 is 5</span></span><br><span class="line"><span class="comment">// 2 times 5 is 10</span></span><br><span class="line"><span class="comment">// 3 times 5 is 15</span></span><br><span class="line"><span class="comment">// 4 times 5 is 20</span></span><br><span class="line"><span class="comment">// 5 times 5 is 25</span></span><br></pre></td></tr></table></figure>
+
 <p>半闭区间运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> names = [<span class="string">&quot;Anna&quot;</span>, <span class="string">&quot;Alex&quot;</span>, <span class="string">&quot;Brian&quot;</span>, <span class="string">&quot;Jack&quot;</span>]</span><br><span class="line"><span class="keyword">let</span> <span class="built_in">count</span> = names.<span class="built_in">count</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="number">0</span>..&lt;<span class="built_in">count</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Person \(i + 1) is called \(names[i])&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Person 1 is called Anna</span></span><br><span class="line"><span class="comment">// Person 2 is called Alex</span></span><br><span class="line"><span class="comment">// Person 3 is called Brian</span></span><br><span class="line"><span class="comment">// Person 4 is called Jack</span></span><br></pre></td></tr></table></figure>
+
 <h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>逻辑非运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> allowedEntry = <span class="literal">false</span></span><br><span class="line"><span class="keyword">if</span> !allowedEntry &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;ACCESS DENIED&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;ACCESS DENIED&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>逻辑与运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> enteredDoorCode = <span class="literal">true</span></span><br><span class="line"><span class="keyword">let</span> passedRetinaScan = <span class="literal">false</span></span><br><span class="line"><span class="keyword">if</span> enteredDoorCode &amp;&amp; passedRetinaScan &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Welcome!&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;ACCESS DENIED&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;ACCESS DENIED&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>逻辑或运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> hasDoorKey = <span class="literal">false</span></span><br><span class="line"><span class="keyword">let</span> knowsOverridePassword = <span class="literal">true</span></span><br><span class="line"><span class="keyword">if</span> hasDoorKey || knowsOverridePassword &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Welcome!&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;ACCESS DENIED&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Welcome!&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>组合逻辑运算符：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> enteredDoorCode &amp;&amp; passedRetinaScan || hasDoorKey || knowsOverridePassword &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Welcome!&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;ACCESS DENIED&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Welcome!&quot;</span></span><br></pre></td></tr></table></figure>
+
 <p>显式圆括号：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (enteredDoorCode &amp;&amp; passedRetinaScan) || hasDoorKey || knowsOverridePassword &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Welcome!&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;ACCESS DENIED&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Welcome!&quot;</span></span><br></pre></td></tr></table></figure>
+
     </div>
 
     
@@ -588,11 +577,7 @@
 
 
 
-    
-  <div class="comments">
-    <div id="utterances-container"></div>
-  </div>
-  
+    <div class="comments utterances-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -624,7 +609,7 @@
 
 <div class="copyright">
   &copy; 2015 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
@@ -669,20 +654,10 @@
   </footer>
 
   
-  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
-  <script>
-    (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-    })();
-  </script>
-
 <script src="/js/local-search.js"></script>
 
 
@@ -712,10 +687,6 @@
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  <div style="display: none;">
-    <script src="//s95.cnzz.com/z_stat.php?id=1273883269&web_id=1273883269"></script>
-  </div>
 
 
 <script>
@@ -808,7 +779,7 @@
 
 
 <script>
-NexT.utils.loadComments('#utterances-container', () => {
+NexT.utils.loadComments('.utterances-container', () => {
   const script = document.createElement('script');
   script.src = 'https://utteranc.es/client.js';
   script.setAttribute('repo', "xlsdg/blog-comments");
@@ -816,7 +787,7 @@ NexT.utils.loadComments('#utterances-container', () => {
   script.setAttribute('theme', "github-light");
   script.crossOrigin = 'anonymous';
   script.async = true;
-  document.querySelector('#utterances-container').appendChild(script);
+  document.querySelector('.utterances-container').appendChild(script);
 });
 </script>
 
