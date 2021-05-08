@@ -21,15 +21,12 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;xlsdg.org&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Pisces&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;always&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.json&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
 <meta name="description" content="数组创建空的数组： 123var someInts &#x3D; [Int]()println(&quot;someInts is of type [Int] with \(someInts.count) items.&quot;)&#x2F;&#x2F; prints &quot;someInts is of type [Int] with 0 items.&quot;  添加数组数据项： 1234someInts.appe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift 语言之集合类型学习笔记">
@@ -48,79 +45,27 @@
 <link rel="canonical" href="https://xlsdg.org/p/b20d6f2b.html">
 
 
-<script class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-<title>Swift 语言之集合类型学习笔记 | xLsDg</title>
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;xlsdg.org&#x2F;p&#x2F;b20d6f2b.html&quot;,&quot;path&quot;:&quot;p&#x2F;b20d6f2b.html&quot;,&quot;title&quot;:&quot;Swift 语言之集合类型学习笔记&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>Swift 语言之集合类型学习笔记 | xLsDg</title><script src="/js/config.js"></script>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-62013560-3');
-      }
-    </script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{&quot;tracking_id&quot;:&quot;UA-62013560-3&quot;,&quot;only_pageview&quot;:false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5"></script>
 
-  <script>
-    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
-    gio('init', '93b1fecf6ab1be1a', {});
-    gio('send');
-  </script>
+  <script async src="//assets.growingio.com/2.1/gio.js"></script>
+  <script class="next-config" data-name="growingio_analytics" type="application/json">&quot;93b1fecf6ab1be1a&quot;</script>
+  <script src="/js/third-party/analytics/growingio.js"></script>
 
 
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="xLsDg" type="application/atom+xml">
 </head>
 
@@ -299,7 +244,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -381,7 +326,7 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span class="leancloud-visitors-count"></span>
     </span>
-    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -414,122 +359,122 @@
     
     <div class="post-body" itemprop="articleBody">
         <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>创建空的数组：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> someInts = [<span class="type">Int</span>]()</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;someInts is of type [Int] with \(someInts.count) items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;someInts is of type [Int] with 0 items.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> someInts <span class="operator">=</span> [<span class="type">Int</span>]()</span><br><span class="line">println(<span class="string">&quot;someInts is of type [Int] with <span class="subst">\(someInts.count)</span> items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;someInts is of type [Int] with 0 items.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>添加数组数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">someInts.append(<span class="number">3</span>)</span><br><span class="line"><span class="comment">// someInts now contains 1 value of type Int</span></span><br><span class="line">someInts = []</span><br><span class="line"><span class="comment">// someInts is now an empty array, but is still of type [Int]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">someInts.append(<span class="number">3</span>)</span><br><span class="line"><span class="comment">// someInts now contains 1 value of type Int</span></span><br><span class="line">someInts <span class="operator">=</span> []</span><br><span class="line"><span class="comment">// someInts is now an empty array, but is still of type [Int]</span></span><br></pre></td></tr></table></figure>
 
 <span id="more"></span>
 
 <p>创建重复数据项的数组：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> threeDoubles = [<span class="type">Double</span>](<span class="built_in">count</span>: <span class="number">3</span>, repeatedValue: <span class="number">0.0</span>)</span><br><span class="line"><span class="comment">// threeDoubles is of type [Double], and equals [0.0, 0.0, 0.0]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> threeDoubles <span class="operator">=</span> [<span class="type">Double</span>](count: <span class="number">3</span>, repeatedValue: <span class="number">0.0</span>)</span><br><span class="line"><span class="comment">// threeDoubles is of type [Double], and equals [0.0, 0.0, 0.0]</span></span><br></pre></td></tr></table></figure>
 
 <p>数组相加：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> anotherThreeDoubles = [<span class="type">Double</span>](<span class="built_in">count</span>: <span class="number">3</span>, repeatedValue: <span class="number">2.5</span>)</span><br><span class="line"><span class="comment">// anotherThreeDoubles is inferred as [Double], and equals [2.5, 2.5, 2.5]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sixDoubles = threeDoubles + anotherThreeDoubles</span><br><span class="line"><span class="comment">// sixDoubles is inferred as [Double], and equals [0.0, 0.0, 0.0, 2.5, 2.5, 2.5]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> anotherThreeDoubles <span class="operator">=</span> [<span class="type">Double</span>](count: <span class="number">3</span>, repeatedValue: <span class="number">2.5</span>)</span><br><span class="line"><span class="comment">// anotherThreeDoubles is inferred as [Double], and equals [2.5, 2.5, 2.5]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> sixDoubles <span class="operator">=</span> threeDoubles <span class="operator">+</span> anotherThreeDoubles</span><br><span class="line"><span class="comment">// sixDoubles is inferred as [Double], and equals [0.0, 0.0, 0.0, 2.5, 2.5, 2.5]</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="数组字面量"><a href="#数组字面量" class="headerlink" title="数组字面量"></a>数组字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> shoppingList: [<span class="type">String</span>] = [<span class="string">&quot;Eggs&quot;</span>, <span class="string">&quot;Milk&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList has been initialized with two initial items</span></span><br></pre></td></tr></table></figure>
+<h3 id="数组字面量"><a href="#数组字面量" class="headerlink" title="数组字面量"></a>数组字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> shoppingList: [<span class="type">String</span>] <span class="operator">=</span> [<span class="string">&quot;Eggs&quot;</span>, <span class="string">&quot;Milk&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList has been initialized with two initial items</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="读取和修改数组"><a href="#读取和修改数组" class="headerlink" title="读取和修改数组"></a>读取和修改数组</h3><p>数组数据项个数：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The shopping list contains \(shoppingList.count) items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The shopping list contains 2 items.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">println(<span class="string">&quot;The shopping list contains <span class="subst">\(shoppingList.count)</span> items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The shopping list contains 2 items.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>判断数组是否为空：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> shoppingList.isEmpty &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The shopping list is empty.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The shopping list is not empty.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The shopping list is not empty.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> shoppingList.isEmpty &#123;</span><br><span class="line">    println(<span class="string">&quot;The shopping list is empty.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;The shopping list is not empty.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The shopping list is not empty.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>数组后面添加新的数据项：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">shoppingList.append(<span class="string">&quot;Flour&quot;</span>)</span><br><span class="line"><span class="comment">// shoppingList now contains 3 items, and someone is making pancakes</span></span><br></pre></td></tr></table></figure>
 
 <p>加法赋值运算符添加数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">shoppingList += [<span class="string">&quot;Baking Powder&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList now contains 4 items</span></span><br><span class="line">shoppingList += [<span class="string">&quot;Chocolate Spread&quot;</span>, <span class="string">&quot;Cheese&quot;</span>, <span class="string">&quot;Butter&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList now contains 7 items</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">shoppingList <span class="operator">+=</span> [<span class="string">&quot;Baking Powder&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList now contains 4 items</span></span><br><span class="line">shoppingList <span class="operator">+=</span> [<span class="string">&quot;Chocolate Spread&quot;</span>, <span class="string">&quot;Cheese&quot;</span>, <span class="string">&quot;Butter&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList now contains 7 items</span></span><br></pre></td></tr></table></figure>
 
 <p>下标读取数组中的数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstItem = shoppingList[<span class="number">0</span>]</span><br><span class="line"><span class="comment">// firstItem is equal to &quot;Eggs&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstItem <span class="operator">=</span> shoppingList[<span class="number">0</span>]</span><br><span class="line"><span class="comment">// firstItem is equal to &quot;Eggs&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>下标修改数组中的数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">shoppingList[<span class="number">0</span>] = <span class="string">&quot;Six eggs&quot;</span></span><br><span class="line"><span class="comment">// the first item in the list is now equal to &quot;Six eggs&quot; rather than &quot;Eggs&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">shoppingList[<span class="number">0</span>] <span class="operator">=</span> <span class="string">&quot;Six eggs&quot;</span></span><br><span class="line"><span class="comment">// the first item in the list is now equal to &quot;Six eggs&quot; rather than &quot;Eggs&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>下标修改数组中的一系列数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">shoppingList[<span class="number">4</span>...<span class="number">6</span>] = [<span class="string">&quot;Bananas&quot;</span>, <span class="string">&quot;Apples&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList now contains 6 items</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">shoppingList[<span class="number">4</span><span class="operator">...</span><span class="number">6</span>] <span class="operator">=</span> [<span class="string">&quot;Bananas&quot;</span>, <span class="string">&quot;Apples&quot;</span>]</span><br><span class="line"><span class="comment">// shoppingList now contains 6 items</span></span><br></pre></td></tr></table></figure>
 
 <p>某个具体索引值之前添加数据项：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">shoppingList.insert(<span class="string">&quot;Maple Syrup&quot;</span>, atIndex: <span class="number">0</span>)</span><br><span class="line"><span class="comment">// shoppingList now contains 7 items</span></span><br><span class="line"><span class="comment">// &quot;Maple Syrup&quot; is now the first item in the list</span></span><br></pre></td></tr></table></figure>
 
 <p>删除某个特定索引值的数据项，并返回这个数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> mapleSyrup = shoppingList.removeAtIndex(<span class="number">0</span>)</span><br><span class="line"><span class="comment">// the item that was at index 0 has just been removed</span></span><br><span class="line"><span class="comment">// shoppingList now contains 6 items, and no Maple Syrup</span></span><br><span class="line"><span class="comment">// the mapleSyrup constant is now equal to the removed &quot;Maple Syrup&quot; string</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> mapleSyrup <span class="operator">=</span> shoppingList.removeAtIndex(<span class="number">0</span>)</span><br><span class="line"><span class="comment">// the item that was at index 0 has just been removed</span></span><br><span class="line"><span class="comment">// shoppingList now contains 6 items, and no Maple Syrup</span></span><br><span class="line"><span class="comment">// the mapleSyrup constant is now equal to the removed &quot;Maple Syrup&quot; string</span></span><br></pre></td></tr></table></figure>
 
 <p>删除最后一个数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> apples = shoppingList.removeLast()</span><br><span class="line"><span class="comment">// the last item in the array has just been removed</span></span><br><span class="line"><span class="comment">// shoppingList now contains 5 items, and no apples</span></span><br><span class="line"><span class="comment">// the apples constant is now equal to the removed &quot;Apples&quot; string</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> apples <span class="operator">=</span> shoppingList.removeLast()</span><br><span class="line"><span class="comment">// the last item in the array has just been removed</span></span><br><span class="line"><span class="comment">// shoppingList now contains 5 items, and no apples</span></span><br><span class="line"><span class="comment">// the apples constant is now equal to the removed &quot;Apples&quot; string</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (index, value) <span class="keyword">in</span> <span class="built_in">enumerate</span>(shoppingList) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Item \(index + 1): \(value)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Item 1: Six eggs</span></span><br><span class="line"><span class="comment">// Item 2: Milk</span></span><br><span class="line"><span class="comment">// Item 3: Flour</span></span><br><span class="line"><span class="comment">// Item 4: Baking Powder</span></span><br><span class="line"><span class="comment">// Item 5: Bananas</span></span><br></pre></td></tr></table></figure>
+<h3 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (index, value) <span class="keyword">in</span> enumerate(shoppingList) &#123;</span><br><span class="line">    println(<span class="string">&quot;Item <span class="subst">\(index <span class="operator">+</span> <span class="number">1</span>)</span>: <span class="subst">\(value)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Item 1: Six eggs</span></span><br><span class="line"><span class="comment">// Item 2: Milk</span></span><br><span class="line"><span class="comment">// Item 3: Flour</span></span><br><span class="line"><span class="comment">// Item 4: Baking Powder</span></span><br><span class="line"><span class="comment">// Item 5: Bananas</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p>创建空的集合：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> letters = <span class="type">Set</span>&lt;<span class="type">Character</span>&gt;()</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;letters is of type Set&lt;Character&gt; with \(letters.count) items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;letters is of type Set&lt;Character&gt; with 0 items.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> letters <span class="operator">=</span> <span class="type">Set</span>&lt;<span class="type">Character</span>&gt;()</span><br><span class="line">println(<span class="string">&quot;letters is of type Set&lt;Character&gt; with <span class="subst">\(letters.count)</span> items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;letters is of type Set&lt;Character&gt; with 0 items.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>插入集合数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">letters.insert(<span class="string">&quot;a&quot;</span>)</span><br><span class="line"><span class="comment">// letters now contains 1 value of type Character</span></span><br><span class="line">letters = []</span><br><span class="line"><span class="comment">// letters is now an empty set, but is still of type Set&lt;Character&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">letters.insert(<span class="string">&quot;a&quot;</span>)</span><br><span class="line"><span class="comment">// letters now contains 1 value of type Character</span></span><br><span class="line">letters <span class="operator">=</span> []</span><br><span class="line"><span class="comment">// letters is now an empty set, but is still of type Set&lt;Character&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="集合字面量"><a href="#集合字面量" class="headerlink" title="集合字面量"></a>集合字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> favoriteGenres: <span class="type">Set</span>&lt;<span class="type">String</span>&gt; = [<span class="string">&quot;Rock&quot;</span>, <span class="string">&quot;Classical&quot;</span>, <span class="string">&quot;Hip hop&quot;</span>]</span><br><span class="line"><span class="comment">// favoriteGenres has been initialized with three initial items</span></span><br></pre></td></tr></table></figure>
+<h3 id="集合字面量"><a href="#集合字面量" class="headerlink" title="集合字面量"></a>集合字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> favoriteGenres: <span class="type">Set</span>&lt;<span class="type">String</span>&gt; <span class="operator">=</span> [<span class="string">&quot;Rock&quot;</span>, <span class="string">&quot;Classical&quot;</span>, <span class="string">&quot;Hip hop&quot;</span>]</span><br><span class="line"><span class="comment">// favoriteGenres has been initialized with three initial items</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="读取和修改集合"><a href="#读取和修改集合" class="headerlink" title="读取和修改集合"></a>读取和修改集合</h3><p>集合元素个数：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println</span>(<span class="string">&quot;I have \(favoriteGenres.count) favorite music genres.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;&quot;I have 3 favorite music genres.&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">println(<span class="string">&quot;I have <span class="subst">\(favoriteGenres.count)</span> favorite music genres.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;&quot;I have 3 favorite music genres.&quot;&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>判断集合是否为空：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> favoriteGenres.isEmpty &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;As far as music goes, I&#x27;m not picky.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;I have particular music preferences.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;I have particular music preferences.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> favoriteGenres.isEmpty &#123;</span><br><span class="line">    println(<span class="string">&quot;As far as music goes, I&#x27;m not picky.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;I have particular music preferences.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;I have particular music preferences.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>向集合中添加新的数据项：</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">favoriteGenres.insert(<span class="string">&quot;Jazz&quot;</span>)</span><br><span class="line"><span class="comment">// favoriteGenres now contains 4 items</span></span><br></pre></td></tr></table></figure>
 
 <p>删除某个数据项，并返回这个数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> removedGenre = favoriteGenres.remove(<span class="string">&quot;Rock&quot;</span>) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(removedValue)? I&#x27;m over it.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;I never much cared for that.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Rock? I&#x27;m over it.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> removedGenre <span class="operator">=</span> favoriteGenres.remove(<span class="string">&quot;Rock&quot;</span>) &#123;</span><br><span class="line">    println(<span class="string">&quot;<span class="subst">\(removedValue)</span>? I&#x27;m over it.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;I never much cared for that.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Rock? I&#x27;m over it.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>判断集合是否包含某个数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> favoriteGenres.<span class="built_in">contains</span>(<span class="string">&quot;Funk&quot;</span>) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;I get up on the good foot.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;It&#x27;s too funky in here.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;It&#x27;s too funky in here.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> favoriteGenres.contains(<span class="string">&quot;Funk&quot;</span>) &#123;</span><br><span class="line">    println(<span class="string">&quot;I get up on the good foot.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;It&#x27;s too funky in here.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;It&#x27;s too funky in here.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="遍历集合"><a href="#遍历集合" class="headerlink" title="遍历集合"></a>遍历集合</h3><p>使用for-in循环遍历集合：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> genre <span class="keyword">in</span> favoriteGenres &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(value)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Classical</span></span><br><span class="line"><span class="comment">// Jazz</span></span><br><span class="line"><span class="comment">// Hip hop</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> genre <span class="keyword">in</span> favoriteGenres &#123;</span><br><span class="line">    println(<span class="string">&quot;<span class="subst">\(value)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Classical</span></span><br><span class="line"><span class="comment">// Jazz</span></span><br><span class="line"><span class="comment">// Hip hop</span></span><br></pre></td></tr></table></figure>
 
 <p>集合排序：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> genre <span class="keyword">in</span> sorted(favoriteGenres) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(genre)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Classical&quot;</span></span><br><span class="line"><span class="comment">// prints &quot;Hip hop&quot;</span></span><br><span class="line"><span class="comment">// prints &quot;Jazz&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> genre <span class="keyword">in</span> sorted(favoriteGenres) &#123;</span><br><span class="line">    println(<span class="string">&quot;<span class="subst">\(genre)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Classical&quot;</span></span><br><span class="line"><span class="comment">// prints &quot;Hip hop&quot;</span></span><br><span class="line"><span class="comment">// prints &quot;Jazz&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><p>创建空的字典：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> namesOfIntegers = [<span class="type">Int</span>: <span class="type">String</span>]()</span><br><span class="line"><span class="comment">// namesOfIntegers is an empty [Int: String] dictionary</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> namesOfIntegers <span class="operator">=</span> [<span class="type">Int</span>: <span class="type">String</span>]()</span><br><span class="line"><span class="comment">// namesOfIntegers is an empty [Int: String] dictionary</span></span><br></pre></td></tr></table></figure>
 
 <p>添加字典数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">namesOfIntegers[<span class="number">16</span>] = <span class="string">&quot;sixteen&quot;</span></span><br><span class="line"><span class="comment">// namesOfIntegers now contains 1 key-value pair</span></span><br><span class="line">namesOfIntegers = [:]</span><br><span class="line"><span class="comment">// namesOfIntegers is once again an empty dictionary of type [Int: String]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">namesOfIntegers[<span class="number">16</span>] <span class="operator">=</span> <span class="string">&quot;sixteen&quot;</span></span><br><span class="line"><span class="comment">// namesOfIntegers now contains 1 key-value pair</span></span><br><span class="line">namesOfIntegers <span class="operator">=</span> [:]</span><br><span class="line"><span class="comment">// namesOfIntegers is once again an empty dictionary of type [Int: String]</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="字典字面量"><a href="#字典字面量" class="headerlink" title="字典字面量"></a>字典字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> airports: [<span class="type">String</span>: <span class="type">String</span>] = [<span class="string">&quot;YYZ&quot;</span>: <span class="string">&quot;Toronto Pearson&quot;</span>, <span class="string">&quot;DUB&quot;</span>: <span class="string">&quot;Dublin&quot;</span>]</span><br></pre></td></tr></table></figure>
+<h3 id="字典字面量"><a href="#字典字面量" class="headerlink" title="字典字面量"></a>字典字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> airports: [<span class="type">String</span>: <span class="type">String</span>] <span class="operator">=</span> [<span class="string">&quot;YYZ&quot;</span>: <span class="string">&quot;Toronto Pearson&quot;</span>, <span class="string">&quot;DUB&quot;</span>: <span class="string">&quot;Dublin&quot;</span>]</span><br></pre></td></tr></table></figure>
 
 <h3 id="读取和修改字典"><a href="#读取和修改字典" class="headerlink" title="读取和修改字典"></a>读取和修改字典</h3><p>字典数据项个数：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The airports dictionary contains \(airports.count) items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The airports dictionary contains 2 items.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">println(<span class="string">&quot;The airports dictionary contains <span class="subst">\(airports.count)</span> items.&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The airports dictionary contains 2 items.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>判断字典是否为空：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> airports.isEmpty &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The airports dictionary is empty.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The airports dictionary is not empty.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The airports dictionary is not empty.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> airports.isEmpty &#123;</span><br><span class="line">    println(<span class="string">&quot;The airports dictionary is empty.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;The airports dictionary is not empty.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The airports dictionary is not empty.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>字典后面添加新的数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports[<span class="string">&quot;LHR&quot;</span>] = <span class="string">&quot;London&quot;</span></span><br><span class="line"><span class="comment">// the airports dictionary now contains 3 items</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports[<span class="string">&quot;LHR&quot;</span>] <span class="operator">=</span> <span class="string">&quot;London&quot;</span></span><br><span class="line"><span class="comment">// the airports dictionary now contains 3 items</span></span><br></pre></td></tr></table></figure>
 
 <p>下标修改字典中的数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports[<span class="string">&quot;LHR&quot;</span>] = <span class="string">&quot;London Heathrow&quot;</span></span><br><span class="line"><span class="comment">// the value for &quot;LHR&quot; has been changed to &quot;London Heathrow&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">airports[<span class="string">&quot;LHR&quot;</span>] <span class="operator">=</span> <span class="string">&quot;London Heathrow&quot;</span></span><br><span class="line"><span class="comment">// the value for &quot;LHR&quot; has been changed to &quot;London Heathrow&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>updateValue(_:forKey:) 方式修改字典中的数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> oldValue = airports.updateValue(<span class="string">&quot;Dublin Airport&quot;</span>, forKey: <span class="string">&quot;DUB&quot;</span>) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The old value for DUB was \(oldValue).&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The old value for DUB was Dublin.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> oldValue <span class="operator">=</span> airports.updateValue(<span class="string">&quot;Dublin Airport&quot;</span>, forKey: <span class="string">&quot;DUB&quot;</span>) &#123;</span><br><span class="line">    println(<span class="string">&quot;The old value for DUB was <span class="subst">\(oldValue)</span>.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The old value for DUB was Dublin.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>下标判断字典中是否存在某个数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> airportName = airports[<span class="string">&quot;DUB&quot;</span>] &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The name of the airport is \(airportName).&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;That airport is not in the airports dictionary.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The name of the airport is Dublin Airport.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> airportName <span class="operator">=</span> airports[<span class="string">&quot;DUB&quot;</span>] &#123;</span><br><span class="line">    println(<span class="string">&quot;The name of the airport is <span class="subst">\(airportName)</span>.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;That airport is not in the airports dictionary.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The name of the airport is Dublin Airport.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>通过下标删除字典中的某个数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">airports[<span class="string">&quot;APL&quot;</span>] = <span class="string">&quot;Apple International&quot;</span></span><br><span class="line"><span class="comment">// &quot;Apple International&quot; is not the real airport for APL, so delete it</span></span><br><span class="line">airports[<span class="string">&quot;APL&quot;</span>] = <span class="literal">nil</span></span><br><span class="line"><span class="comment">// APL has now been removed from the dictionary</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">airports[<span class="string">&quot;APL&quot;</span>] <span class="operator">=</span> <span class="string">&quot;Apple International&quot;</span></span><br><span class="line"><span class="comment">// &quot;Apple International&quot; is not the real airport for APL, so delete it</span></span><br><span class="line">airports[<span class="string">&quot;APL&quot;</span>] <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"><span class="comment">// APL has now been removed from the dictionary</span></span><br></pre></td></tr></table></figure>
 
 <p>removeValueForKey(_:) 方式删除字典中的数据项：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> removedValue = airports.removeValueForKey(<span class="string">&quot;DUB&quot;</span>) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The removed airport&#x27;s name is \(removedValue).&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;The airports dictionary does not contain a value for DUB.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The removed airport&#x27;s name is Dublin Airport.&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> removedValue <span class="operator">=</span> airports.removeValueForKey(<span class="string">&quot;DUB&quot;</span>) &#123;</span><br><span class="line">    println(<span class="string">&quot;The removed airport&#x27;s name is <span class="subst">\(removedValue)</span>.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;The airports dictionary does not contain a value for DUB.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;The removed airport&#x27;s name is Dublin Airport.&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="遍历字典"><a href="#遍历字典" class="headerlink" title="遍历字典"></a>遍历字典</h3><p>键值对同时遍历：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (index, value) <span class="keyword">in</span> <span class="built_in">enumerate</span>(shoppingList) &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Item \(index + 1): \(value)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Item 1: Six eggs</span></span><br><span class="line"><span class="comment">// Item 2: Milk</span></span><br><span class="line"><span class="comment">// Item 3: Flour</span></span><br><span class="line"><span class="comment">// Item 4: Baking Powder</span></span><br><span class="line"><span class="comment">// Item 5: Bananas</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (index, value) <span class="keyword">in</span> enumerate(shoppingList) &#123;</span><br><span class="line">    println(<span class="string">&quot;Item <span class="subst">\(index <span class="operator">+</span> <span class="number">1</span>)</span>: <span class="subst">\(value)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Item 1: Six eggs</span></span><br><span class="line"><span class="comment">// Item 2: Milk</span></span><br><span class="line"><span class="comment">// Item 3: Flour</span></span><br><span class="line"><span class="comment">// Item 4: Baking Powder</span></span><br><span class="line"><span class="comment">// Item 5: Bananas</span></span><br></pre></td></tr></table></figure>
 
 <p>遍历字典的keys或values：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> airportCode <span class="keyword">in</span> airports.keys &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Airport code: \(airportCode)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Airport code: YYZ</span></span><br><span class="line"><span class="comment">// Airport code: LHR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> airportName <span class="keyword">in</span> airports.values &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Airport name: \(airportName)&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Airport name: Toronto Pearson</span></span><br><span class="line"><span class="comment">// Airport name: London Heathrow</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> airportCode <span class="keyword">in</span> airports.keys &#123;</span><br><span class="line">    println(<span class="string">&quot;Airport code: <span class="subst">\(airportCode)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Airport code: YYZ</span></span><br><span class="line"><span class="comment">// Airport code: LHR</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> airportName <span class="keyword">in</span> airports.values &#123;</span><br><span class="line">    println(<span class="string">&quot;Airport name: <span class="subst">\(airportName)</span>&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// Airport name: Toronto Pearson</span></span><br><span class="line"><span class="comment">// Airport name: London Heathrow</span></span><br></pre></td></tr></table></figure>
 
 <p>返回字典的keys或values数组：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> airportCodes = [<span class="type">String</span>](airports.keys)</span><br><span class="line"><span class="comment">// airportCodes is [&quot;YYZ&quot;, &quot;LHR&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> airportNames = [<span class="type">String</span>](airports.values)</span><br><span class="line"><span class="comment">// airportNames is [&quot;Toronto Pearson&quot;, &quot;London Heathrow&quot;]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> airportCodes <span class="operator">=</span> [<span class="type">String</span>](airports.keys)</span><br><span class="line"><span class="comment">// airportCodes is [&quot;YYZ&quot;, &quot;LHR&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> airportNames <span class="operator">=</span> [<span class="type">String</span>](airports.values)</span><br><span class="line"><span class="comment">// airportNames is [&quot;Toronto Pearson&quot;, &quot;London Heathrow&quot;]</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -540,19 +485,19 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/dd188d84.html" rel="bookmark">Swift 语言之基本运算符学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/a9bf149e.html" rel="bookmark">Swift 语言之字符串与字符学习笔记</a></div>
+      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/d414fd72.html" rel="bookmark">Swift 语言之控制流学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/ef567bc8.html" rel="bookmark">Swift 语言之函数学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/b10f8da0.html" rel="bookmark">Swift 语言之枚举学习笔记</a></div>
     </li>
   </ul>
 
@@ -648,29 +593,7 @@
 
 
 
-    <div class="comments utterances-container"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    <div class="comments utterances-container"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -701,7 +624,7 @@
   </span>
 </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
@@ -709,7 +632,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
@@ -729,138 +652,25 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="/js/local-search.js"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
 
 
-  <script>
-    NProgress.configure({
-      showSpinner: false
-    });
-    NProgress.start();
-    document.addEventListener('readystatechange', () => {
-      if (document.readyState === 'interactive') {
-        NProgress.inc(0.8);
-      }
-      if (document.readyState === 'complete') {
-        NProgress.done();
-      }
-    });
-    document.addEventListener('pjax:send', () => {
-      NProgress.start();
-    });
-    document.addEventListener('pjax:success', () => {
-      NProgress.done();
-    });
-  </script>
+  <script class="next-config" data-name="nprogress" type="application/json">{&quot;enable&quot;:true,&quot;spinner&quot;:false}</script>
+  <script src="/js/third-party/nprogress.js"></script>
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-<script>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      const visitors = document.querySelector('.leancloud_visitors');
-      const url = decodeURI(visitors.id);
-      const title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            const counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      const visitors = document.querySelectorAll('.leancloud_visitors');
-      const entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            const target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
-    function fetchData(api_server) {
-      const Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{&quot;enable&quot;:true,&quot;app_id&quot;:&quot;kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI&quot;,&quot;app_key&quot;:&quot;uqTkCbm6jRHkwFOiIDe2qb3i&quot;,&quot;server_url&quot;:null,&quot;security&quot;:true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
-
-<script>
-NexT.utils.loadComments('.utterances-container', () => {
-  const script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', "xlsdg/blog-comments");
-  script.setAttribute('issue-term', "pathname");
-  script.setAttribute('theme', "github-light");
-  script.crossOrigin = 'anonymous';
-  script.async = true;
-  document.querySelector('.utterances-container').appendChild(script);
-});
-</script>
+<script class="next-config" data-name="utterances" type="application/json">{&quot;enable&quot;:true,&quot;repo&quot;:&quot;xlsdg&#x2F;blog-comments&quot;,&quot;issue_term&quot;:&quot;pathname&quot;,&quot;theme&quot;:&quot;github-light&quot;}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>

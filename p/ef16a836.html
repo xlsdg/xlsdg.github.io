@@ -21,15 +21,12 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;xlsdg.org&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Pisces&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;always&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.json&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
 <meta name="description" content="常量和变量用let来声明常量，用var来声明变量： 12let maximumNumberOfLoginAttempts &#x3D; 10var currentLoginAttempt &#x3D; 0  类型标注： 12var welcomeMessage: String &#x3D; &quot;Hello&quot;var red, green, blue: Double  输出常量和变量： 12var friendl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift 语言之基础学习笔记">
@@ -48,79 +45,27 @@
 <link rel="canonical" href="https://xlsdg.org/p/ef16a836.html">
 
 
-<script class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-<title>Swift 语言之基础学习笔记 | xLsDg</title>
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;xlsdg.org&#x2F;p&#x2F;ef16a836.html&quot;,&quot;path&quot;:&quot;p&#x2F;ef16a836.html&quot;,&quot;title&quot;:&quot;Swift 语言之基础学习笔记&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>Swift 语言之基础学习笔记 | xLsDg</title><script src="/js/config.js"></script>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-62013560-3');
-      }
-    </script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{&quot;tracking_id&quot;:&quot;UA-62013560-3&quot;,&quot;only_pageview&quot;:false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5"></script>
 
-  <script>
-    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
-    gio('init', '93b1fecf6ab1be1a', {});
-    gio('send');
-  </script>
+  <script async src="//assets.growingio.com/2.1/gio.js"></script>
+  <script class="next-config" data-name="growingio_analytics" type="application/json">&quot;93b1fecf6ab1be1a&quot;</script>
+  <script src="/js/third-party/analytics/growingio.js"></script>
 
 
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="xLsDg" type="application/atom+xml">
 </head>
 
@@ -299,7 +244,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -381,7 +326,7 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span class="leancloud-visitors-count"></span>
     </span>
-    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -414,13 +359,13 @@
     
     <div class="post-body" itemprop="articleBody">
         <h3 id="常量和变量"><a href="#常量和变量" class="headerlink" title="常量和变量"></a>常量和变量</h3><p>用let来声明常量，用var来声明变量：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> maximumNumberOfLoginAttempts = <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> currentLoginAttempt = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> maximumNumberOfLoginAttempts <span class="operator">=</span> <span class="number">10</span></span><br><span class="line"><span class="keyword">var</span> currentLoginAttempt <span class="operator">=</span> <span class="number">0</span></span><br></pre></td></tr></table></figure>
 
 <p>类型标注：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> welcomeMessage: <span class="type">String</span> = <span class="string">&quot;Hello&quot;</span></span><br><span class="line"><span class="keyword">var</span> red, green, blue: <span class="type">Double</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> welcomeMessage: <span class="type">String</span> <span class="operator">=</span> <span class="string">&quot;Hello&quot;</span></span><br><span class="line"><span class="keyword">var</span> red, green, blue: <span class="type">Double</span></span><br></pre></td></tr></table></figure>
 
 <p>输出常量和变量：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> friendlyWelcome = <span class="string">&quot;Hello!&quot;</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The current value of friendlyWelcome is \(friendlyWelcome)&quot;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> friendlyWelcome <span class="operator">=</span> <span class="string">&quot;Hello!&quot;</span></span><br><span class="line">println(<span class="string">&quot;The current value of friendlyWelcome is <span class="subst">\(friendlyWelcome)</span>&quot;</span>)</span><br></pre></td></tr></table></figure>
 
 <span id="more"></span>
 
@@ -431,64 +376,64 @@
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* this is the start of the first multiline comment</span></span><br><span class="line"><span class="comment"><span class="comment">/* this is the second, nested multiline comment */</span></span></span><br><span class="line"><span class="comment">this is the end of the first multiline comment */</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="分号"><a href="#分号" class="headerlink" title="分号"></a>分号</h3><p>同一行内写多条独立语句：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> cat = <span class="string">&quot;🐱&quot;</span>; <span class="built_in">println</span>(cat)</span><br><span class="line"><span class="comment">// prints &quot;🐱&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> cat <span class="operator">=</span> <span class="string">&quot;🐱&quot;</span>; println(cat)</span><br><span class="line"><span class="comment">// prints &quot;🐱&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h3><p>整数范围：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> minValue = <span class="type">UInt8</span>.<span class="built_in">min</span>  <span class="comment">// minValue is equal to 0, and is of type UInt8</span></span><br><span class="line"><span class="keyword">let</span> maxValue = <span class="type">UInt8</span>.<span class="built_in">max</span>  <span class="comment">// maxValue is equal to 255, and is of type UInt8</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> minValue <span class="operator">=</span> <span class="type">UInt8</span>.min  <span class="comment">// minValue is equal to 0, and is of type UInt8</span></span><br><span class="line"><span class="keyword">let</span> maxValue <span class="operator">=</span> <span class="type">UInt8</span>.max  <span class="comment">// maxValue is equal to 255, and is of type UInt8</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h3><p>略</p>
 <h3 id="类型安全和类型推断"><a href="#类型安全和类型推断" class="headerlink" title="类型安全和类型推断"></a>类型安全和类型推断</h3><p>整数推断</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> meaningOfLife = <span class="number">42</span></span><br><span class="line"><span class="comment">// meaningOfLife is inferred to be of type Int</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> meaningOfLife <span class="operator">=</span> <span class="number">42</span></span><br><span class="line"><span class="comment">// meaningOfLife is inferred to be of type Int</span></span><br></pre></td></tr></table></figure>
 
 <p>浮点数推断：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> anotherPi = <span class="number">3</span> + <span class="number">0.14159</span></span><br><span class="line"><span class="comment">// anotherPi is also inferred to be of type Double</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> anotherPi <span class="operator">=</span> <span class="number">3</span> <span class="operator">+</span> <span class="number">0.14159</span></span><br><span class="line"><span class="comment">// anotherPi is also inferred to be of type Double</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="数值字面量"><a href="#数值字面量" class="headerlink" title="数值字面量"></a>数值字面量</h3><p>整数字面量（十进制数没有前缀，二进制数前缀是0b，八进制数前缀是0o，十六进制数前缀是0x）：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> decimalInteger = <span class="number">17</span></span><br><span class="line"><span class="keyword">let</span> binaryInteger = <span class="number">0b10001</span>       <span class="comment">// 17 in binary notation</span></span><br><span class="line"><span class="keyword">let</span> octalInteger = <span class="number">0o21</span>           <span class="comment">// 17 in octal notation</span></span><br><span class="line"><span class="keyword">let</span> hexadecimalInteger = <span class="number">0x11</span>     <span class="comment">// 17 in hexadecimal notation</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> decimalInteger <span class="operator">=</span> <span class="number">17</span></span><br><span class="line"><span class="keyword">let</span> binaryInteger <span class="operator">=</span> <span class="number">0b10001</span>       <span class="comment">// 17 in binary notation</span></span><br><span class="line"><span class="keyword">let</span> octalInteger <span class="operator">=</span> <span class="number">0o21</span>           <span class="comment">// 17 in octal notation</span></span><br><span class="line"><span class="keyword">let</span> hexadecimalInteger <span class="operator">=</span> <span class="number">0x11</span>     <span class="comment">// 17 in hexadecimal notation</span></span><br></pre></td></tr></table></figure>
 
 <p>浮点字面量（十进制数没有前缀，指数通过e或E指定，十六进制通过p或P指定）：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> decimalDouble = <span class="number">12.1875</span></span><br><span class="line"><span class="keyword">let</span> exponentDouble = <span class="number">1.21875e1</span></span><br><span class="line"><span class="keyword">let</span> hexadecimalDouble = <span class="number">0xC.3p0</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> decimalDouble <span class="operator">=</span> <span class="number">12.1875</span></span><br><span class="line"><span class="keyword">let</span> exponentDouble <span class="operator">=</span> <span class="number">1.21875e1</span></span><br><span class="line"><span class="keyword">let</span> hexadecimalDouble <span class="operator">=</span> <span class="number">0xC.3p0</span></span><br></pre></td></tr></table></figure>
 
 <p>数值字面量增强可读性写法：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> paddedDouble = <span class="number">000123.456</span></span><br><span class="line"><span class="keyword">let</span> oneMillion = <span class="number">1_000_000</span></span><br><span class="line"><span class="keyword">let</span> justOverOneMillion = <span class="number">1_000_000.000_000_1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> paddedDouble <span class="operator">=</span> <span class="number">000123.456</span></span><br><span class="line"><span class="keyword">let</span> oneMillion <span class="operator">=</span> <span class="number">1_000_000</span></span><br><span class="line"><span class="keyword">let</span> justOverOneMillion <span class="operator">=</span> <span class="number">1_000_000.000_000_1</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="数值类型转换"><a href="#数值类型转换" class="headerlink" title="数值类型转换"></a>数值类型转换</h3><p>整数转换：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> twoThousand: <span class="type">UInt16</span> = <span class="number">2_000</span></span><br><span class="line"><span class="keyword">let</span> one: <span class="type">UInt8</span> = <span class="number">1</span></span><br><span class="line"><span class="keyword">let</span> twoThousandAndOne = twoThousand + <span class="type">UInt16</span>(one)</span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> twoThousand: <span class="type">UInt16</span> <span class="operator">=</span> <span class="number">2_000</span></span><br><span class="line"><span class="keyword">let</span> one: <span class="type">UInt8</span> <span class="operator">=</span> <span class="number">1</span></span><br><span class="line"><span class="keyword">let</span> twoThousandAndOne <span class="operator">=</span> twoThousand <span class="operator">+</span> <span class="type">UInt16</span>(one)</span><br></pre></td></tr></table></figure>
 
 <p>整数与浮点数转换：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> three = <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> pointOneFourOneFiveNine = <span class="number">0.14159</span></span><br><span class="line"><span class="keyword">let</span> pi = <span class="type">Double</span>(three) + pointOneFourOneFiveNine</span><br><span class="line"><span class="comment">// pi equals 3.14159, and is inferred to be of type Double</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> three <span class="operator">=</span> <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> pointOneFourOneFiveNine <span class="operator">=</span> <span class="number">0.14159</span></span><br><span class="line"><span class="keyword">let</span> pi <span class="operator">=</span> <span class="type">Double</span>(three) <span class="operator">+</span> pointOneFourOneFiveNine</span><br><span class="line"><span class="comment">// pi equals 3.14159, and is inferred to be of type Double</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="类型别名"><a href="#类型别名" class="headerlink" title="类型别名"></a>类型别名</h3><p>类型别名就是给现有类型定义另外一个名字：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typealias</span> <span class="type">AudioSample</span> = <span class="type">UInt16</span></span><br><span class="line"><span class="keyword">var</span> maxAmplitudeFound = <span class="type">AudioSample</span>.<span class="built_in">min</span></span><br><span class="line"><span class="comment">// maxAmplitudeFound is now 0</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typealias</span> <span class="type">AudioSample</span> <span class="operator">=</span> <span class="type">UInt16</span></span><br><span class="line"><span class="keyword">var</span> maxAmplitudeFound <span class="operator">=</span> <span class="type">AudioSample</span>.min</span><br><span class="line"><span class="comment">// maxAmplitudeFound is now 0</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> orangesAreOrange = <span class="literal">true</span></span><br><span class="line"><span class="keyword">let</span> turnipsAreDelicious = <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> orangesAreOrange <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line"><span class="keyword">let</span> turnipsAreDelicious <span class="operator">=</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h3><p>元组就是把多个值组合成一个复合值：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> http404Error = (<span class="number">404</span>, <span class="string">&quot;Not Found&quot;</span>)</span><br><span class="line"><span class="comment">// http404Error is of type (Int, String), and equals (404, &quot;Not Found&quot;)</span></span><br><span class="line"><span class="keyword">let</span> (statusCode, statusMessage) = http404Error</span><br><span class="line"></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status code is \(statusCode)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 404&quot;</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status message is \(statusMessage)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status message is Not Found</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> http404Error <span class="operator">=</span> (<span class="number">404</span>, <span class="string">&quot;Not Found&quot;</span>)</span><br><span class="line"><span class="comment">// http404Error is of type (Int, String), and equals (404, &quot;Not Found&quot;)</span></span><br><span class="line"><span class="keyword">let</span> (statusCode, statusMessage) <span class="operator">=</span> http404Error</span><br><span class="line"></span><br><span class="line">println(<span class="string">&quot;The status code is <span class="subst">\(statusCode)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 404&quot;</span></span><br><span class="line">println(<span class="string">&quot;The status message is <span class="subst">\(statusMessage)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status message is Not Found</span></span><br></pre></td></tr></table></figure>
 
 <p>如果只需要一部分元组值，分解的时候可以把要忽略的部分用下划线（_）标记：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> (justTheStatusCode, <span class="number">_</span>) = http404Error</span><br><span class="line"></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status code is \(justTheStatusCode)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 404</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> (justTheStatusCode, <span class="keyword">_</span>) <span class="operator">=</span> http404Error</span><br><span class="line"></span><br><span class="line">println(<span class="string">&quot;The status code is <span class="subst">\(justTheStatusCode)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 404</span></span><br></pre></td></tr></table></figure>
 
 <p>还可以通过下标来访问元组中的单个元素，下标从零开始：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status code is \(http404Error.0)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 404&quot;</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status message is \(http404Error.1)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status message is Not Found</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">println(<span class="string">&quot;The status code is <span class="subst">\(http404Error.<span class="number">0</span>)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 404&quot;</span></span><br><span class="line">println(<span class="string">&quot;The status message is <span class="subst">\(http404Error.<span class="number">1</span>)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status message is Not Found</span></span><br></pre></td></tr></table></figure>
 
 <p>可以在定义元组的时候给单个元素命名：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> http200Status = (statusCode: <span class="number">200</span>, description: <span class="string">&quot;OK&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status code is \(http200Status.statusCode)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 200&quot;</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;The status message is \(http200Status.description)&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status message is OK</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> http200Status <span class="operator">=</span> (statusCode: <span class="number">200</span>, description: <span class="string">&quot;OK&quot;</span>)</span><br><span class="line"></span><br><span class="line">println(<span class="string">&quot;The status code is <span class="subst">\(http200Status.statusCode)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status code is 200&quot;</span></span><br><span class="line">println(<span class="string">&quot;The status message is <span class="subst">\(http200Status.description)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;The status message is OK</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="可选"><a href="#可选" class="headerlink" title="可选"></a>可选</h3><p>可以给可选变量赋值为nil来表示它没有值：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> serverResponseCode: <span class="type">Int?</span> = <span class="number">404</span></span><br><span class="line"><span class="comment">// serverResponseCode contains an actual Int value of 404</span></span><br><span class="line">serverResponseCode = <span class="literal">nil</span></span><br><span class="line"><span class="comment">// serverResponseCode now contains no value</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> serverResponseCode: <span class="type">Int</span>? <span class="operator">=</span> <span class="number">404</span></span><br><span class="line"><span class="comment">// serverResponseCode contains an actual Int value of 404</span></span><br><span class="line">serverResponseCode <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"><span class="comment">// serverResponseCode now contains no value</span></span><br></pre></td></tr></table></figure>
 
 <p>if语句强制解析：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> possibleNumber = <span class="string">&quot;123&quot;</span></span><br><span class="line"><span class="keyword">let</span> convertedNumber = possibleNumber.toInt()</span><br><span class="line"><span class="comment">// convertedNumber is inferred to be of type &quot;Int?&quot;, or &quot;optional Int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> convertedNumber != <span class="literal">nil</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;convertedNumber has an integer value of \(convertedNumber!).&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;convertedNumber has an integer value of 123.</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> possibleNumber <span class="operator">=</span> <span class="string">&quot;123&quot;</span></span><br><span class="line"><span class="keyword">let</span> convertedNumber <span class="operator">=</span> possibleNumber.toInt()</span><br><span class="line"><span class="comment">// convertedNumber is inferred to be of type &quot;Int?&quot;, or &quot;optional Int</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> convertedNumber <span class="operator">!=</span> <span class="literal">nil</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;convertedNumber has an integer value of <span class="subst">\(convertedNumber<span class="operator">!</span>)</span>.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;convertedNumber has an integer value of 123.</span></span><br></pre></td></tr></table></figure>
 
 <p>可选绑定：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> actualNumber = possibleNumber.toInt() &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(possibleNumber) has an integer value of \(actualNumber)&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;\(possibleNumber) could not be converted to an integer&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;123 has an integer value of 123</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> <span class="keyword">let</span> actualNumber <span class="operator">=</span> possibleNumber.toInt() &#123;</span><br><span class="line">    println(<span class="string">&quot;<span class="subst">\(possibleNumber)</span> has an integer value of <span class="subst">\(actualNumber)</span>&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    println(<span class="string">&quot;<span class="subst">\(possibleNumber)</span> could not be converted to an integer&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;123 has an integer value of 123</span></span><br></pre></td></tr></table></figure>
 
 <p>隐式解析可选类型：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> possibleString: <span class="type">String?</span> = <span class="string">&quot;An optional string.&quot;</span></span><br><span class="line"><span class="built_in">println</span>(possibleString!) <span class="comment">// requires an exclamation mark to access its value</span></span><br><span class="line"><span class="comment">// prints &quot;An optional string.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> assumedString: <span class="type">String!</span> = <span class="string">&quot;An implicitly unwrapped optional string.&quot;</span></span><br><span class="line"><span class="built_in">println</span>(assumedString)  <span class="comment">// no exclamation mark is needed to access its value</span></span><br><span class="line"><span class="comment">// prints &quot;An implicitly unwrapped optional string.</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> possibleString: <span class="type">String</span>? <span class="operator">=</span> <span class="string">&quot;An optional string.&quot;</span></span><br><span class="line">println(possibleString<span class="operator">!</span>) <span class="comment">// requires an exclamation mark to access its value</span></span><br><span class="line"><span class="comment">// prints &quot;An optional string.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> assumedString: <span class="type">String</span>! <span class="operator">=</span> <span class="string">&quot;An implicitly unwrapped optional string.&quot;</span></span><br><span class="line">println(assumedString)  <span class="comment">// no exclamation mark is needed to access its value</span></span><br><span class="line"><span class="comment">// prints &quot;An implicitly unwrapped optional string.</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h3><p>使用断言调试：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> age = -<span class="number">3</span></span><br><span class="line"><span class="built_in">assert</span>(age &gt;= <span class="number">0</span>, <span class="string">&quot;A person&#x27;s age cannot be less than zero&quot;</span>)</span><br><span class="line"><span class="comment">// this causes the assertion to trigger, because age is not &gt;= 0</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> age <span class="operator">=</span> <span class="operator">-</span><span class="number">3</span></span><br><span class="line"><span class="built_in">assert</span>(age <span class="operator">&gt;=</span> <span class="number">0</span>, <span class="string">&quot;A person&#x27;s age cannot be less than zero&quot;</span>)</span><br><span class="line"><span class="comment">// this causes the assertion to trigger, because age is not &gt;= 0</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -502,9 +447,6 @@
       <div class="popular-posts-title"><a href="/p/dd188d84.html" rel="bookmark">Swift 语言之基本运算符学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/a9bf149e.html" rel="bookmark">Swift 语言之字符串与字符学习笔记</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/b20d6f2b.html" rel="bookmark">Swift 语言之集合类型学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
@@ -512,6 +454,9 @@
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/ef567bc8.html" rel="bookmark">Swift 语言之函数学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/b10f8da0.html" rel="bookmark">Swift 语言之枚举学习笔记</a></div>
     </li>
   </ul>
 
@@ -607,29 +552,7 @@
 
 
 
-    <div class="comments utterances-container"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    <div class="comments utterances-container"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -660,7 +583,7 @@
   </span>
 </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
@@ -668,7 +591,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
@@ -688,138 +611,25 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="/js/local-search.js"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
 
 
-  <script>
-    NProgress.configure({
-      showSpinner: false
-    });
-    NProgress.start();
-    document.addEventListener('readystatechange', () => {
-      if (document.readyState === 'interactive') {
-        NProgress.inc(0.8);
-      }
-      if (document.readyState === 'complete') {
-        NProgress.done();
-      }
-    });
-    document.addEventListener('pjax:send', () => {
-      NProgress.start();
-    });
-    document.addEventListener('pjax:success', () => {
-      NProgress.done();
-    });
-  </script>
+  <script class="next-config" data-name="nprogress" type="application/json">{&quot;enable&quot;:true,&quot;spinner&quot;:false}</script>
+  <script src="/js/third-party/nprogress.js"></script>
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-<script>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      const visitors = document.querySelector('.leancloud_visitors');
-      const url = decodeURI(visitors.id);
-      const title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            const counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      const visitors = document.querySelectorAll('.leancloud_visitors');
-      const entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            const target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
-    function fetchData(api_server) {
-      const Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{&quot;enable&quot;:true,&quot;app_id&quot;:&quot;kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI&quot;,&quot;app_key&quot;:&quot;uqTkCbm6jRHkwFOiIDe2qb3i&quot;,&quot;server_url&quot;:null,&quot;security&quot;:true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
-
-<script>
-NexT.utils.loadComments('.utterances-container', () => {
-  const script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', "xlsdg/blog-comments");
-  script.setAttribute('issue-term', "pathname");
-  script.setAttribute('theme', "github-light");
-  script.crossOrigin = 'anonymous';
-  script.async = true;
-  document.querySelector('.utterances-container').appendChild(script);
-});
-</script>
+<script class="next-config" data-name="utterances" type="application/json">{&quot;enable&quot;:true,&quot;repo&quot;:&quot;xlsdg&#x2F;blog-comments&quot;,&quot;issue_term&quot;:&quot;pathname&quot;,&quot;theme&quot;:&quot;github-light&quot;}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>

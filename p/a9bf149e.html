@@ -21,15 +21,12 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
   <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
 
-<script class="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"xlsdg.org","root":"/","images":"/images","scheme":"Pisces","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
-  </script>
+<script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;xlsdg.org&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Pisces&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;always&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.json&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
 <meta name="description" content="字符串字面量1let someString &#x3D; &quot;Some string literal value&quot;  初始化空字符串123var emptyString &#x3D; &quot;&quot;               &#x2F;&#x2F; empty string literalvar anotherEmptyString &#x3D; String()  &#x2F;&#x2F; initializer syntax&#x2F;&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift 语言之字符串与字符学习笔记">
@@ -48,79 +45,27 @@
 <link rel="canonical" href="https://xlsdg.org/p/a9bf149e.html">
 
 
-<script class="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'zh-CN'
-  };
-</script>
-<title>Swift 语言之字符串与字符学习笔记 | xLsDg</title>
+
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;xlsdg.org&#x2F;p&#x2F;a9bf149e.html&quot;,&quot;path&quot;:&quot;p&#x2F;a9bf149e.html&quot;,&quot;title&quot;:&quot;Swift 语言之字符串与字符学习笔记&quot;}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
+<title>Swift 语言之字符串与字符学习笔记 | xLsDg</title><script src="/js/config.js"></script>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62013560-3"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-62013560-3');
-      }
-    </script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{&quot;tracking_id&quot;:&quot;UA-62013560-3&quot;,&quot;only_pageview&quot;:false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
 
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?9a9b63fd96c23bccc070d9afe797bdc5"></script>
 
-  <script>
-    !function(e,t,n,g,i){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)},n=t.createElement("script"),tag=t.getElementsByTagName("script")[0],n.async=1,n.src=('https:'==document.location.protocol?'https://':'http://')+g,tag.parentNode.insertBefore(n,tag)}(window,document,"script","assets.growingio.com/2.1/gio.js","gio");
-    gio('init', '93b1fecf6ab1be1a', {});
-    gio('send');
-  </script>
+  <script async src="//assets.growingio.com/2.1/gio.js"></script>
+  <script class="next-config" data-name="growingio_analytics" type="application/json">&quot;93b1fecf6ab1be1a&quot;</script>
+  <script src="/js/third-party/analytics/growingio.js"></script>
 
 
   <noscript>
-  <style>
-  body { margin-top: 2rem; }
-
-  .use-motion .menu-item,
-  .use-motion .sidebar,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header {
-    visibility: visible;
-  }
-
-  .use-motion .header,
-  .use-motion .site-brand-container .toggle,
-  .use-motion .footer { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle,
-  .use-motion .custom-logo-image {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line {
-    transform: scaleX(1);
-  }
-
-  .search-pop-overlay, .sidebar-nav { display: none; }
-  .sidebar-panel { display: block; }
-  </style>
-</noscript>
-
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
 <link rel="alternate" href="/atom.xml" title="xLsDg" type="application/atom+xml">
 </head>
 
@@ -299,7 +244,7 @@
     </header>
 
     
-  <div class="back-to-top" role="button">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
@@ -381,7 +326,7 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span class="leancloud-visitors-count"></span>
     </span>
-    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -413,54 +358,54 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="字符串字面量"><a href="#字符串字面量" class="headerlink" title="字符串字面量"></a>字符串字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> someString = <span class="string">&quot;Some string literal value&quot;</span></span><br></pre></td></tr></table></figure>
+        <h3 id="字符串字面量"><a href="#字符串字面量" class="headerlink" title="字符串字面量"></a>字符串字面量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> someString <span class="operator">=</span> <span class="string">&quot;Some string literal value&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="初始化空字符串"><a href="#初始化空字符串" class="headerlink" title="初始化空字符串"></a>初始化空字符串</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> emptyString = <span class="string">&quot;&quot;</span>               <span class="comment">// empty string literal</span></span><br><span class="line"><span class="keyword">var</span> anotherEmptyString = <span class="type">String</span>()  <span class="comment">// initializer syntax</span></span><br><span class="line"><span class="comment">// these two strings are both empty, and are equivalent to each other</span></span><br></pre></td></tr></table></figure>
+<h3 id="初始化空字符串"><a href="#初始化空字符串" class="headerlink" title="初始化空字符串"></a>初始化空字符串</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> emptyString <span class="operator">=</span> <span class="string">&quot;&quot;</span>               <span class="comment">// empty string literal</span></span><br><span class="line"><span class="keyword">var</span> anotherEmptyString <span class="operator">=</span> <span class="type">String</span>()  <span class="comment">// initializer syntax</span></span><br><span class="line"><span class="comment">// these two strings are both empty, and are equivalent to each other</span></span><br></pre></td></tr></table></figure>
 
 <span id="more"></span>
 
 <p>判断字符串是否为空：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> emptyString.isEmpty &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;Nothing to see here&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Nothing to see here&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> emptyString.isEmpty &#123;</span><br><span class="line">    println(<span class="string">&quot;Nothing to see here&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;Nothing to see here&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="字符串可变性"><a href="#字符串可变性" class="headerlink" title="字符串可变性"></a>字符串可变性</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> variableString = <span class="string">&quot;Horse&quot;</span></span><br><span class="line">variableString += <span class="string">&quot; and carriage&quot;</span></span><br><span class="line"><span class="comment">// variableString is now &quot;Horse and carriage&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> constantString = <span class="string">&quot;Highlander&quot;</span></span><br><span class="line">constantString += <span class="string">&quot; and another Highlander&quot;</span></span><br><span class="line"><span class="comment">// this reports a compile-time error - a constant string cannot be modified</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串可变性"><a href="#字符串可变性" class="headerlink" title="字符串可变性"></a>字符串可变性</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> variableString <span class="operator">=</span> <span class="string">&quot;Horse&quot;</span></span><br><span class="line">variableString <span class="operator">+=</span> <span class="string">&quot; and carriage&quot;</span></span><br><span class="line"><span class="comment">// variableString is now &quot;Horse and carriage&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> constantString <span class="operator">=</span> <span class="string">&quot;Highlander&quot;</span></span><br><span class="line">constantString <span class="operator">+=</span> <span class="string">&quot; and another Highlander&quot;</span></span><br><span class="line"><span class="comment">// this reports a compile-time error - a constant string cannot be modified</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="使用字符"><a href="#使用字符" class="headerlink" title="使用字符"></a>使用字符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> catCharacters: [<span class="type">Character</span>] = [<span class="string">&quot;C&quot;</span>, <span class="string">&quot;a&quot;</span>, <span class="string">&quot;t&quot;</span>, <span class="string">&quot;!&quot;</span>, <span class="string">&quot;🐱&quot;</span>]</span><br><span class="line"><span class="keyword">let</span> catString = <span class="type">String</span>(catCharacters)</span><br><span class="line"><span class="built_in">println</span>(catString)</span><br><span class="line"><span class="comment">// prints &quot;Cat!🐱&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="使用字符"><a href="#使用字符" class="headerlink" title="使用字符"></a>使用字符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> catCharacters: [<span class="type">Character</span>] <span class="operator">=</span> [<span class="string">&quot;C&quot;</span>, <span class="string">&quot;a&quot;</span>, <span class="string">&quot;t&quot;</span>, <span class="string">&quot;!&quot;</span>, <span class="string">&quot;🐱&quot;</span>]</span><br><span class="line"><span class="keyword">let</span> catString <span class="operator">=</span> <span class="type">String</span>(catCharacters)</span><br><span class="line">println(catString)</span><br><span class="line"><span class="comment">// prints &quot;Cat!🐱&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="连接字符串和字符"><a href="#连接字符串和字符" class="headerlink" title="连接字符串和字符"></a>连接字符串和字符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> string1 = <span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="keyword">let</span> string2 = <span class="string">&quot; there&quot;</span></span><br><span class="line"><span class="keyword">var</span> welcome = string1 + string2</span><br><span class="line"><span class="comment">// welcome now equals &quot;hello there&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> instruction = <span class="string">&quot;look over&quot;</span></span><br><span class="line">instruction += string2</span><br><span class="line"><span class="comment">// instruction now equals &quot;look over there&quot;</span></span><br><span class="line"><span class="keyword">let</span> exclamationMark: <span class="type">Character</span> = <span class="string">&quot;!&quot;</span></span><br><span class="line">welcome.append(exclamationMark)</span><br><span class="line"><span class="comment">// welcome now equals &quot;hello there!&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="连接字符串和字符"><a href="#连接字符串和字符" class="headerlink" title="连接字符串和字符"></a>连接字符串和字符</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> string1 <span class="operator">=</span> <span class="string">&quot;hello&quot;</span></span><br><span class="line"><span class="keyword">let</span> string2 <span class="operator">=</span> <span class="string">&quot; there&quot;</span></span><br><span class="line"><span class="keyword">var</span> welcome <span class="operator">=</span> string1 <span class="operator">+</span> string2</span><br><span class="line"><span class="comment">// welcome now equals &quot;hello there&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> instruction <span class="operator">=</span> <span class="string">&quot;look over&quot;</span></span><br><span class="line">instruction <span class="operator">+=</span> string2</span><br><span class="line"><span class="comment">// instruction now equals &quot;look over there&quot;</span></span><br><span class="line"><span class="keyword">let</span> exclamationMark: <span class="type">Character</span> <span class="operator">=</span> <span class="string">&quot;!&quot;</span></span><br><span class="line">welcome.append(exclamationMark)</span><br><span class="line"><span class="comment">// welcome now equals &quot;hello there!&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="字符串插值"><a href="#字符串插值" class="headerlink" title="字符串插值"></a>字符串插值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> multiplier = <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> message = <span class="string">&quot;\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)&quot;</span></span><br><span class="line"><span class="comment">// message is &quot;3 times 2.5 is 7.5&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串插值"><a href="#字符串插值" class="headerlink" title="字符串插值"></a>字符串插值</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> multiplier <span class="operator">=</span> <span class="number">3</span></span><br><span class="line"><span class="keyword">let</span> message <span class="operator">=</span> <span class="string">&quot;<span class="subst">\(multiplier)</span> times 2.5 is <span class="subst">\(Double(multiplier) <span class="operator">*</span> <span class="number">2.5</span>)</span>&quot;</span></span><br><span class="line"><span class="comment">// message is &quot;3 times 2.5 is 7.5&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="字面量中的特殊字符（-0-t-n-r-“-39-）"><a href="#字面量中的特殊字符（-0-t-n-r-“-39-）" class="headerlink" title="字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）"></a>字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wiseWords = <span class="string">&quot;\&quot;Imagination is more important than knowledge\&quot; - Einstein&quot;</span></span><br><span class="line"><span class="comment">// &quot;Imagination is more important than knowledge&quot; - Einstein</span></span><br><span class="line"><span class="keyword">let</span> dollarSign = <span class="string">&quot;\u&#123;24&#125;&quot;</span>        <span class="comment">// $,  Unicode scalar U+0024</span></span><br><span class="line"><span class="keyword">let</span> blackHeart = <span class="string">&quot;\u&#123;2665&#125;&quot;</span>      <span class="comment">// ♥,  Unicode scalar U+2665</span></span><br><span class="line"><span class="keyword">let</span> sparklingHeart = <span class="string">&quot;\u&#123;1F496&#125;&quot;</span> <span class="comment">// 💖, Unicode scalar U+1F496</span></span><br></pre></td></tr></table></figure>
+<h3 id="字面量中的特殊字符（-0-t-n-r-“-39-）"><a href="#字面量中的特殊字符（-0-t-n-r-“-39-）" class="headerlink" title="字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）"></a>字面量中的特殊字符（\0, \, \t, \n, \r, \“, &#39;）</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> wiseWords <span class="operator">=</span> <span class="string">&quot;<span class="subst">\&quot;</span>Imagination is more important than knowledge<span class="subst">\&quot;</span> - Einstein&quot;</span></span><br><span class="line"><span class="comment">// &quot;Imagination is more important than knowledge&quot; - Einstein</span></span><br><span class="line"><span class="keyword">let</span> dollarSign <span class="operator">=</span> <span class="string">&quot;<span class="subst">\u&#123;24&#125;</span>&quot;</span>        <span class="comment">// $,  Unicode scalar U+0024</span></span><br><span class="line"><span class="keyword">let</span> blackHeart <span class="operator">=</span> <span class="string">&quot;<span class="subst">\u&#123;2665&#125;</span>&quot;</span>      <span class="comment">// ♥,  Unicode scalar U+2665</span></span><br><span class="line"><span class="keyword">let</span> sparklingHeart <span class="operator">=</span> <span class="string">&quot;<span class="subst">\u&#123;1F496&#125;</span>&quot;</span> <span class="comment">// 💖, Unicode scalar U+1F496</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="计算字符数量"><a href="#计算字符数量" class="headerlink" title="计算字符数量"></a>计算字符数量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> unusualMenagerie = <span class="string">&quot;Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪&quot;</span></span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;unusualMenagerie has \(count(unusualMenagerie)) characters&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;unusualMenagerie has 40 characters&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="计算字符数量"><a href="#计算字符数量" class="headerlink" title="计算字符数量"></a>计算字符数量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> unusualMenagerie <span class="operator">=</span> <span class="string">&quot;Koala 🐨, Snail 🐌, Penguin 🐧, Dromedary 🐪&quot;</span></span><br><span class="line">println(<span class="string">&quot;unusualMenagerie has <span class="subst">\(count(unusualMenagerie))</span> characters&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;unusualMenagerie has 40 characters&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="字符串索引"><a href="#字符串索引" class="headerlink" title="字符串索引"></a>字符串索引</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> greeting = <span class="string">&quot;Guten Tag&quot;</span></span><br><span class="line"><span class="comment">// prints &quot;greeting: String = &quot;Guten Tag&quot;&quot;</span></span><br><span class="line"><span class="built_in">println</span>(greeting.startIndex)</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line"><span class="built_in">println</span>(greeting.endIndex)</span><br><span class="line"><span class="comment">// 9</span></span><br><span class="line">greeting[greeting.startIndex.successor()]</span><br><span class="line"><span class="comment">// u</span></span><br><span class="line">greeting[greeting.endIndex.predecessor()]</span><br><span class="line"><span class="comment">// g</span></span><br><span class="line"><span class="keyword">let</span> index = <span class="built_in">advance</span>(greeting.startIndex, <span class="number">7</span>)</span><br><span class="line">greeting[index]</span><br><span class="line"><span class="comment">// a</span></span><br><span class="line">greeting.endIndex.successor() <span class="comment">// fatal error: can not increment endIndex</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串索引"><a href="#字符串索引" class="headerlink" title="字符串索引"></a>字符串索引</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> greeting <span class="operator">=</span> <span class="string">&quot;Guten Tag&quot;</span></span><br><span class="line"><span class="comment">// prints &quot;greeting: String = &quot;Guten Tag&quot;&quot;</span></span><br><span class="line">println(greeting.startIndex)</span><br><span class="line"><span class="comment">// 0</span></span><br><span class="line">println(greeting.endIndex)</span><br><span class="line"><span class="comment">// 9</span></span><br><span class="line">greeting[greeting.startIndex.successor()]</span><br><span class="line"><span class="comment">// u</span></span><br><span class="line">greeting[greeting.endIndex.predecessor()]</span><br><span class="line"><span class="comment">// g</span></span><br><span class="line"><span class="keyword">let</span> index <span class="operator">=</span> advance(greeting.startIndex, <span class="number">7</span>)</span><br><span class="line">greeting[index]</span><br><span class="line"><span class="comment">// a</span></span><br><span class="line">greeting.endIndex.successor() <span class="comment">// fatal error: can not increment endIndex</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="字符串插入和删除"><a href="#字符串插入和删除" class="headerlink" title="字符串插入和删除"></a>字符串插入和删除</h3><p>在某个位置插入字符：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> welcome = <span class="string">&quot;hello&quot;</span></span><br><span class="line">welcome.insert(<span class="string">&quot;!&quot;</span>, atIndex: welcome.endIndex)</span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello!&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> welcome <span class="operator">=</span> <span class="string">&quot;hello&quot;</span></span><br><span class="line">welcome.insert(<span class="string">&quot;!&quot;</span>, atIndex: welcome.endIndex)</span><br><span class="line">println(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello!&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>在某个位置插入字符串：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">welcome.splice(<span class="string">&quot; there&quot;</span>, atIndex: welcome.endIndex.predecessor())</span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello there!&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">welcome.splice(<span class="string">&quot; there&quot;</span>, atIndex: welcome.endIndex.predecessor())</span><br><span class="line">println(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello there!&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>删除某个位置的字符：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">welcome.removeAtIndex(welcome.endIndex.predecessor())</span><br><span class="line"><span class="comment">// !</span></span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello there&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">welcome.removeAtIndex(welcome.endIndex.predecessor())</span><br><span class="line"><span class="comment">// !</span></span><br><span class="line">println(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello there&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>删除某个范围的字符串：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> range = <span class="built_in">advance</span>(welcome.endIndex, -<span class="number">6</span>)..&lt;welcome.endIndex</span><br><span class="line">welcome.removeRange(range)</span><br><span class="line"><span class="built_in">println</span>(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> range <span class="operator">=</span> advance(welcome.endIndex, <span class="operator">-</span><span class="number">6</span>)<span class="operator">..&lt;</span>welcome.endIndex</span><br><span class="line">welcome.removeRange(range)</span><br><span class="line">println(welcome)</span><br><span class="line"><span class="comment">// prints &quot;hello&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="字符串和字符比较"><a href="#字符串和字符比较" class="headerlink" title="字符串和字符比较"></a>字符串和字符比较</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> quotation = <span class="string">&quot;We&#x27;re a lot alike, you and I.&quot;</span></span><br><span class="line"><span class="keyword">let</span> sameQuotation = <span class="string">&quot;We&#x27;re a lot alike, you and I.&quot;</span></span><br><span class="line"><span class="keyword">if</span> quotation == sameQuotation &#123;</span><br><span class="line">    <span class="built_in">println</span>(<span class="string">&quot;These two strings are considered equal&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;These two strings are considered equal&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串和字符比较"><a href="#字符串和字符比较" class="headerlink" title="字符串和字符比较"></a>字符串和字符比较</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> quotation <span class="operator">=</span> <span class="string">&quot;We&#x27;re a lot alike, you and I.&quot;</span></span><br><span class="line"><span class="keyword">let</span> sameQuotation <span class="operator">=</span> <span class="string">&quot;We&#x27;re a lot alike, you and I.&quot;</span></span><br><span class="line"><span class="keyword">if</span> quotation <span class="operator">==</span> sameQuotation &#123;</span><br><span class="line">    println(<span class="string">&quot;These two strings are considered equal&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// prints &quot;These two strings are considered equal&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="字符串前缀-后缀相等"><a href="#字符串前缀-后缀相等" class="headerlink" title="字符串前缀/后缀相等"></a>字符串前缀/后缀相等</h3><p>前缀相等：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> romeoAndJuliet = [</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 1: Verona, A public place&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 2: Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 3: A room in Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 4: A street outside Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 5: The Great Hall in Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 1: Outside Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 2: Capulet&#x27;s orchard&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 3: Outside Friar Lawrence&#x27;s cell&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 4: A street in Verona&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 5: Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 6: Friar Lawrence&#x27;s cell&quot;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> act1SceneCount = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> scene <span class="keyword">in</span> romeoAndJuliet &#123;</span><br><span class="line">    <span class="keyword">if</span> scene.hasPrefix(<span class="string">&quot;Act 1 &quot;</span>) &#123;</span><br><span class="line">        ++act1SceneCount</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;There are \(act1SceneCount) scenes in Act 1&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;There are 5 scenes in Act 1&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> romeoAndJuliet <span class="operator">=</span> [</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 1: Verona, A public place&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 2: Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 3: A room in Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 4: A street outside Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 1 Scene 5: The Great Hall in Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 1: Outside Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 2: Capulet&#x27;s orchard&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 3: Outside Friar Lawrence&#x27;s cell&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 4: A street in Verona&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 5: Capulet&#x27;s mansion&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Act 2 Scene 6: Friar Lawrence&#x27;s cell&quot;</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> act1SceneCount <span class="operator">=</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> scene <span class="keyword">in</span> romeoAndJuliet &#123;</span><br><span class="line">    <span class="keyword">if</span> scene.hasPrefix(<span class="string">&quot;Act 1 &quot;</span>) &#123;</span><br><span class="line">        <span class="operator">++</span>act1SceneCount</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">println(<span class="string">&quot;There are <span class="subst">\(act1SceneCount)</span> scenes in Act 1&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;There are 5 scenes in Act 1&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>后缀相等：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mansionCount = <span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> cellCount = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> scene <span class="keyword">in</span> romeoAndJuliet &#123;</span><br><span class="line">    <span class="keyword">if</span> scene.hasSuffix(<span class="string">&quot;Capulet&#x27;s mansion&quot;</span>) &#123;</span><br><span class="line">        ++mansionCount</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> scene.hasSuffix(<span class="string">&quot;Friar Lawrence&#x27;s cell&quot;</span>) &#123;</span><br><span class="line">        ++cellCount</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">println</span>(<span class="string">&quot;\(mansionCount) mansion scenes; \(cellCount) cell scenes&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;6 mansion scenes; 2 cell scenes&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> mansionCount <span class="operator">=</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">var</span> cellCount <span class="operator">=</span> <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> scene <span class="keyword">in</span> romeoAndJuliet &#123;</span><br><span class="line">    <span class="keyword">if</span> scene.hasSuffix(<span class="string">&quot;Capulet&#x27;s mansion&quot;</span>) &#123;</span><br><span class="line">        <span class="operator">++</span>mansionCount</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> scene.hasSuffix(<span class="string">&quot;Friar Lawrence&#x27;s cell&quot;</span>) &#123;</span><br><span class="line">        <span class="operator">++</span>cellCount</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">println(<span class="string">&quot;<span class="subst">\(mansionCount)</span> mansion scenes; <span class="subst">\(cellCount)</span> cell scenes&quot;</span>)</span><br><span class="line"><span class="comment">// prints &quot;6 mansion scenes; 2 cell scenes&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> codeUnit <span class="keyword">in</span> dogString.utf8 &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\(codeUnit) &quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line"><span class="comment">// 68 111 103 226 128 188 240 159 144 182</span></span><br></pre></td></tr></table></figure>
+<h3 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> codeUnit <span class="keyword">in</span> dogString.utf8 &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(codeUnit)</span> &quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\n</span>&quot;</span>)</span><br><span class="line"><span class="comment">// 68 111 103 226 128 188 240 159 144 182</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> codeUnit <span class="keyword">in</span> dogString.utf16 &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\(codeUnit) &quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line"><span class="comment">// 68 111 103 8252 55357 56374</span></span><br></pre></td></tr></table></figure>
+<h3 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> codeUnit <span class="keyword">in</span> dogString.utf16 &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(codeUnit)</span> &quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\n</span>&quot;</span>)</span><br><span class="line"><span class="comment">// 68 111 103 8252 55357 56374</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="Unicode标量"><a href="#Unicode标量" class="headerlink" title="Unicode标量"></a>Unicode标量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> scalar <span class="keyword">in</span> dogString.unicodeScalars &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\(scalar.value) &quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line"><span class="comment">// 68 111 103 8252 128054</span></span><br></pre></td></tr></table></figure>
+<h3 id="Unicode标量"><a href="#Unicode标量" class="headerlink" title="Unicode标量"></a>Unicode标量</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> scalar <span class="keyword">in</span> dogString.unicodeScalars &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(scalar.value)</span> &quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\n</span>&quot;</span>)</span><br><span class="line"><span class="comment">// 68 111 103 8252 128054</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -471,13 +416,13 @@
   <div class="popular-posts-header">相关文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
-    </li>
-    <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/dd188d84.html" rel="bookmark">Swift 语言之基本运算符学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/b20d6f2b.html" rel="bookmark">Swift 语言之集合类型学习笔记</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/p/ef16a836.html" rel="bookmark">Swift 语言之基础学习笔记</a></div>
     </li>
     <li class="popular-posts-item">
       <div class="popular-posts-title"><a href="/p/d414fd72.html" rel="bookmark">Swift 语言之控制流学习笔记</a></div>
@@ -579,29 +524,7 @@
 
 
 
-    <div class="comments utterances-container"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      const commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
+    <div class="comments utterances-container"></div><script src="/js/comments.js"></script>
 </div>
   </main>
 
@@ -632,7 +555,7 @@
   </span>
 </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
       <span class="post-meta-item-icon">
         <i class="fa fa-user"></i>
       </span>
@@ -640,7 +563,7 @@
         <span id="busuanzi_value_site_uv"></span>
       </span>
     </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
       </span>
@@ -660,138 +583,25 @@
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
-<script src="/js/local-search.js"></script>
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
 
 
-  <script>
-    NProgress.configure({
-      showSpinner: false
-    });
-    NProgress.start();
-    document.addEventListener('readystatechange', () => {
-      if (document.readyState === 'interactive') {
-        NProgress.inc(0.8);
-      }
-      if (document.readyState === 'complete') {
-        NProgress.done();
-      }
-    });
-    document.addEventListener('pjax:send', () => {
-      NProgress.start();
-    });
-    document.addEventListener('pjax:success', () => {
-      NProgress.done();
-    });
-  </script>
+  <script class="next-config" data-name="nprogress" type="application/json">{&quot;enable&quot;:true,&quot;spinner&quot;:false}</script>
+  <script src="/js/third-party/nprogress.js"></script>
 
   
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
-<script>
-  (function() {
-    function leancloudSelector(url) {
-      url = encodeURI(url);
-      return document.getElementById(url).querySelector('.leancloud-visitors-count');
-    }
-
-    function addCount(Counter) {
-      const visitors = document.querySelector('.leancloud_visitors');
-      const url = decodeURI(visitors.id);
-      const title = visitors.dataset.flagTitle;
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          if (results.length > 0) {
-            const counter = results[0];
-            leancloudSelector(url).innerText = counter.time + 1;
-            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
-              .catch(error => {
-                console.error('Failed to save visitor count', error);
-              });
-          } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    function showTime(Counter) {
-      const visitors = document.querySelectorAll('.leancloud_visitors');
-      const entries = [...visitors].map(element => {
-        return decodeURI(element.id);
-      });
-
-      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
-        .then(response => response.json())
-        .then(({ results }) => {
-          for (let url of entries) {
-            const target = results.find(item => item.url === url);
-            leancloudSelector(url).innerText = target ? target.time : 0;
-          }
-        })
-        .catch(error => {
-          console.error('LeanCloud Counter Error', error);
-        });
-    }
-
-    const { app_id, app_key, server_url } = {"enable":true,"app_id":"kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI","app_key":"uqTkCbm6jRHkwFOiIDe2qb3i","server_url":null,"security":true};
-    function fetchData(api_server) {
-      const Counter = (method, url, data) => {
-        return fetch(`${api_server}/1.1${url}`, {
-          method,
-          headers: {
-            'X-LC-Id'     : app_id,
-            'X-LC-Key'    : app_key,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(data)
-        });
-      };
-      if (CONFIG.page.isPost) {
-        if (CONFIG.hostname !== location.hostname) return;
-        addCount(Counter);
-      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
-        showTime(Counter);
-      }
-    }
-
-    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
-
-    if (api_server) {
-      fetchData(api_server);
-    } else {
-      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-        .then(response => response.json())
-        .then(({ api_server }) => {
-          fetchData('https://' + api_server);
-        });
-    }
-  })();
-</script>
+  <script class="next-config" data-name="leancloud_visitors" type="application/json">{&quot;enable&quot;:true,&quot;app_id&quot;:&quot;kS9fC0iDa3h8EEFlbK5BHKxY-MdYXbMMI&quot;,&quot;app_key&quot;:&quot;uqTkCbm6jRHkwFOiIDe2qb3i&quot;,&quot;server_url&quot;:null,&quot;security&quot;:true}</script>
+  <script src="/js/third-party/statistics/lean-analytics.js"></script>
 
 
-
-<script>
-NexT.utils.loadComments('.utterances-container', () => {
-  const script = document.createElement('script');
-  script.src = 'https://utteranc.es/client.js';
-  script.setAttribute('repo', "xlsdg/blog-comments");
-  script.setAttribute('issue-term', "pathname");
-  script.setAttribute('theme', "github-light");
-  script.crossOrigin = 'anonymous';
-  script.async = true;
-  document.querySelector('.utterances-container').appendChild(script);
-});
-</script>
+<script class="next-config" data-name="utterances" type="application/json">{&quot;enable&quot;:true,&quot;repo&quot;:&quot;xlsdg&#x2F;blog-comments&quot;,&quot;issue_term&quot;:&quot;pathname&quot;,&quot;theme&quot;:&quot;github-light&quot;}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
 
 </body>
 </html>
