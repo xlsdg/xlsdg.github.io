@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/static.json</loc>
+    <loc>https://xlsdg.org/now.json</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/now.json</loc>
+    <loc>https://xlsdg.org/static.json</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/about/index.html</loc>
+    <loc>https://xlsdg.org/app.json</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/app.json</loc>
+    <loc>https://xlsdg.org/about/index.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -299,15 +299,6 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/6dc860e9.html</loc>
-    
-    <lastmod>2026-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/p/6c71b74b.html</loc>
     
     <lastmod>2026-02-16</lastmod>
@@ -317,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/p/b46b5ca3.html</loc>
+    <loc>https://xlsdg.org/p/6dc860e9.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -336,6 +327,15 @@
   
   <url>
     <loc>https://xlsdg.org/p/8703e1fe.html</loc>
+    
+    <lastmod>2026-02-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/p/b46b5ca3.html</loc>
     
     <lastmod>2026-02-16</lastmod>
     
@@ -489,13 +489,6 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Python/</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/tags/C/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -524,14 +517,21 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Git/</loc>
+    <loc>https://xlsdg.org/tags/JavaScript/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/JavaScript/</loc>
+    <loc>https://xlsdg.org/tags/Python/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/tags/Git/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -559,14 +559,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Html/</loc>
+    <loc>https://xlsdg.org/tags/Shell/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/Shell/</loc>
+    <loc>https://xlsdg.org/tags/Html/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -587,13 +587,6 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/ProxyChains-NG/</loc>
-    <lastmod>2026-02-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://xlsdg.org/tags/PMP/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -601,7 +594,7 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/tags/MySQL/</loc>
+    <loc>https://xlsdg.org/tags/ProxyChains-NG/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -616,6 +609,13 @@
   
   <url>
     <loc>https://xlsdg.org/tags/Swift/</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://xlsdg.org/tags/MySQL/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -680,14 +680,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/Html/</loc>
+    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
+    <loc>https://xlsdg.org/categories/02-%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/Html/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -722,14 +722,14 @@
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%90%8E%E7%AB%AF/</loc>
+    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>https://xlsdg.org/categories/01-%E5%B7%A5%E4%BD%9C/%E5%90%8E%E7%AB%AF/</loc>
     <lastmod>2026-02-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
