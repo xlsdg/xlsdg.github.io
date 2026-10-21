@@ -1,0 +1,17 @@
+User-agent: *
+
+Allow: /
+Allow: /about/
+Allow: /archives/
+Allow: /categories/
+Allow: /p/
+Allow: /page/
+Allow: /tags/
+
+Disallow: /css/
+Disallow: /images/
+Disallow: /js/
+Disallow: /lib/
+
+Sitemap: https://xlsdg.org/sitemap.xml
+Sitemap: https://xlsdg.org/baidusitemap.xml
